@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <title>Interactive Exhibit Viewer | Kerala Science City Kottayam</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@400;600;700&family=Noto+Serif+Malayalam:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Base Variables */
+        :root {
+            --bg-dark: #070a13;
+            --bg-card: rgba(13, 20, 38, 0.45);
+            --primary-cyan: #00e5ff;
+            --secondary-purple: #9d4ede;
+            --accent-emerald: #00f5d4;
+            --text-primary: #f8f9fa;
+            --text-secondary: #a0aec0;
+            --text-muted: #718096;
+            --border-color: rgba(255, 255, 255, 0.08);
+            --border-color-glow: rgba(0, 229, 255, 0.2);
+            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --font-heading: 'Space Grotesk', sans-serif;
+            --font-body: 'Outfit', sans-serif;
+            --font-ml: 'Noto Serif Malayalam', serif;
+        }
+
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            overflow-x: hidden;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Sticky Header */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(7, 10, 19, 0.85);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+            padding: 14px 0;
+        }
+
+        .header-grid {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .logo-group {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            height: 40px;
+            width: 40px;
+            object-fit: contain;
+        }
+
+        .logo-text-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-title {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: var(--text-primary);
+            letter-spacing: 0.05em;
+        }
+
+        .logo-subtitle {
+            font-size: 0.75rem;
+            color: var(--primary-cyan);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+        }
+
+        .header-controls {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .toggle-group {
+            display: flex;
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--border-color);
+            border-radius: 30px;
+            padding: 3px;
+        }
+
+        .toggle-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            font-family: var(--font-heading);
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .toggle-btn.active {
+            background: var(--primary-cyan);
+            color: #000;
+            box-shadow: 0 0 12px rgba(0, 229, 255, 0.3);
+        }
+
+        .complexity-toggle .toggle-btn.active {
+            background: var(--secondary-purple);
+            color: var(--text-primary);
+            box-shadow: 0 0 12px rgba(157, 78, 221, 0.4);
+        }
+
+        /* Layout Main */
+        main {
+            flex-grow: 1;
+            padding: 30px 0 60px 0;
+        }
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+
+        .breadcrumb a {
+            color: var(--primary-cyan);
+            text-decoration: none;
+            transition: var(--transition-smooth);
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* Stage Area */
+        .stage-wrapper {
+            background: rgba(0,0,0,0.6);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5), inset 0 0 20px rgba(0, 229, 255, 0.05);
+            position: relative;
+        }
+
+        .stage-header {
+            background: rgba(255,255,255,0.02);
+            border-bottom: 1px solid var(--border-color);
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .stage-title {
+            font-family: var(--font-heading);
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .stage-title i {
+            color: var(--primary-cyan);
+        }
+
+        .simulation-iframe {
+            width: 100%;
+            height: 380px;
+            border: none;
+            background: transparent;
+            display: block;
+        }
+
+        /* Details Stage */
+        .exhibit-info-panel {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: inset 0 0 30px rgba(255,255,255,0.01);
+        }
+
+        .exhibit-title-group {
+            margin-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .exhibit-main-title {
+            font-family: var(--font-heading);
+            font-size: 2.2rem;
+            font-weight: 800;
+            line-height: 1.2;
+            color: var(--text-primary);
+            letter-spacing: -0.02em;
+        }
+
+        .exhibit-sub-title {
+            font-family: var(--font-ml);
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--primary-cyan);
+            margin-top: 8px;
+            line-height: 1.4;
+        }
+
+        /* Audio Button styling */
+        .btn-tts {
+            background: rgba(0, 229, 255, 0.08);
+            border: 1px solid var(--border-color-glow);
+            color: var(--primary-cyan);
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-family: var(--font-heading);
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition-smooth);
+            box-shadow: 0 4px 12px rgba(0, 229, 255, 0.05);
+            margin-bottom: 8px;
+        }
+
+        .btn-tts:hover {
+            background: rgba(0, 229, 255, 0.15);
+            border-color: var(--primary-cyan);
+            box-shadow: 0 0 15px rgba(0, 229, 255, 0.2);
+        }
+
+        .btn-tts:active {
+            transform: scale(0.96);
+        }
+
+        .btn-tts.playing {
+            background: rgba(0, 245, 212, 0.12);
+            border-color: var(--accent-emerald);
+            color: var(--accent-emerald);
+            box-shadow: 0 0 15px rgba(0, 245, 212, 0.25);
+            animation: pulse-border 1.5s infinite alternate;
+        }
+
+        .btn-tts.playing i {
+            animation: bounce-icon 0.6s infinite alternate;
+        }
+
+        @keyframes pulse-border {
+            from { border-color: rgba(0, 245, 212, 0.3); }
+            to { border-color: rgba(0, 245, 212, 0.8); }
+        }
+
+        @keyframes bounce-icon {
+            from { transform: scale(1); }
+            to { transform: scale(1.15); }
+        }
+
+        /* Content Tiering */
+        .tier-content {
+            display: none;
+            animation: fadeIn 0.4s ease forwards;
+        }
+
+        body.lang-en-active.complexity-quick .tier-content.tier-quick.lang-en { display: block; }
+        body.lang-en-active.complexity-how .tier-content.tier-how.lang-en { display: block; }
+        body.lang-en-active.complexity-deep .tier-content.tier-deep.lang-en { display: block; }
+
+        body.lang-ml-active.complexity-quick .tier-content.tier-quick.lang-ml { display: block; }
+        body.lang-ml-active.complexity-how .tier-content.tier-how.lang-ml { display: block; }
+        body.lang-ml-active.complexity-deep .tier-content.tier-deep.lang-ml { display: block; }
+
+        .tier-content h4 {
+            font-family: var(--font-heading);
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--accent-emerald);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tier-content.tier-deep {
+            background: rgba(157, 78, 221, 0.04);
+            border-left: 4px solid var(--secondary-purple);
+            border-radius: 0 8px 8px 0;
+            padding: 20px;
+        }
+        
+        .tier-content.tier-deep h4 {
+            color: var(--secondary-purple);
+        }
+
+        .tier-content p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+
+        .tier-content h3 {
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            color: var(--text-primary);
+            margin-top: 24px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding-bottom: 6px;
+        }
+
+        .tier-content ol, .tier-content ul {
+            margin-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        .tier-content li {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+        }
+
+        /* Fallbacks */
+        .empty-exhibit-card {
+            text-align: center;
+            padding: 60px 40px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.4);
+        }
+
+        .empty-exhibit-card i {
+            font-size: 3.5rem;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+        }
+
+        .empty-exhibit-card h2 {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+        }
+
+        .empty-exhibit-card p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        footer {
+            border-top: 1px solid var(--border-color);
+            padding: 30px 0;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .header-grid {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 14px;
+            }
+            .header-controls {
+                width: 100%;
+                justify-content: space-between;
+            }
+            .simulation-iframe {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sticky Header -->
+    <header>
+        <div class="container header-grid">
+            <a href="./index.html" class="logo-group">
+                <img src="./assets/images/ksstm_logo.png?v=3" alt="KSSTM Logo" class="logo-img">
+                <div class="logo-text-group">
+                    <span class="logo-title">SCIENCE CITY</span>
+                    <span class="logo-subtitle">Kottayam</span>
+                </div>
+            </a>
+
+            <!-- Header Toggles -->
+            <div class="header-controls">
+                <!-- 1. Language Toggle -->
+                <div class="toggle-group language-toggle">
+                    <button class="toggle-btn active" id="lang-en-btn" data-lang="en">English</button>
+                    <button class="toggle-btn" id="lang-ml-btn" data-lang="ml">മലയാളം</button>
+                </div>
+
+                <!-- 2. Complexity Toggle -->
+                <div class="toggle-group complexity-toggle">
+                    <button class="toggle-btn active" data-complexity="quick">
+                        <i class="fas fa-child"></i>
+                        <span class="lang-en-only">Quick Play</span>
+                        <span class="lang-ml-only">ക്വിക്ക് പ്ലേ</span>
+                    </button>
+                    <button class="toggle-btn" data-complexity="how">
+                        <i class="fas fa-gamepad"></i>
+                        <span class="lang-en-only">How it Works</span>
+                        <span class="lang-ml-only">രീതി</span>
+                    </button>
+                    <button class="toggle-btn" data-complexity="deep">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span class="lang-en-only">Deep Dive</span>
+                        <span class="lang-ml-only">ഡീപ് ഡൈവ്</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Viewport -->
+    <main class="container">
+        <div class="breadcrumb">
+            <a href="./exhibit_guide.html" id="breadcrumb-gallery-link">Exhibits</a>
+            <i class="fas fa-chevron-right" style="font-size: 0.7rem; color: var(--text-muted);"></i>
+            <span id="breadcrumb-exhibit-name" style="color: var(--text-muted);">Exhibit Details</span>
+        </div>
+
+        <div id="exhibit-viewport">
+            <!-- 1. Simulation display frame -->
+            <div class="stage-wrapper">
+                <div class="stage-header">
+                    <span class="stage-title">
+                        <i class="fas fa-atom"></i>
+                        <span class="lang-en-only">Interactive Physics Stage</span>
+                        <span class="lang-ml-only">ഇന്ററാക്ടീവ് ഫിസിക്സ് സ്റ്റേജ്</span>
+                    </span>
+                    <span style="font-size: 0.8rem; color: var(--text-muted);">
+                        <i class="fas fa-expand"></i> HTML5 Sandbox
+                    </span>
+                </div>
+                <iframe id="animation-sandbox" class="simulation-iframe" sandbox="allow-scripts"></iframe>
+            </div>
+
+            <!-- 2. Detail panels -->
+            <div class="exhibit-info-panel">
+                <div class="exhibit-title-group">
+                    <div>
+                        <h1 class="exhibit-main-title" id="title-en">Exhibit Name</h1>
+                        <h2 class="exhibit-sub-title" id="title-ml">പ്രദർശന നാമം</h2>
+                    </div>
+                    <!-- Audio Narration Buttons -->
+                    <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 8px;">
+                        <button class="btn-tts" id="tts-btn" style="margin-bottom: 0;">
+                            <i class="fas fa-volume-high"></i>
+                            <span class="lang-en-only">Listen to Narration</span>
+                            <span class="lang-ml-only">ശബ്ദം കേൾക്കുക</span>
+                        </button>
+                        <button class="btn-tts" id="speed-btn" style="margin-bottom: 0;" title="Adjust speech speed">
+                            <i class="fas fa-gauge-high"></i>
+                            <span id="speed-text">1.0x</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="exhibit-details-body" id="details-body">
+                    <!-- TIER 1: QUICK PLAY -->
+                    <div class="tier-content tier-quick lang-en">
+                        <div id="desc-quick-en">Quick English description...</div>
+                    </div>
+                    <div class="tier-content tier-quick lang-ml">
+                        <div id="desc-quick-ml">ചെറിയ വിവരണം...</div>
+                    </div>
+
+                    <!-- TIER 2: HOW IT WORKS -->
+                    <div class="tier-content tier-how lang-en">
+                        <div id="desc-how-en">Step-by-step description...</div>
+                    </div>
+                    <div class="tier-content tier-how lang-ml">
+                        <div id="desc-how-ml">പ്രവർത്തന ഘട്ടങ്ങൾ...</div>
+                    </div>
+
+                    <!-- TIER 3: DEEP DIVE -->
+                    <div class="tier-content tier-deep lang-en">
+                        <div id="desc-deep-en">Scientific explanation...</div>
+                    </div>
+                    <div class="tier-content tier-deep lang-ml">
+                        <div id="desc-deep-ml">തത്വങ്ങളും സമവാക്യങ്ങളും...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. Fallback Display -->
+        <div id="empty-state-viewport" style="display: none;">
+            <div class="empty-exhibit-card">
+                <i class="fas fa-circle-info"></i>
+                <h2 class="lang-en-only">Exhibit Data Not Loaded</h2>
+                <h2 class="lang-ml-only">വിവരങ്ങൾ ലഭ്യമായിട്ടില്ല</h2>
+                <p class="lang-en-only">No active exhibit was selected, or we are currently populating this exhibit's database details. Please scan a QR code at the science gallery station to inspect.</p>
+                <p class="lang-ml-only">പ്രദർശനം തിരഞ്ഞെടുക്കുകയോ അല്ലെങ്കിൽ ഇതിന്റെ വിവരങ്ങൾ ഡാറ്റാബേസിൽ ഉൾപ്പെടുത്തി കൊണ്ടിരിക്കുകയോ ആണ്. വിവരങ്ങൾക്കായി ഗാലറിയിലെ ക്യുആർ കോഡ് വീണ്ടും സ്കാൻ ചെയ്യുക.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <span class="lang-en-only">2026 Kerala Science City Kottayam. Developed by KSSTM. All Rights Reserved.</span>
+            <span class="lang-ml-only">2026 കേരള സയൻസ് സിറ്റി കോട്ടയം. വികസിപ്പിച്ചത് കെ.എസ്.എസ്.ടി.എം. ഓൾ റൈറ്റ്സ് റിസേർവ്ഡ്.</span>
+        </div>
+    </footer>
+
+    <!-- Exhibits Database -->
+    <script src="./assets/data/interactive_exhibits_db.js"></script>
+
+    <!-- State & Dynamic Render Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const langEnBtn = document.getElementById('lang-en-btn');
+            const langMlBtn = document.getElementById('lang-ml-btn');
+            const complexityBtns = document.querySelectorAll('.complexity-toggle .toggle-btn');
+            
+            const viewport = document.getElementById('exhibit-viewport');
+            const emptyViewport = document.getElementById('empty-state-viewport');
+            
+            const titleEn = document.getElementById('title-en');
+            const titleMl = document.getElementById('title-ml');
+            const descQuickEn = document.getElementById('desc-quick-en');
+            const descQuickMl = document.getElementById('desc-quick-ml');
+            const descHowEn = document.getElementById('desc-how-en');
+            const descHowMl = document.getElementById('desc-how-ml');
+            const descDeepEn = document.getElementById('desc-deep-en');
+            const descDeepMl = document.getElementById('desc-deep-ml');
+            
+            const sandboxIframe = document.getElementById('animation-sandbox');
+            const breadcrumbExhibitName = document.getElementById('breadcrumb-exhibit-name');
+
+            // --- 1. State Management (Cookies/LocalStorage) ---
+            let userLang = localStorage.getItem('ksc_user_lang') || 'en';
+            let userComplexity = localStorage.getItem('ksc_complexity_level') || 'quick';
+
+            function applyState() {
+                document.body.classList.remove('lang-en-active', 'lang-ml-active');
+                document.body.classList.remove('complexity-quick', 'complexity-how', 'complexity-deep');
+
+                document.body.classList.add(`lang-${userLang}-active`);
+                document.body.classList.add(`complexity-${userComplexity}`);
+
+                document.querySelectorAll('.language-toggle .toggle-btn').forEach(btn => btn.classList.remove('active'));
+                document.querySelectorAll('.complexity-toggle .toggle-btn').forEach(btn => btn.classList.remove('active'));
+
+                if (userLang === 'en') langEnBtn.classList.add('active');
+                else langMlBtn.classList.add('active');
+
+                const activeCompBtn = Array.from(complexityBtns).find(btn => btn.getAttribute('data-complexity') === userComplexity);
+                if (activeCompBtn) activeCompBtn.classList.add('active');
+
+                document.documentElement.lang = userLang;
+            }
+
+            langEnBtn.addEventListener('click', () => {
+                userLang = 'en';
+                localStorage.setItem('ksc_user_lang', userLang);
+                applyState();
+            });
+            langMlBtn.addEventListener('click', () => {
+                userLang = 'ml';
+                localStorage.setItem('ksc_user_lang', userLang);
+                applyState();
+            });
+
+            complexityBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    userComplexity = btn.getAttribute('data-complexity');
+                    localStorage.setItem('ksc_complexity_level', userComplexity);
+                    applyState();
+                });
+            });
+
+            applyState();
+
+            // --- 2. Dynamic Content Parsing & Render Routing ---
+            function getQueryParam(param) {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(param);
+            }
+
+            const exhibitSlug = getQueryParam('exhibit');
+
+            if (exhibitSlug && typeof INTERACTIVE_EXHIBITS !== 'undefined' && INTERACTIVE_EXHIBITS[exhibitSlug]) {
+                const exhibitData = INTERACTIVE_EXHIBITS[exhibitSlug];
+
+                titleEn.textContent = exhibitData.title.en;
+                titleMl.textContent = exhibitData.title.ml;
+                breadcrumbExhibitName.textContent = userLang === 'en' ? exhibitData.title.en : exhibitData.title.ml;
+
+                descQuickEn.innerHTML = exhibitData.content.quick.en;
+                descQuickMl.innerHTML = exhibitData.content.quick.ml;
+                
+                descHowEn.innerHTML = exhibitData.content.how.en;
+                descHowMl.innerHTML = exhibitData.content.how.ml;
+                
+                descDeepEn.innerHTML = exhibitData.content.deep.en;
+                descDeepMl.innerHTML = exhibitData.content.deep.ml;
+
+                // --- 3. Animation Stage Loader (Iframe srcdoc) ---
+                if (exhibitData.animation) {
+                    const trimmedAnim = exhibitData.animation.trim();
+                    if (trimmedAnim.startsWith('<!DOCTYPE html>') || trimmedAnim.toLowerCase().includes('<html>')) {
+                        sandboxIframe.srcdoc = exhibitData.animation;
+                    } else {
+                        const iframeWrapperHtml = `
+                            <!DOCTYPE html>
+                            <html>
+                            <head>
+                                <meta charset="UTF-8">
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <style>
+                                    * { margin: 0; padding: 0; box-sizing: border-box; }
+                                    body {
+                                        background: #0d1426;
+                                        color: #f8f9fa;
+                                        font-family: 'Outfit', sans-serif;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        min-height: 100vh;
+                                        overflow: hidden;
+                                        padding: 10px;
+                                    }
+                                    #canvas-stage {
+                                        background: #070a13;
+                                        border: 1px solid rgba(0, 229, 255, 0.15);
+                                        border-radius: 12px;
+                                        box-shadow: 0 0 20px rgba(0,229,255,0.05);
+                                    }
+                                </style>
+                            </head>
+                            <body>
+                                ${exhibitData.animation}
+                            </body>
+                            </html>
+                        `;
+                        sandboxIframe.srcdoc = iframeWrapperHtml;
+                    }
+                } else {
+                    sandboxIframe.parentElement.style.display = 'none';
+                }
+
+                viewport.style.display = 'block';
+                emptyViewport.style.display = 'none';
+            } else {
+                viewport.style.display = 'none';
+                emptyViewport.style.display = 'block';
+                breadcrumbExhibitName.textContent = "Not Found";
+            }
+
+            // --- 4. Text-To-Speech (TTS) Narration System (Google Cloud Keyless Streamer) ---
+            const ttsBtn = document.getElementById('tts-btn');
+            const speedBtn = document.getElementById('speed-btn');
+            const speedText = document.getElementById('speed-text');
+            let speechRate = parseFloat(localStorage.getItem('ksc_speech_rate')) || 1.0;
+
+            function updateSpeedUI() {
+                speedText.textContent = speechRate.toFixed(1) + 'x';
+            }
+            updateSpeedUI();
+            let isSpeaking = false;
+            let activeAudio = null;
+            let sentenceQueue = [];
+            let currentQueueIndex = 0;
+
+            function stopSpeech() {
+                if (activeAudio) {
+                    activeAudio.pause();
+                    activeAudio = null;
+                }
+                isSpeaking = false;
+                sentenceQueue = [];
+                currentQueueIndex = 0;
+                ttsBtn.classList.remove('playing');
+                const textSpanEn = ttsBtn.querySelector('.lang-en-only');
+                const textSpanMl = ttsBtn.querySelector('.lang-ml-only');
+                if (textSpanEn) textSpanEn.textContent = "Listen to Narration";
+                if (textSpanMl) textSpanMl.textContent = "ശബ്ദം കേൾക്കുക";
+            }
+
+            function splitIntoSentences(text) {
+                let sentences = text.split(/[\.\!\?\n]+|\u0d64/g);
+                let result = [];
+                sentences.forEach(s => {
+                    let cleaned = s.trim();
+                    if (!cleaned) return;
+                    
+                    if (cleaned.length > 150) {
+                        let words = cleaned.split(/\s+/);
+                        let currentChunk = "";
+                        words.forEach(w => {
+                            if ((currentChunk + " " + w).length > 150) {
+                                result.push(currentChunk.trim());
+                                currentChunk = w;
+                            } else {
+                                currentChunk += (currentChunk ? " " : "") + w;
+                            }
+                        });
+                        if (currentChunk.trim()) {
+                            result.push(currentChunk.trim());
+                        }
+                    } else {
+                        result.push(cleaned);
+                    }
+                });
+                return result;
+            }
+
+            function playNextSentence() {
+                if (currentQueueIndex >= sentenceQueue.length) {
+                    stopSpeech();
+                    return;
+                }
+
+                const sentence = sentenceQueue[currentQueueIndex];
+                const url = `https://translate.google.com/translate_tts?ie=UTF-8&tl=${userLang}&client=tw-ob&q=${encodeURIComponent(sentence)}`;
+                
+                activeAudio = new Audio(url);
+                activeAudio.playbackRate = speechRate;
+                activeAudio.onended = () => {
+                    currentQueueIndex++;
+                    playNextSentence();
+                };
+                activeAudio.onerror = (e) => {
+                    console.error("Error streaming sentence from Google Cloud TTS:", e);
+                    currentQueueIndex++;
+                    playNextSentence();
+                };
+                
+                activeAudio.play().catch(err => {
+                    console.error("Audio playback error:", err);
+                    stopSpeech();
+                });
+            }
+
+            function startSpeech() {
+                const activeTierClass = `.tier-${userComplexity}.lang-${userLang}`;
+                const activeEl = document.querySelector(activeTierClass);
+
+                if (!activeEl) return;
+
+                let textToRead = activeEl.innerHTML;
+                
+                textToRead = textToRead.replace(/<h3>(.*?)<\/h3>/g, '$1.\n');
+                textToRead = textToRead.replace(/<h4>(.*?)<\/h4>/g, '$1.\n');
+                textToRead = textToRead.replace(/<li>(.*?)<\/li>/g, 'Point. $1.\n');
+                textToRead = textToRead.replace(/<p>(.*?)<\/p>/g, '$1.\n');
+                
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = textToRead;
+                const cleanText = tempDiv.textContent || tempDiv.innerText || '';
+
+                if (!cleanText.trim()) return;
+
+                sentenceQueue = splitIntoSentences(cleanText);
+                currentQueueIndex = 0;
+                isSpeaking = true;
+                ttsBtn.classList.add('playing');
+                
+                const textSpanEn = ttsBtn.querySelector('.lang-en-only');
+                const textSpanMl = ttsBtn.querySelector('.lang-ml-only');
+                if (textSpanEn) textSpanEn.textContent = "Stop Narration";
+                if (textSpanMl) textSpanMl.textContent = "നിർത്തുക";
+
+                playNextSentence();
+            }
+
+            ttsBtn.addEventListener('click', () => {
+                if (isSpeaking) {
+                    stopSpeech();
+                } else {
+                    startSpeech();
+                }
+            });
+
+            langEnBtn.addEventListener('click', stopSpeech);
+            langMlBtn.addEventListener('click', stopSpeech);
+            complexityBtns.forEach(btn => btn.addEventListener('click', stopSpeech));
+            window.addEventListener('beforeunload', stopSpeech);
+
+            speedBtn.addEventListener('click', () => {
+                if (speechRate === 1.0) speechRate = 1.2;
+                else if (speechRate === 1.2) speechRate = 1.5;
+                else if (speechRate === 1.5) speechRate = 0.8;
+                else speechRate = 1.0;
+                
+                localStorage.setItem('ksc_speech_rate', speechRate);
+                updateSpeedUI();
+                
+                if (activeAudio) {
+                    activeAudio.playbackRate = speechRate;
+                }
+            });
+        });
+    </script>
+</body>
+</html>

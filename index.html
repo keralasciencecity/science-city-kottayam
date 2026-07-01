@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kerala Science City Kottayam | Official Website</title>
+
+    <meta name="description" content="Welcome to Kerala Science City Kottayam, a state-of-the-art 30-acre interactive science museum in Kuravilangad, Kerala. Explore Fun Science, Marine Ecology, Emerging Tech, and Dinosaur Enclave.">
+
+    <!-- Stylesheets -->
+
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Font Awesome Icons -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Favicon placeholder (using code box) -->
+
+    <style>
+
+        /* Hero-specific styles */
+
+        .hero {
+
+            position: relative;
+
+            height: 100vh;
+
+            display: flex;
+
+            align-items: center;
+
+            overflow: hidden;
+
+            border-bottom: 1px solid var(--border-color);
+
+            background: linear-gradient(180deg, rgba(7, 10, 19, 0.65) 0%, rgba(7, 10, 19, 0.85) 100%), 
+
+                        url('./assets/images/drone_sky.jpg') center/cover no-repeat;
+
+        }
+
+        .hero-canvas {
+
+            position: absolute;
+
+            top: 0;
+
+            left: 0;
+
+            width: 100%;
+
+            height: 100%;
+
+            z-index: 1;
+
+            pointer-events: none;
+
+        }
+
+        .hero-content {
+
+            position: relative;
+
+            z-index: 2;
+
+            max-width: 800px;
+
+            margin-top: 60px;
+
+        }
+
+        .hero h1 {
+
+            font-size: 4rem;
+
+            line-height: 1.1;
+
+            margin-bottom: 24px;
+
+            font-weight: 800;
+
+        }
+
+        .hero h1 span {
+
+            background: linear-gradient(135deg, var(--primary-cyan) 0%, var(--secondary-purple) 100%);
+
+            -webkit-background-clip: text;
+
+            -webkit-text-fill-color: transparent;
+
+        }
+
+        .hero p {
+
+            font-size: 1.25rem;
+
+            color: var(--text-secondary);
+
+            margin-bottom: 40px;
+
+            max-width: 650px;
+
+        }
+
+        
+
+        /* Stats Grid */
+
+        .stats-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 24px;
+
+            margin-top: -60px;
+
+            position: relative;
+
+            z-index: 10;
+
+        }
+
+        
+
+        /* Features / Galleries Grid */
+
+        .features-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 32px;
+
+            margin-top: 40px;
+
+        }
+
+        .feature-card {
+
+            height: 100%;
+
+            display: flex;
+
+            flex-direction: column;
+
+            overflow: hidden;
+
+            padding: 0;
+
+        }
+
+        .feature-img-wrapper {
+
+            width: 100%;
+
+            height: 200px;
+
+            overflow: hidden;
+
+            position: relative;
+
+        }
+
+        .feature-img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            transition: var(--transition-smooth);
+
+        }
+
+        .feature-card:hover .feature-img {
+
+            transform: scale(1.08);
+
+        }
+
+        .feature-info {
+
+            padding: 28px;
+
+            flex-grow: 1;
+
+            display: flex;
+
+            flex-direction: column;
+
+        }
+
+        .feature-info p {
+
+            color: var(--text-secondary);
+
+            font-size: 0.95rem;
+
+            margin-bottom: 20px;
+
+            flex-grow: 1;
+
+        }
+
+        /* Trivia Widget Specifics */
+
+        .trivia-container {
+
+            max-width: 750px;
+
+            margin: 0 auto;
+
+            text-align: center;
+
+        }
+
+        .trivia-box {
+
+            min-height: 150px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 1.3rem;
+
+            font-weight: 500;
+
+            line-height: 1.5;
+
+            color: var(--text-primary);
+
+            border-left: 4px solid var(--primary-cyan);
+
+            padding-left: 24px;
+
+            margin: 30px 0;
+
+            text-align: left;
+
+        }
+
+        
+
+        @media (max-width: 992px) {
+
+            .stats-grid {
+
+                grid-template-columns: repeat(2, 1fr);
+
+                margin-top: -30px;
+
+            }
+
+            .features-grid {
+
+                grid-template-columns: repeat(2, 1fr);
+
+            }
+
+        }
+
+        @media (max-width: 768px) {
+
+            .hero h1 {
+
+                font-size: 2.8rem;
+
+            }
+
+            .stats-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .features-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body class="lang-en">
+
+    <!-- Sticky Header -->
+
+    <header>
+
+        <div class="container navbar">
+
+            <a href="./index.html" class="logo">
+
+                <img src="./assets/images/ksstm_logo.png?v=3" alt="KSSTM Logo" class="logo-img">
+
+                <div>
+
+                    <span class="logo-text">SCIENCE CITY</span>
+
+                    <span class="logo-sub">Kottayam</span>
+
+                </div>
+
+            </a>
+
+            
+
+            <ul class="nav-links">
+
+                <li><a href="./index.html" class="active"><span class="lang-en">Home</span><span class="lang-ml">ഹോം</span></a></li>
+
+                <li><a href="./exhibits.html"><span class="lang-en">Exhibits</span><span class="lang-ml">പ്രദർശനങ്ങൾ</span></a></li>
+
+                <li><a href="./events.html"><span class="lang-en">Events</span><span class="lang-ml">പരിപാടികൾ</span></a></li>
+
+                <li><a href="./activity.html"><span class="lang-en">Activity Centre</span><span class="lang-ml">ആക്ടിവിറ്റി സെന്റർ</span></a></li>
+
+                <li><a href="./visit.html"><span class="lang-en">Visit</span><span class="lang-ml">സന്ദർശനം</span></a></li>
+
+            </ul>
+
+            <div class="nav-controls">
+
+                <a href="https://ksstm.in/public/tickets" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 6px 16px; font-size: 0.85rem; border-color: var(--primary-cyan); color: var(--primary-cyan); border-radius: 20px;">
+
+                    <i class="fas fa-ticket-alt"></i> <span class="lang-en">Book Tickets</span><span class="lang-ml">ടിക്കറ്റ് ബുക്കിംഗ്</span>
+
+                </a>
+
+                <button class="lang-switch" id="lang-toggle-btn" aria-label="Toggle Language">
+
+                    <i class="fas fa-globe"></i> മലയാളം
+
+                </button>
+
+                <button class="mobile-menu-toggle" aria-label="Toggle Mobile Menu">
+
+                    <i class="fas fa-bars"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Hero Section -->
+
+    <section class="hero" id="home">
+
+        <!-- Interactive Node Canvas Background -->
+
+        <canvas class="hero-canvas" id="particles-canvas"></canvas>
+
+        <div class="container">
+
+            <div class="hero-content">
+
+                
+
+                <h1 class="animate-fade-in" style="animation-delay: 0.1s;">
+
+                    <span class="lang-en">Stay Curious. <br><span>Stay Inspired.</span></span>
+
+                    <span class="lang-ml">കൗതുകങ്ങൾ അറിയുക, <br><span>പ്രചോദനം ഉൾക്കൊള്ളുക.</span></span>
+
+                </h1>
+
+                <p class="animate-fade-in" style="animation-delay: 0.2s;">
+
+                    <span class="lang-en">Welcome to Kerala Science City Kottayam, a state-of-the-art interactive space in Kuravilangad exploring the frontiers of science, engineering, and technology.</span>
+
+                    <span class="lang-ml">ശാസ്ത്രത്തിന്റെയും സാങ്കേതികവിദ്യയുടെയും വിസ്മയങ്ങൾ തൊട്ടറിയാൻ കുറുപ്പന്തറയ്ക്കടുത്ത് കോഴയിൽ ഒരുക്കിയിരിക്കുന്ന കേരള സയൻസ് സിറ്റിയിലേക്ക് സ്വാഗതം.</span>
+
+                </p>
+
+                <div class="animate-fade-in" style="animation-delay: 0.3s; display: flex; gap: 16px; flex-wrap: wrap;">
+
+                    <a href="https://ksstm.in/public/tickets" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+
+                        <span class="lang-en">Book Tickets Online</span>
+
+                        <span class="lang-ml">ഓൺലൈൻ ബുക്കിംഗ്</span>
+
+                        <i class="fas fa-ticket-alt"></i>
+
+                    </a>
+
+                    <a href="./exhibits.html" class="btn btn-secondary">
+
+                        <span class="lang-en">Explore Exhibits</span>
+
+                        <span class="lang-ml">പ്രദർശനങ്ങൾ കാണുക</span>
+
+                        <i class="fas fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Stats Section -->
+
+    <div class="container">
+
+        <div class="stats-grid">
+
+            <div class="glass-panel" style="text-align: center; border-color: rgba(0, 229, 255, 0.15);">
+
+                <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary-cyan); margin-bottom: 8px;">30</div>
+
+                <div style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary);">
+
+                    <span class="lang-en">Acres Campus</span>
+
+                    <span class="lang-ml">ഏക്കർ കാമ്പസ്</span>
+
+                </div>
+
+            </div>
+
+            <div class="glass-panel" style="text-align: center; border-color: rgba(157, 78, 221, 0.15);">
+
+                <div style="font-size: 2.5rem; font-weight: 800; color: var(--secondary-purple); margin-bottom: 8px;">47K+</div>
+
+                <div style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary);">
+
+                    <span class="lang-en">Sq.Ft Building</span>
+
+                    <span class="lang-ml">ചതുരശ്ര അടി വിസ്തീർണ്ണം</span>
+
+                </div>
+
+            </div>
+
+            <div class="glass-panel" style="text-align: center; border-color: rgba(0, 245, 212, 0.15);">
+
+                <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent-emerald); margin-bottom: 8px;">80+</div>
+
+                <div style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary);">
+
+                    <span class="lang-en">Interactive Exhibits</span>
+
+                    <span class="lang-ml">ഇന്ററാക്ടീവ് പ്രദർശനങ്ങൾ</span>
+
+                </div>
+
+            </div>
+
+            <div class="glass-panel" style="text-align: center; border-color: rgba(255, 255, 255, 0.15);">
+
+                <div style="font-size: 2.5rem; font-weight: 800; color: var(--text-primary); margin-bottom: 8px;">3D</div>
+
+                <div style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary);">
+
+                    <span class="lang-en">Movie Theatre</span>
+
+                    <span class="lang-ml">3D തിയേറ്റർ</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- About Section -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+
+                <div>
+
+                    <span class="badge"><span class="lang-en">About the Centre</span><span class="lang-ml">ശാസ്ത്ര നഗരിയെക്കുറിച്ച്</span></span>
+
+                    <h2 style="font-size: 2.2rem; margin-bottom: 24px; line-height: 1.2;">
+
+                        <span class="lang-en">Inspiring Scientific Temper & Innovation in South India</span>
+
+                        <span class="lang-ml">ദക്ഷിണേന്ത്യയിലെ ശാസ്ത്ര സംസ്കാരത്തിന്റെയും പുരോഗതിയുടെയും കേന്ദ്രം</span>
+
+                    </h2>
+
+                    <div style="color: var(--text-secondary); margin-bottom: 30px;">
+
+                        <p class="lang-en" style="margin-bottom: 16px;">
+
+                            Kerala Science City Kottayam has been conceptualized, designed, and developed by the <strong>National Council of Science Museums (NCSM)</strong>, Ministry of Culture, Govt. of India, in active collaboration with the <strong>Kerala State Science & Technology Museum (KSSTM)</strong>.
+
+                        </p>
+
+                        <p class="lang-en">
+
+                            Spanning over a lush 30-acre campus in Kuravilangad (Kottayam), this landmark facility integrates outdoor nature pathways with scientific experiments, bringing textbooks to life through tactile interaction and immersive multimedia.
+
+                        </p>
+
+                        
+
+                        <p class="lang-ml" style="margin-bottom: 16px;">
+
+                            കേരള ശാസ്ത്ര സാങ്കേതിക മ്യൂസിയത്തിന്റെ (KSSTM) മേൽനോട്ടത്തിൽ, കേന്ദ്ര സാംസ്കാരിക മന്ത്രാലയത്തിന് കീഴിലുള്ള നാഷണൽ കൗൺസിൽ ഓഫ് സയൻസ് മ്യൂസിയംസ് (NCSM) രൂപകൽപ്പന ചെയ്ത ദക്ഷിണേന്ത്യയിലെ ഏറ്റവും മികച്ച ശാസ്ത്ര വിനോദ വിജ്ഞാന കേന്ദ്രമാണ് കോട്ടയം കോഴയിലുള്ള കേരള സയൻസ് സിറ്റി.
+
+                        </p>
+
+                        <p class="lang-ml">
+
+                            പ്രകൃതിഭംഗി തുളുമ്പുന്ന 30 ഏക്കർ വിസ്തൃതിയിലാണ് ഈ ശാസ്ത്ര നഗരം സ്ഥിതി ചെയ്യുന്നത്. ശാസ്ത്രതത്വങ്ങൾ സ്വയം പരീക്ഷിച്ച് ബോധ്യപ്പെടാൻ സഹായിക്കുന്ന 80-ലധികം ശാസ്ത്ര ഉപകരണങ്ങൾ, 3D വിജ്ഞാന തിയേറ്റർ, വംശനാശം സംഭവിച്ച ഭീമാകാരങ്ങളായ ദിനോസറുകളുടെ മാതൃകകൾ അടങ്ങിയ പാർക്ക് എന്നിവ ആദ്യഘട്ടത്തിൽ ഇവിടെ ലഭ്യമാക്കിയിട്ടുണ്ട്.
+
+                        </p>
+
+                    </div>
+
+                    <div style="display: flex; gap: 30px;">
+
+                        <div>
+
+                            <div style="color: var(--primary-cyan); font-weight: 700; font-size: 1.1rem; margin-bottom: 4px;">
+
+                                <span class="lang-en">Joint Collaboration</span>
+
+                                <span class="lang-ml">സംയുക്ത സംരംഭം</span>
+
+                            </div>
+
+                            <div style="font-size: 0.85rem; color: var(--text-muted);">NCSM & KSSTM, Govt of India & Kerala</div>
+
+                        </div>
+
+                        <div style="border-left: 1px solid var(--border-color); padding-left: 30px;">
+
+                            <div style="color: var(--accent-emerald); font-weight: 700; font-size: 1.1rem; margin-bottom: 4px;">
+
+                                <span class="lang-en">Focus Areas</span>
+
+                                <span class="lang-ml">പ്രധാന ലക്ഷ്യം</span>
+
+                            </div>
+
+                            <div style="font-size: 0.85rem; color: var(--text-muted);"><span class="lang-en">Tinkering, Fun Learning, Space, Biology</span><span class="lang-ml">പ്രായോഗിക ശാസ്ത്ര പഠനം, ക്രിയേറ്റിവിറ്റി</span></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <div class="glass-panel" style="padding: 12px; border-color: rgba(255,255,255,0.06); position: relative;">
+
+                        <!-- Using generated image for banner / overview -->
+
+                        <img src="./assets/images/science_city_entrance_topview.jpg" alt="Kerala Science City Entrance Top View" style="width: 100%; height: auto; border-radius: 12px; display: block;">
+
+                        <div style="position: absolute; bottom: 30px; left: 30px; right: 30px; padding: 20px; background: rgba(7, 10, 19, 0.8); backdrop-filter: blur(8px); border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+
+                            <span class="lang-en">"Science is not merely something to be seen or read - it is felt, played with, imagined, and experienced."</span>
+
+                            <span class="lang-ml">"ശാസ്ത്രം വെറുതെ കാണാനും വായിക്കാനുമുള്ളതല്ല; അത് അനുഭവിക്കാനും കളിച്ചു പഠിക്കാനും ഊഹിച്ചെടുക്കാനുമുള്ളതാണ്."</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Key Attractions Section -->
+
+    <section class="section" style="background: rgba(255, 255, 255, 0.01); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="badge badge-purple"><span class="lang-en">Main Highlights</span><span class="lang-ml">പ്രധാന കാഴ്ചകൾ</span></span>
+
+                <h2 class="section-title">
+
+                    <span class="lang-en">Experience Science at First Hand</span>
+
+                    <span class="lang-ml">ശാസ്ത്ര വിസ്മയങ്ങൾ നേരിട്ടറിയാം</span>
+
+                </h2>
+
+                <p class="section-subtitle">
+
+                    <span class="lang-en">Explore the interactive wings within the Science City designed to spark questions and unleash creativity.</span>
+
+                    <span class="lang-ml">കുട്ടികൾക്കും മുതിർന്നവർക്കും ഒരുപോലെ വിജ്ഞാനവും വിനോദവും നൽകുന്ന പ്രധാന ഗ്യാലറികൾ താഴെ പറയുന്നവയാണ്.</span>
+
+                </p>
+
+            </div>
+
+            
+
+            <div class="features-horizontal-scroll">
+            <!-- 1. Fun Science Gallery -->
+            <div class="glass-panel feature-card">
+                <div class="feature-img-wrapper">
+                    <img src="./assets/images/fun_science_entrance.jpg" class="feature-img" alt="Fun Science Gallery">
+                    <span class="badge badge-emerald" style="position: absolute; top: 16px; left: 16px; margin: 0; z-index: 5;">
+                        <span class="lang-en">Indoor</span><span class="lang-ml">ഇൻഡോർ</span>
+                    </span>
+                </div>
+                <div class="feature-info">
+                    <h3 style="font-size: 1.3rem; margin-bottom: 12px; color: var(--primary-cyan);">
+                        <span class="lang-en">Fun Science Gallery</span>
+                        <span class="lang-ml">ഫൺ സയൻസ് ഗാലറി</span>
+                    </h3>
+                    <p class="lang-en">Where physics rules become play and mathematics comes alive! Interactive hands-on installations and mirrors.</p>
+                    <p class="lang-ml">ഭൗതികശാസ്ത്ര നിയമങ്ങളും ഗണിതശാസ്ത്ര സമവാക്യങ്ങളും കളികളിലൂടെയും പരീക്ഷണങ്ങളിലൂടെയും കുട്ടികൾക്ക് സ്വയം മനസ്സിലാക്കാൻ കഴിയുന്ന ഗാലറി.</p>
+                    <a href="./exhibits.html#fun-science" style="color: var(--primary-cyan); font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; gap: 6px; margin-top: auto;">
+                        <span class="lang-en">Read More</span><span class="lang-ml">കൂടുതൽ വായിക്കൂ</span> <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 2. Emerging Technology Gallery -->
+            <div class="glass-panel feature-card">
+                <div class="feature-img-wrapper">
+                    <img src="./assets/images/emerging_tech_entrance.jpg" class="feature-img" alt="Emerging Technology Gallery">
+                    <span class="badge badge-emerald" style="position: absolute; top: 16px; left: 16px; margin: 0; z-index: 5;">
+                        <span class="lang-en">Indoor</span><span class="lang-ml">ഇൻഡോർ</span>
+                    </span>
+                </div>
+                <div class="feature-info">
+                    <h3 style="font-size: 1.3rem; margin-bottom: 12px; color: var(--secondary-purple);">
+                        <span class="lang-en">Emerging Technology</span>
+                        <span class="lang-ml">എമേർജിങ് ടെക്നോളജി</span>
+                    </h3>
+                    <p class="lang-en">Explore space mission controls, micro-robotics workbenches, microchips, and interactive AI logic modules.</p>
+                    <p class="lang-ml">നൂതന സാങ്കേതികവിദ്യകളായ റോബോട്ടിക്സ്, ബഹിരാകാശ ദൗത്യങ്ങൾ, ആർട്ടിഫിഷ്യൽ ഇന്റലിജൻസ് എന്നിവ പരിചയപ്പെടുത്തുന്ന ഗാലറി.</p>
+                    <a href="./exhibits.html#emerging" style="color: var(--secondary-purple); font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; gap: 6px; margin-top: auto;">
+                        <span class="lang-en">Read More</span><span class="lang-ml">കൂടുതൽ വായിക്കൂ</span> <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 3. Marine Science Gallery -->
+            <div class="glass-panel feature-card">
+                <div class="feature-img-wrapper">
+                    <img src="./assets/images/marine_gallery_real.webp" class="feature-img" alt="Marine Science Gallery">
+                    <span class="badge badge-emerald" style="position: absolute; top: 16px; left: 16px; margin: 0; z-index: 5;">
+                        <span class="lang-en">Indoor</span><span class="lang-ml">ഇൻഡോർ</span>
+                    </span>
+                </div>
+                <div class="feature-info">
+                    <h3 style="font-size: 1.3rem; margin-bottom: 12px; color: var(--primary-cyan);">
+                        <span class="lang-en">Marine Science Gallery</span>
+                        <span class="lang-ml">മറൈൻ സയൻസ് ഗാലറി</span>
+                    </h3>
+                    <p class="lang-en">Walk through a dry marine aquarium studying Antarctic ecosystems, deep ocean zones, and polar research missions.</p>
+                    <p class="lang-ml">ആന്റാർട്ടിക് പരിസ്ഥിതി വ്യവസ്ഥകൾ, ആഴക്കടലിലെ ജീവജാലങ്ങൾ, സമുദ്ര ഗവേഷണം എന്നിവയുടെ വിവരങ്ങൾ അടങ്ങിയ ഗാലറി.</p>
+                    <a href="./exhibits.html#marine" style="color: var(--primary-cyan); font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; gap: 6px; margin-top: auto;">
+                        <span class="lang-en">Read More</span><span class="lang-ml">കൂടുതൽ വായിക്കൂ</span> <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 4. 3D Cinematic Theatre -->
+            <div class="glass-panel feature-card">
+                <div class="feature-img-wrapper">
+                    <img src="./assets/images/3d_theatre_entrance.jpg" class="feature-img" alt="3D Cinematic Theatre">
+                    <span class="badge badge-emerald" style="position: absolute; top: 16px; left: 16px; margin: 0; z-index: 5;">
+                        <span class="lang-en">Indoor</span><span class="lang-ml">ഇൻഡോർ</span>
+                    </span>
+                </div>
+                <div class="feature-info">
+                    <h3 style="font-size: 1.3rem; margin-bottom: 12px; color: var(--primary-cyan);">
+                        <span class="lang-en">3D Movie Theatre</span>
+                        <span class="lang-ml">3D സിനിമ തിയേറ്റർ</span>
+                    </h3>
+                    <p class="lang-en">Experience science in action on a multi-dimensional screen. Advanced 3D surround sound theatre system.</p>
+                    <p class="lang-ml">ഉയർന്ന റെസല്യൂഷൻ ഉള്ള ത്രിമാന പ്രൊജക്ഷൻ സംവിധാനവും സറൗണ്ട് സൗണ്ടും ഒത്തുചേരുന്ന തിയേറ്റർ അനുഭവം.</p>
+                    <a href="./exhibits.html#3d-theatre" style="color: var(--primary-cyan); font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; gap: 6px; margin-top: auto;">
+                        <span class="lang-en">Read More</span><span class="lang-ml">കൂടുതൽ വായിക്കൂ</span> <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 5. Science Park -->
+            <div class="glass-panel feature-card">
+                <div class="feature-img-wrapper">
+                    <img src="./assets/images/outdoor_exhibit_2.jpg" class="feature-img" alt="Outdoor Science Park">
+                    <span class="badge badge-emerald" style="position: absolute; top: 16px; left: 16px; margin: 0; z-index: 5;">
+                        <span class="lang-en">Outdoor</span><span class="lang-ml">ഔട്ട്ഡോർ</span>
+                    </span>
+                </div>
+                <div class="feature-info">
+                    <h3 style="font-size: 1.3rem; margin-bottom: 12px; color: var(--accent-emerald);">
+                        <span class="lang-en">Science Park</span>
+                        <span class="lang-ml">ശാസ്ത്ര പാർക്ക്</span>
+                    </h3>
+                    <p class="lang-en">Open-air mechanical swings, pulleys, gear levers, and echo tubes that make physics concepts fun to play.</p>
+                    <p class="lang-ml">നമുക്ക് ചുറ്റുമുള്ള ഭൗതികശാസ്ത്ര തത്വങ്ങൾ കളിയിലൂടെ നേരിട്ട് അനുഭവിച്ചറിയാൻ സഹായിക്കുന്ന ഔട്ട്ഡോർ പാർക്ക്.</p>
+                    <a href="./exhibits.html#science-park" style="color: var(--accent-emerald); font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; gap: 6px; margin-top: auto;">
+                        <span class="lang-en">Read More</span><span class="lang-ml">കൂടുതൽ വായിക്കൂ</span> <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 6. Dinosaur Enclave -->
+            <div class="glass-panel feature-card">
+                <div class="feature-img-wrapper">
+                    <img src="./assets/images/dinosaur_enclave_real.jpg" class="feature-img" alt="Dinosaur Enclave">
+                    <span class="badge badge-emerald" style="position: absolute; top: 16px; left: 16px; margin: 0; z-index: 5;">
+                        <span class="lang-en">Outdoor</span><span class="lang-ml">ഔട്ട്ഡോർ</span>
+                    </span>
+                </div>
+                <div class="feature-info">
+                    <h3 style="font-size: 1.3rem; margin-bottom: 12px; color: var(--accent-emerald);">
+                        <span class="lang-en">Dinosaur Enclave</span>
+                        <span class="lang-ml">ഡൈനോസർ എൻക്ലേവ്</span>
+                    </h3>
+                    <p class="lang-en">Walk among highly realistic animatronic models of dinosaurs nestled in simulated prehistoric flora.</p>
+                    <p class="lang-ml">പ്രകൃതിദത്തമായ കാടിന്റെ പശ്ചാത്തലത്തിൽ നിർമ്മിച്ചിട്ടുള്ള യഥാർത്ഥ വലുപ്പത്തിലുള്ള ഡൈനോസറുകളുടെ മാതൃകകൾ.</p>
+                    <a href="./exhibits.html#dinosaur" style="color: var(--accent-emerald); font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; gap: 6px; margin-top: auto;">
+                        <span class="lang-en">Read More</span><span class="lang-ml">കൂടുതൽ വായിക്കൂ</span> <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 7. Activity Corner -->
+            <div class="glass-panel feature-card">
+                <div class="feature-img-wrapper">
+                    <img src="./assets/images/activity_room_real.jpg" class="feature-img" alt="Activity Corner">
+                    <span class="badge badge-purple" style="position: absolute; top: 16px; left: 16px; margin: 0; z-index: 5;">
+                        <span class="lang-en">Tinkering</span><span class="lang-ml">ടിങ്കറിങ്</span>
+                    </span>
+                </div>
+                <div class="feature-info">
+                    <h3 style="font-size: 1.3rem; margin-bottom: 12px; color: var(--secondary-purple);">
+                        <span class="lang-en">Activity Corner</span>
+                        <span class="lang-ml">ആക്ടിവിറ്റി കോർണർ</span>
+                    </h3>
+                    <p class="lang-en">Hands-on learning corner equipped with microcontroller boards, chemistry experiment facilities, and microscopes.</p>
+                    <p class="lang-ml">വിദ്യാർത്ഥികൾക്കായി ഒരുക്കിയിരിക്കുന്ന ശാസ്ത്ര പരീക്ഷണശാലയും ടിങ്കറിങ് ഉപകരണങ്ങളും അടങ്ങുന്ന മുറി.</p>
+                    <a href="./activity.html" style="color: var(--secondary-purple); font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; gap: 6px; margin-top: auto;">
+                        <span class="lang-en">Read More</span><span class="lang-ml">കൂടുതൽ വായിക്കൂ</span> <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 8. Kids Play Corner -->
+            <div class="glass-panel feature-card">
+                <div class="feature-img-wrapper">
+                    <img src="./assets/images/kids_play_corner_real.jpg" class="feature-img" alt="Kids Play Corner">
+                    <span class="badge badge-purple" style="position: absolute; top: 16px; left: 16px; margin: 0; z-index: 5;">
+                        <span class="lang-en">Tinkering</span><span class="lang-ml">കളിക്കളം</span>
+                    </span>
+                </div>
+                <div class="feature-info">
+                    <h3 style="font-size: 1.3rem; margin-bottom: 12px; color: var(--secondary-purple);">
+                        <span class="lang-en">Kids' Play Corner</span>
+                        <span class="lang-ml">കുട്ടികളുടെ പ്ലേ കോർണർ</span>
+                    </h3>
+                    <p class="lang-en">A custom assembly block space for toddlers to experience soft climbing blocks and basic color-mixing wheels.</p>
+                    <p class="lang-ml">ചെറിയ കുട്ടികൾക്കായി സുരക്ഷിതമായി നിർമ്മിച്ചിട്ടുള്ള കളിക്കളവും ലളിതമായ പരീക്ഷണങ്ങളും.</p>
+                    <a href="./exhibits.html#kids-corner" style="color: var(--secondary-purple); font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; gap: 6px; margin-top: auto;">
+                        <span class="lang-en">Read More</span><span class="lang-ml">കൂടുതൽ വായിക്കൂ</span> <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+    </section>
+
+    <!-- Science Trivia Widget Section -->
+
+    <section class="section">
+
+        <div class="container trivia-container">
+
+            <div class="glass-panel" style="padding: 50px 40px; border-color: rgba(0, 229, 255, 0.15);">
+
+                <div style="font-size: 1.8rem; color: var(--primary-cyan); margin-bottom: 16px;"><i class="fas fa-atom fa-spin"></i></div>
+
+                <h3 style="font-size: 1.8rem; font-family: var(--font-heading); margin-bottom: 10px;">
+
+                    <span class="lang-en">Daily Science Fact</span>
+
+                    <span class="lang-ml">നിങ്ങൾക്കറിയാമോ?</span>
+
+                </h3>
+
+                <div class="trivia-box" id="trivia-text">
+
+                    <!-- Text content managed dynamically by main.js -->
+
+                </div>
+
+                <button class="btn btn-secondary" id="trivia-next-btn">
+
+                    <span class="lang-en">Next Trivia</span>
+
+                    <span class="lang-ml">അടുത്ത അറിവ്</span>
+
+                    <i class="fas fa-redo"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Upcoming Events Teaser Section -->
+
+    <section class="section" style="border-top: 1px solid var(--border-color); background: radial-gradient(circle at center, rgba(157, 78, 221, 0.03) 0%, transparent 60%);">
+
+        <div class="container">
+
+            <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 50px; flex-wrap: wrap; gap: 20px;">
+
+                <div>
+
+                    <span class="badge"><span class="lang-en">What's Happening</span><span class="lang-ml">ഇപ്പോഴത്തെ വിശേഷങ്ങൾ</span></span>
+
+                    <h2 style="font-size: 2.2rem; line-height: 1.2;">
+
+                        <span class="lang-en">Upcoming Events & Workshops</span>
+
+                        <span class="lang-ml">വരാനിരിക്കുന്ന പരിപാടികൾ</span>
+
+                    </h2>
+
+                </div>
+
+                <a href="./events.html" class="btn btn-secondary">
+
+                    <span class="lang-en">View All Events</span>
+
+                    <span class="lang-ml">എല്ലാ പരിപാടികളും</span>
+
+                    <i class="fas fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px;">
+
+                <!-- Event 1 (Upcoming: Talk With a Scientist) -->
+
+                <div class="glass-panel" style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
+
+                    <div style="background: rgba(0, 229, 255, 0.1); border: 1px solid var(--primary-cyan); padding: 18px; border-radius: 12px; text-align: center; min-width: 90px;">
+
+                        <div style="font-size: 1.8rem; font-weight: 800; color: var(--primary-cyan); line-height: 1;">05</div>
+
+                        <div style="font-size: 0.75rem; text-transform: uppercase; margin-top: 4px; font-weight: 600;">
+
+                            <span class="lang-en">July</span><span class="lang-ml">ജൂലൈ</span>
+
+                        </div>
+
+                    </div>
+
+                    <div style="flex-grow: 1; flex-basis: 250px;">
+
+                        <span class="badge badge-emerald" style="margin-bottom: 8px; font-size: 0.7rem; padding: 4px 10px;">
+
+                            <span class="lang-en">Upcoming Talk</span><span class="lang-ml">ശാസ്ത്ര സംവാദം</span>
+
+                        </span>
+
+                        <h3 style="font-size: 1.25rem; margin-bottom: 6px;">
+
+                            <span class="lang-en">Talk With a Scientist</span>
+
+                            <span class="lang-ml">ശാസ്ത്രജ്ഞനുമായി സംവാദം</span>
+
+                        </h3>
+
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 12px;">
+
+                            <span class="lang-en">Meet leading researchers and discuss recent space programs and advancements.</span>
+
+                            <span class="lang-ml">പ്രമുഖ ശാസ്ത്രജ്ഞരുമായി സംവദിക്കാനും ബഹിരാകാശ ഗവേഷണങ്ങളെക്കുറിച്ചറിയാനും അവസരം.</span>
+
+                        </p>
+
+                        <a href="./events.html" style="color: var(--primary-cyan); font-size: 0.85rem; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;">
+
+                            <span class="lang-en">More Details</span><span class="lang-ml">കൂടുതൽ വിവരങ്ങൾ</span> <i class="fas fa-chevron-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Event 2 (Past: Summer Solstice) -->
+
+                <div class="glass-panel" style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
+
+                    <div style="background: rgba(157, 78, 221, 0.1); border: 1px solid var(--secondary-purple); padding: 18px; border-radius: 12px; text-align: center; min-width: 90px;">
+
+                        <div style="font-size: 1.8rem; font-weight: 800; color: var(--secondary-purple); line-height: 1;">21</div>
+
+                        <div style="font-size: 0.75rem; text-transform: uppercase; margin-top: 4px; font-weight: 600;">
+
+                            <span class="lang-en">June</span><span class="lang-ml">ജൂൺ</span>
+
+                        </div>
+
+                    </div>
+
+                    <div style="flex-grow: 1; flex-basis: 250px;">
+
+                        <span class="badge badge-purple" style="margin-bottom: 8px; font-size: 0.7rem; padding: 4px 10px;">
+
+                            <span class="lang-en">Sky Event</span><span class="lang-ml">ആകാശ വിസ്മയം</span>
+
+                        </span>
+
+                        <h3 style="font-size: 1.25rem; margin-bottom: 6px;">
+
+                            <span class="lang-en">Summer Solstice Program</span>
+
+                            <span class="lang-ml">സമ്മർ സോൾസ്റ്റിസ് പരിപാടി</span>
+
+                        </h3>
+
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 12px;">
+
+                            <span class="lang-en">Special shadow measurements and planetarium shows marking the longest day.</span>
+
+                            <span class="lang-ml">വർഷത്തിലെ ഏറ്റവും നീളം കൂടിയ പകലിനെ അടയാളപ്പെടുത്തി നിഴൽ പരീക്ഷണങ്ങൾ.</span>
+
+                        </p>
+
+                        <a href="./events.html" style="color: var(--secondary-purple); font-size: 0.85rem; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;">
+
+                            <span class="lang-en">More Details</span><span class="lang-ml">കൂടുതൽ വിവരങ്ങൾ</span> <i class="fas fa-chevron-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="container footer-grid">
+
+            <div class="footer-col font-about">
+
+                <a href="./index.html" class="logo" style="margin-bottom: 20px; display: inline-flex;">
+
+                    <img src="./assets/images/ksstm_logo.png?v=3" alt="KSSTM Logo" style="height: 40px; filter: invert(1) brightness(1.8); margin-right: 8px;">
+
+                    <div>
+
+                        <span class="logo-text">SCIENCE CITY</span>
+
+                        <span class="logo-sub">Kottayam</span>
+
+                    </div>
+
+                </a>
+
+                <p>
+
+                    <span class="lang-en">A premium center fostering curiosity, hands-on scientific experiences, and space research among students and families.</span>
+
+                    <span class="lang-ml">ശാസ്ത്ര താല്പര്യങ്ങൾ വളർത്താനും പരീക്ഷണങ്ങൾ സ്വയം ചെയ്യാനുമായി കോട്ടയത്ത് ഒരുക്കിയിട്ടുള്ള അത്യാധുനിക സയൻസ് സെന്റർ.</span>
+
+                </p>
+
+                <div class="social-links">
+
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+
+                </div>
+
+            </div>
+
+            
+
+            <div class="footer-col">
+
+                <h4><span class="lang-en">Quick Links</span><span class="lang-ml">പെട്ടെന്നുള്ള ലിങ്കുകൾ</span></h4>
+
+                <ul class="footer-links">
+
+                    <li><a href="./index.html"><span class="lang-en">Home</span><span class="lang-ml">ഹോം</span></a></li>
+
+                    <li><a href="./exhibits.html"><span class="lang-en">Galleries</span><span class="lang-ml">പ്രദർശനങ്ങൾ</span></a></li>
+
+                    <li><a href="./events.html"><span class="lang-en">Events</span><span class="lang-ml">പരിപാടികൾ</span></a></li>
+
+                    <li><a href="./activity.html"><span class="lang-en">Activity Centre</span><span class="lang-ml">ആക്ടിവിറ്റി സെന്റർ</span></a></li>
+
+                    <li><a href="./visit.html"><span class="lang-en">Visitor Details</span><span class="lang-ml">സന്ദർശക വിവരങ്ങൾ</span></a></li>
+
+                </ul>
+
+            </div>
+
+            
+
+            <div class="footer-col">
+
+                <h4><span class="lang-en">Timings</span><span class="lang-ml">സമയവിവരം</span></h4>
+
+                <ul class="footer-links" style="color: var(--text-secondary);">
+
+                    <li style="margin-bottom: 8px;">
+
+                        <strong><span class="lang-en">Tue - Sun:</span><span class="lang-ml">ചൊവ്വ - ഞായർ:</span></strong><br>
+
+                        10:00 AM - 05:00 PM
+
+                    </li>
+
+                    <li style="margin-bottom: 8px; color: var(--secondary-purple);">
+
+                        <strong><span class="lang-en">Monday:</span><span class="lang-ml">തിങ്കളാഴ്ച:</span></strong><br>
+
+                        <span class="lang-en">Closed (Weekly Holiday)</span><span class="lang-ml">അവധി ദിവസം</span>
+
+                    </li>
+
+                    <li>
+
+                        <span class="lang-en">Ticket Counter closes at 04:15 PM</span>
+
+                        <span class="lang-ml">ടിക്കറ്റ് കൗണ്ടർ 4:15-ന് അടയ്ക്കും</span>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            
+
+            <div class="footer-col footer-contact">
+
+                <h4><span class="lang-en">Contact Us</span><span class="lang-ml">ബന്ധപ്പെടുക</span></h4>
+
+                <p>
+
+                    <i class="fas fa-map-marker-alt icon"></i>
+
+                    <span>
+
+                        <span class="lang-en">Kerala Science City, SH 1, Kozha, Kuravilangad, Kottayam, Kerala - 686636</span>
+
+                        <span class="lang-ml">കേരള സയൻസ് സിറ്റി, കോഴ, കുറുപ്പന്തറ-കുറവിലങ്ങാട് റോഡ്, കോട്ടയം - 686636</span>
+
+                    </span>
+
+                </p>
+
+                <p>
+
+                    <i class="fas fa-phone-alt icon"></i>
+
+                    <span>04822 232001</span>
+
+                </p>
+
+                <p>
+
+                    <i class="fas fa-envelope icon"></i>
+
+                    <span>keralasciencecity@gmail.com</span>
+
+                </p>
+
+            </div>
+
+        </div>
+
+        
+
+        <div class="container footer-bottom">
+
+            <p>&copy; 2026 Kerala Science City Kottayam. Developed by KSSTM. All Rights Reserved.</p>
+
+            <p>
+
+                <a href="./visit.html#terms" style="margin-right: 16px;"><span class="lang-en">Terms of Use</span><span class="lang-ml">ഉപാധികൾ</span></a>
+
+                <a href="./visit.html#privacy"><span class="lang-en">Privacy Policy</span><span class="lang-ml">സ്വകാര്യതാനയം</span></a>
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- Logic Script -->
+
+    <script src="./main.js"></script>
+
+    
+
+    <!-- Canvas Particle Effect Script -->
+
+    <script>
+
+        const canvas = document.getElementById('particles-canvas');
+
+        const ctx = canvas.getContext('2d');
+
+        
+
+        let width = canvas.width = canvas.offsetWidth;
+
+        let height = canvas.height = canvas.offsetHeight;
+
+        
+
+        window.addEventListener('resize', () => {
+
+            width = canvas.width = canvas.offsetWidth;
+
+            height = canvas.height = canvas.offsetHeight;
+
+        });
+
+        
+
+        const particles = [];
+
+        const maxParticles = 60;
+
+        
+
+        class Particle {
+
+            constructor() {
+
+                this.x = Math.random() * width;
+
+                this.y = Math.random() * height;
+
+                this.vx = (Math.random() - 0.5) * 0.4;
+
+                this.vy = (Math.random() - 0.5) * 0.4;
+
+                this.radius = Math.random() * 2 + 1;
+
+                this.alpha = Math.random() * 0.5 + 0.2;
+
+            }
+
+            
+
+            update() {
+
+                this.x += this.vx;
+
+                this.y += this.vy;
+
+                
+
+                if (this.x < 0 || this.x > width) this.vx *= -1;
+
+                if (this.y < 0 || this.y > height) this.vy *= -1;
+
+            }
+
+            
+
+            draw() {
+
+                ctx.save();
+
+                ctx.beginPath();
+
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+
+                ctx.fillStyle = `rgba(0, 229, 255, ${this.alpha})`;
+
+                ctx.shadowBlur = 10;
+
+                ctx.shadowColor = '#00e5ff';
+
+                ctx.fill();
+
+                ctx.restore();
+
+            }
+
+        }
+
+        
+
+        for (let i = 0; i < maxParticles; i++) {
+
+            particles.push(new Particle());
+
+        }
+
+        
+
+        function animate() {
+
+            ctx.clearRect(0, 0, width, height);
+
+            
+
+            // Draw connections
+
+            for (let i = 0; i < particles.length; i++) {
+
+                particles[i].update();
+
+                particles[i].draw();
+
+                
+
+                for (let j = i + 1; j < particles.length; j++) {
+
+                    const dist = Math.hypot(particles[i].x - particles[j].x, particles[i].y - particles[j].y);
+
+                    if (dist < 100) {
+
+                        ctx.beginPath();
+
+                        ctx.moveTo(particles[i].x, particles[i].y);
+
+                        ctx.lineTo(particles[j].x, particles[j].y);
+
+                        ctx.strokeStyle = `rgba(157, 78, 221, ${0.15 * (1 - dist / 100)})`;
+
+                        ctx.lineWidth = 0.5;
+
+                        ctx.stroke();
+
+                    }
+
+                }
+
+            }
+
+            requestAnimationFrame(animate);
+
+        }
+
+        
+
+        animate();
+
+    </script>
+
+</body>
+
+</html>
+

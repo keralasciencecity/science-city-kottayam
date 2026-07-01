@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Interactive Exhibit Guide | Kerala Science City Kottayam</title>
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;600;700&family=Noto+Serif+Malayalam:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    
+
+    <style>
+
+        :root {
+
+            --bg-dark: #070a13;
+
+            --bg-card: rgba(13, 20, 38, 0.5);
+
+            --bg-card-hover: rgba(13, 20, 38, 0.8);
+
+            --primary-cyan: #00e5ff;
+
+            --secondary-purple: #9d4ede;
+
+            --accent-emerald: #00f5d4;
+
+            --accent-amber: #ffb703;
+
+            --text-primary: #f8f9fa;
+
+            --text-secondary: #a0aec0;
+
+            --text-muted: #718096;
+
+            --border-color: rgba(255, 255, 255, 0.08);
+
+            --border-color-glow: rgba(0, 229, 255, 0.25);
+
+            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+            --font-heading: 'Space Grotesk', sans-serif;
+
+            --font-body: 'Outfit', sans-serif;
+
+            --font-ml: 'Noto Serif Malayalam', serif;
+
+        }
+
+        /* Reset & Base Styles */
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+            -webkit-tap-highlight-color: transparent;
+
+        }
+
+        body {
+
+            background-color: var(--bg-dark);
+
+            color: var(--text-primary);
+
+            font-family: var(--font-body);
+
+            overflow-x: hidden;
+
+            min-height: 100vh;
+
+            padding-bottom: 20px;
+
+        }
+
+        .container {
+
+            width: 100%;
+
+            max-width: 600px; /* Locked to mobile width for app feel */
+
+            margin: 0 auto;
+
+            padding: 0 16px;
+
+        }
+
+        /* Header Branding */
+
+        header {
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 100;
+
+            background: rgba(7, 10, 19, 0.85);
+
+            backdrop-filter: blur(20px);
+
+            border-bottom: 1px solid var(--border-color);
+
+            padding: 12px 0;
+
+        }
+
+        .header-flex {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+        }
+
+        .logo-group {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+        }
+
+        .logo-img {
+
+            height: 36px;
+
+            width: 36px;
+
+            object-fit: contain;
+
+        }
+
+        .logo-text-group {
+
+            display: flex;
+
+            flex-direction: column;
+
+        }
+
+        .logo-title {
+
+            font-family: var(--font-heading);
+
+            font-weight: 700;
+
+            font-size: 0.95rem;
+
+            letter-spacing: 0.05em;
+
+            color: var(--text-primary);
+
+        }
+
+        .logo-subtitle {
+
+            font-size: 0.7rem;
+
+            color: var(--primary-cyan);
+
+            text-transform: uppercase;
+
+            letter-spacing: 0.1em;
+
+            font-weight: 600;
+
+        }
+
+        /* Floating Language Toggle */
+
+        .lang-toggle-btn {
+
+            background: var(--bg-card);
+
+            border: 1px solid var(--border-color);
+
+            color: var(--primary-cyan);
+
+            padding: 6px 14px;
+
+            border-radius: 20px;
+
+            font-size: 0.8rem;
+
+            font-weight: 600;
+
+            cursor: pointer;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 6px;
+
+            transition: var(--transition-smooth);
+
+            font-family: var(--font-heading);
+
+            box-shadow: 0 0 10px rgba(0, 229, 255, 0.1);
+
+        }
+
+        .lang-toggle-btn:active {
+
+            transform: scale(0.95);
+
+            background: var(--border-color-glow);
+
+        }
+
+        /* Hero Directory Banner */
+
+        .hero-banner {
+
+            background: linear-gradient(135deg, rgba(13, 20, 38, 0.4) 0%, rgba(7, 10, 19, 0.8) 100%);
+
+            border: 1px solid var(--border-color);
+
+            border-radius: 16px;
+
+            padding: 20px;
+
+            margin: 16px 0;
+
+            text-align: center;
+
+            box-shadow: inset 0 0 20px rgba(255,255,255,0.02);
+
+        }
+
+        .hero-banner h1 {
+
+            font-family: var(--font-heading);
+
+            font-weight: 800;
+
+            font-size: 1.35rem;
+
+            margin-bottom: 6px;
+
+            color: var(--text-primary);
+
+            letter-spacing: -0.01em;
+
+        }
+
+        .hero-banner p {
+
+            font-size: 0.85rem;
+
+            color: var(--text-secondary);
+
+            line-height: 1.4;
+
+        }
+
+        /* Live Search Section */
+
+        .search-container {
+
+            position: relative;
+
+            margin-bottom: 16px;
+
+        }
+
+        .search-input {
+
+            width: 100%;
+
+            background: rgba(13, 20, 38, 0.8);
+
+            border: 1px solid var(--border-color);
+
+            border-radius: 12px;
+
+            padding: 12px 16px 12px 42px;
+
+            color: var(--text-primary);
+
+            font-family: var(--font-body);
+
+            font-size: 0.95rem;
+
+            outline: none;
+
+            transition: var(--transition-smooth);
+
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.5);
+
+        }
+
+        .search-input:focus {
+
+            border-color: var(--primary-cyan);
+
+            box-shadow: 0 0 15px rgba(0, 229, 255, 0.15), inset 0 2px 4px rgba(0,0,0,0.5);
+
+        }
+
+        .search-icon {
+
+            position: absolute;
+
+            left: 16px;
+
+            top: 50%;
+
+            transform: translateY(-50%);
+
+            color: var(--text-muted);
+
+            font-size: 0.95rem;
+
+            pointer-events: none;
+
+            transition: var(--transition-smooth);
+
+        }
+
+        .search-input:focus + .search-icon {
+
+            color: var(--primary-cyan);
+
+        }
+
+        /* Horizontal Categories Filter */
+
+        .categories-filter {
+
+            display: flex;
+
+            gap: 10px;
+
+            overflow-x: auto;
+
+            padding: 4px 0 16px 0;
+
+            scrollbar-width: none; /* Hide standard Firefox scrollbar */
+
+        }
+
+        .categories-filter::-webkit-scrollbar {
+
+            display: none; /* Hide Chrome/Safari scrollbar */
+
+        }
+
+        .category-tab {
+
+            flex: 0 0 auto;
+
+            background: var(--bg-card);
+
+            border: 1px solid var(--border-color);
+
+            color: var(--text-secondary);
+
+            padding: 8px 16px;
+
+            border-radius: 30px;
+
+            font-size: 0.8rem;
+
+            font-weight: 600;
+
+            cursor: pointer;
+
+            transition: var(--transition-smooth);
+
+            font-family: var(--font-heading);
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 6px;
+
+        }
+
+        .category-tab.active {
+
+            background: rgba(0, 229, 255, 0.12);
+
+            border-color: var(--primary-cyan);
+
+            color: var(--primary-cyan);
+
+            box-shadow: 0 0 10px rgba(0, 229, 255, 0.15);
+
+        }
+
+        .category-tab.cat-physics.active {
+
+            background: rgba(0, 229, 255, 0.12);
+
+            border-color: var(--primary-cyan);
+
+            color: var(--primary-cyan);
+
+        }
+
+        .category-tab.cat-optics.active {
+
+            background: rgba(0, 245, 212, 0.12);
+
+            border-color: var(--accent-emerald);
+
+            color: var(--accent-emerald);
+
+        }
+
+        .category-tab.cat-sound.active {
+
+            background: rgba(255, 183, 3, 0.12);
+
+            border-color: var(--accent-amber);
+
+            color: var(--accent-amber);
+
+        }
+
+        .category-tab.cat-mechanics.active {
+
+            background: rgba(157, 78, 221, 0.12);
+
+            border-color: var(--secondary-purple);
+
+            color: var(--secondary-purple);
+
+        }
+
+        /* Exhibits Grid & Cards */
+
+        .exhibits-list-group {
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 12px;
+
+        }
+
+        .exhibit-row-card {
+
+            background: var(--bg-card);
+
+            border: 1px solid var(--border-color);
+
+            border-radius: 12px;
+
+            padding: 14px 16px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 16px;
+
+            cursor: pointer;
+
+            transition: var(--transition-smooth);
+
+            animation: fadeIn 0.4s ease forwards;
+
+        }
+
+        .exhibit-row-card:active {
+
+            transform: scale(0.98);
+
+            background: var(--bg-card-hover);
+
+        }
+
+        .card-main-info {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 12px;
+
+            flex-grow: 1;
+
+        }
+
+        .exhibit-num {
+
+            font-family: var(--font-heading);
+
+            font-weight: 700;
+
+            font-size: 0.85rem;
+
+            color: var(--text-muted);
+
+            background: rgba(255,255,255,0.03);
+
+            border: 1px solid var(--border-color);
+
+            height: 32px;
+
+            width: 32px;
+
+            border-radius: 8px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            flex-shrink: 0;
+
+            box-shadow: inset 0 1px 2px rgba(0,0,0,0.5);
+
+        }
+
+        .exhibit-meta {
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 4px;
+
+        }
+
+        .exhibit-row-card h3 {
+
+            font-size: 0.95rem;
+
+            font-weight: 600;
+
+            color: var(--text-primary);
+
+            line-height: 1.3;
+
+        }
+
+        .exhibit-badge {
+
+            align-self: flex-start;
+
+            font-size: 0.65rem;
+
+            text-transform: uppercase;
+
+            letter-spacing: 0.05em;
+
+            font-weight: 700;
+
+            padding: 2px 8px;
+
+            border-radius: 4px;
+
+        }
+
+        .badge-physics { background: rgba(0, 229, 255, 0.1); color: var(--primary-cyan); border: 1px solid rgba(0, 229, 255, 0.2); }
+
+        .badge-optics { background: rgba(0, 245, 212, 0.1); color: var(--accent-emerald); border: 1px solid rgba(0, 245, 212, 0.2); }
+
+        .badge-sound { background: rgba(255, 183, 3, 0.1); color: var(--accent-amber); border: 1px solid rgba(255, 183, 3, 0.2); }
+
+        .badge-mechanics { background: rgba(157, 78, 221, 0.1); color: var(--secondary-purple); border: 1px solid rgba(157, 78, 221, 0.2); }
+
+        .card-chevron {
+
+            color: var(--text-muted);
+
+            font-size: 0.85rem;
+
+            transition: var(--transition-smooth);
+
+        }
+
+        .exhibit-row-card:active .card-chevron {
+
+            color: var(--primary-cyan);
+
+            transform: translateX(4px);
+
+        }
+
+        /* --- Bottom Sheet Modal Drawer --- */
+
+        .bottom-sheet-backdrop {
+
+            position: fixed;
+
+            top: 0;
+
+            left: 0;
+
+            right: 0;
+
+            bottom: 0;
+
+            background: rgba(3, 5, 10, 0.75);
+
+            backdrop-filter: blur(10px);
+
+            z-index: 500;
+
+            display: none;
+
+            opacity: 0;
+
+            transition: opacity 0.3s ease;
+
+        }
+
+        .bottom-sheet-drawer {
+
+            position: fixed;
+
+            bottom: 0;
+
+            left: 50%;
+
+            transform: translate(-50%, 100%);
+
+            width: 100%;
+
+            max-width: 600px;
+
+            background: rgba(10, 15, 30, 0.95);
+
+            backdrop-filter: blur(25px);
+
+            border-top: 2px solid var(--border-color-glow);
+
+            border-left: 1px solid var(--border-color);
+
+            border-right: 1px solid var(--border-color);
+
+            border-radius: 24px 24px 0 0;
+
+            z-index: 600;
+
+            max-height: 85vh;
+
+            display: flex;
+
+            flex-direction: column;
+
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+
+            box-shadow: 0 -15px 40px rgba(0,0,0,0.6);
+
+        }
+
+        /* Pull Bar Handle */
+
+        .drawer-handle-bar {
+
+            width: 100%;
+
+            height: 24px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            cursor: pointer;
+
+            flex-shrink: 0;
+
+        }
+
+        .drawer-handle-bar span {
+
+            width: 48px;
+
+            height: 5px;
+
+            background: var(--text-muted);
+
+            border-radius: 10px;
+
+            opacity: 0.6;
+
+            transition: var(--transition-smooth);
+
+        }
+
+        .drawer-handle-bar:active span {
+
+            background: var(--primary-cyan);
+
+            opacity: 1;
+
+        }
+
+        /* Drawer Content Panel */
+
+        .drawer-content {
+
+            overflow-y: auto;
+
+            padding: 0 24px 32px 24px;
+
+            scrollbar-width: thin;
+
+        }
+
+        .drawer-header {
+
+            margin-bottom: 20px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 8px;
+
+            border-bottom: 1px solid var(--border-color);
+
+            padding-bottom: 16px;
+
+        }
+
+        .drawer-title-group {
+
+            display: flex;
+
+            align-items: flex-start;
+
+            gap: 12px;
+
+        }
+
+        .drawer-num {
+
+            font-family: var(--font-heading);
+
+            font-size: 0.95rem;
+
+            font-weight: 700;
+
+            background: var(--border-color-glow);
+
+            color: var(--primary-cyan);
+
+            padding: 4px 10px;
+
+            border-radius: 6px;
+
+            border: 1px solid rgba(0,229,255,0.2);
+
+            flex-shrink: 0;
+
+        }
+
+        .drawer-title-en {
+
+            font-family: var(--font-heading);
+
+            font-size: 1.35rem;
+
+            font-weight: 700;
+
+            color: var(--text-primary);
+
+            line-height: 1.25;
+
+        }
+
+        .drawer-title-ml {
+
+            font-family: var(--font-ml);
+
+            font-size: 1.2rem;
+
+            font-weight: 700;
+
+            color: var(--primary-cyan);
+
+            line-height: 1.35;
+
+            margin-top: 4px;
+
+        }
+
+        /* Section blocks */
+
+        .info-block {
+
+            margin-bottom: 20px;
+
+        }
+
+        .block-header {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 8px;
+
+            font-family: var(--font-heading);
+
+            font-size: 0.85rem;
+
+            font-weight: 600;
+
+            text-transform: uppercase;
+
+            letter-spacing: 0.05em;
+
+            color: var(--text-muted);
+
+            margin-bottom: 10px;
+
+        }
+
+        .block-header i {
+
+            font-size: 0.9rem;
+
+        }
+
+        .block-header-en { color: var(--accent-emerald); }
+
+        .block-header-ml { color: var(--primary-cyan); }
+
+        .block-text-en {
+
+            font-size: 0.95rem;
+
+            line-height: 1.6;
+
+            color: var(--text-primary);
+
+            margin-bottom: 12px;
+
+        }
+
+        .block-text-ml {
+
+            font-family: var(--font-body);
+
+            font-size: 0.95rem;
+
+            line-height: 1.7;
+
+            color: var(--text-secondary);
+
+        }
+
+        .principle-box {
+
+            background: rgba(157, 78, 221, 0.08);
+
+            border-left: 4px solid var(--secondary-purple);
+
+            border-radius: 0 8px 8px 0;
+
+            padding: 16px 20px;
+
+            margin-top: 8px;
+
+        }
+
+        /* Close Button inside Drawer */
+
+        .drawer-close-btn {
+
+            background: var(--bg-card);
+
+            border: 1px solid var(--border-color);
+
+            color: var(--text-secondary);
+
+            font-size: 0.9rem;
+
+            font-weight: 600;
+
+            font-family: var(--font-heading);
+
+            width: 100%;
+
+            padding: 12px;
+
+            border-radius: 12px;
+
+            cursor: pointer;
+
+            margin-top: 24px;
+
+            transition: var(--transition-smooth);
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 8px;
+
+        }
+
+        .drawer-close-btn:active {
+
+            background: var(--border-color);
+
+            color: var(--text-primary);
+
+            transform: scale(0.98);
+
+        }
+
+        /* Empty Search View */
+
+        .empty-search {
+
+            text-align: center;
+
+            padding: 40px 20px;
+
+            color: var(--text-muted);
+
+            display: none;
+
+        }
+
+        .empty-search i {
+
+            font-size: 2.5rem;
+
+            margin-bottom: 16px;
+
+        }
+
+        /* Language Switch Visibility classes */
+
+        .lang-en-only { display: block; }
+
+        .lang-ml-only { display: none; }
+
+        body.lang-ml-active .lang-en-only { display: none; }
+
+        body.lang-ml-active .lang-ml-only { display: block; }
+
+        /* Animation utilities */
+
+        @keyframes fadeIn {
+
+            from { opacity: 0; transform: translateY(10px); }
+
+            to { opacity: 1; transform: translateY(0); }
+
+        }
+
+        @keyframes fadeInUp {
+
+            from { opacity: 0; transform: translate(-50%, 100%); }
+
+            to { opacity: 1; transform: translate(-50%, 0); }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Stickied Mobile App Header -->
+
+    <header>
+
+        <div class="container header-flex">
+
+            <a href="./index.html" class="logo-group" style="text-decoration: none;">
+
+                <img src="./assets/images/ksstm_logo.png?v=3" alt="KSSTM Logo" class="logo-img">
+
+                <div class="logo-text-group">
+
+                    <span class="logo-title" style="color: var(--text-primary);">SCIENCE CITY</span>
+
+                    <span class="logo-subtitle">Kottayam</span>
+
+                </div>
+
+            </a>
+
+            
+
+            <!-- Language Trigger Switch -->
+
+            <button class="lang-toggle-btn" id="lang-switch-btn">
+
+                <i class="fas fa-globe"></i> 
+
+                <span class="lang-en-only">മലയാളം</span>
+
+                <span class="lang-ml-only">English</span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <main class="container">
+
+        
+
+        <!-- Welcome Board -->
+
+        <div class="hero-banner">
+
+            <h1>
+
+                <span class="lang-en-only">Fun Science Exhibit Guide</span>
+
+                <span class="lang-ml-only">ഫൺ സയൻസ് ഗാലറി ഗൈഡ്</span>
+
+            </h1>
+
+            <p>
+
+                <span class="lang-en-only">Scan the QR code at each station to read the instructions, operational guidance, and underlying scientific principles in detail.</span>
+
+                <span class="lang-ml-only">ഓരോ പ്രദർശനത്തിനും സമീപമുള്ള ക്യുആർ കോഡ് സ്കാൻ ചെയ്തുകൊണ്ട് പരീക്ഷണ രീതികളും ശാസ്ത്ര തത്വങ്ങളും വായിച്ചറിയാം.</span>
+
+            </p>
+
+        </div>
+
+        <!-- Search Bar -->
+
+        <div class="search-container">
+
+            <input type="text" class="search-input" id="search-bar" placeholder="Type to search exhibits (e.g. disc)...">
+
+            <i class="fas fa-search search-icon"></i>
+
+        </div>
+
+        <!-- Horizontal Categories Slider -->
+
+        <div class="categories-filter" id="categories-tabs">
+
+            <button class="category-tab active" data-category="all">
+
+                <span class="lang-en-only">All Exhibits</span>
+
+                <span class="lang-ml-only">എല്ലാം</span>
+
+            </button>
+
+            <button class="category-tab cat-physics" data-category="physics">
+
+                <i class="fas fa-bolt"></i>
+
+                <span class="lang-en-only">Physics</span>
+
+                <span class="lang-ml-only">ഫിസിക്സ്</span>
+
+            </button>
+
+            <button class="category-tab cat-optics" data-category="optics-vision">
+
+                <i class="fas fa-eye"></i>
+
+                <span class="lang-en-only">Optics & Vision</span>
+
+                <span class="lang-ml-only">ഒപ്റ്റിക്സ്</span>
+
+            </button>
+
+            <button class="category-tab cat-sound" data-category="sound-waves">
+
+                <i class="fas fa-wave-square"></i>
+
+                <span class="lang-en-only">Sound & Waves</span>
+
+                <span class="lang-ml-only">ശബ്ദശാസ്ത്രം</span>
+
+            </button>
+
+            <button class="category-tab cat-mechanics" data-category="mechanics-math">
+
+                <i class="fas fa-gears"></i>
+
+                <span class="lang-en-only">Math & Mechanics</span>
+
+                <span class="lang-ml-only">മെക്കാനിക്സ്</span>
+
+            </button>
+
+        </div>
+
+        <!-- Empty Result State -->
+
+        <div class="empty-search" id="empty-view">
+
+            <i class="fas fa-magnifying-glass-chart"></i>
+
+            <h3 style="margin-bottom: 8px;">No Exhibits Found</h3>
+
+            <p>Try refining your search keyword or selecting a different category tab.</p>
+
+        </div>
+
+        <!-- Dynamic List Group -->
+
+        <div class="exhibits-list-group" id="exhibits-list">
+
+            <!-- Populated via JavaScript -->
+
+        </div>
+
+    </main>
+
+    <!-- Bottom Sheet Presentation Drawer Backdrop -->
+
+    <div class="bottom-sheet-backdrop" id="drawer-backdrop"></div>
+
+    <!-- Bottom Sheet Presentation Drawer Card -->
+
+    <div class="bottom-sheet-drawer" id="detail-drawer">
+
+        <!-- Pull Handle bar -->
+
+        <div class="drawer-handle-bar" id="drawer-pull-bar">
+
+            <span></span>
+
+        </div>
+
+        <!-- Drawer Content Section -->
+
+        <div class="drawer-content" id="drawer-body">
+
+            <!-- Dynamic Details inserted on tap -->
+
+        </div>
+
+    </div>
+
+    <!-- Exhibits Database -->
+
+    <script src="./assets/data/exhibits_db.js"></script>
+
+    <!-- Interactive Mobile Application Controller Logic -->
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const listContainer = document.getElementById('exhibits-list');
+
+            const searchBar = document.getElementById('search-bar');
+
+            const categoryTabs = document.querySelectorAll('.category-tab');
+
+            const langSwitchBtn = document.getElementById('lang-switch-btn');
+
+            const emptyView = document.getElementById('empty-view');
+
+            
+
+            const drawerBackdrop = document.getElementById('drawer-backdrop');
+
+            const detailDrawer = document.getElementById('detail-drawer');
+
+            const drawerPullBar = document.getElementById('drawer-pull-bar');
+
+            const drawerBody = document.getElementById('drawer-body');
+
+            let currentCategory = 'all';
+
+            let searchQuery = '';
+
+            // Language Toggle Handler
+
+            langSwitchBtn.addEventListener('click', () => {
+
+                document.body.classList.toggle('lang-ml-active');
+
+                
+
+                // Update search placeholder
+
+                if (document.body.classList.contains('lang-ml-active')) {
+
+                    searchBar.placeholder = "പ്രദർശനം ടൈപ്പ് ചെയ്ത് തിരയുക...";
+
+                } else {
+
+                    searchBar.placeholder = "Type to search exhibits (e.g. disc)...";
+
+                }
+
+            });
+
+            // Initial render
+
+            renderExhibits();
+
+            // Search input handler
+
+            searchBar.addEventListener('input', (e) => {
+
+                searchQuery = e.target.value.toLowerCase();
+
+                renderExhibits();
+
+            });
+
+            // Category Tab filter handler
+
+            categoryTabs.forEach(tab => {
+
+                tab.addEventListener('click', () => {
+
+                    categoryTabs.forEach(t => t.classList.remove('active'));
+
+                    tab.classList.add('active');
+
+                    currentCategory = tab.getAttribute('data-category');
+
+                    renderExhibits();
+
+                });
+
+            });
+
+            // Filter & Render Exhibits
+
+            function renderExhibits() {
+
+                listContainer.innerHTML = '';
+
+                
+
+                const filtered = EXHIBITS_DB.filter(exhibit => {
+
+                    const matchCat = (currentCategory === 'all' || exhibit.category === currentCategory);
+
+                    const matchText = (
+
+                        exhibit.title.en.toLowerCase().includes(searchQuery) ||
+
+                        exhibit.title.ml.toLowerCase().includes(searchQuery) ||
+
+                        exhibit.id.toString() === searchQuery
+
+                    );
+
+                    return matchCat && matchText;
+
+                });
+
+                if (filtered.length === 0) {
+
+                    emptyView.style.display = 'block';
+
+                } else {
+
+                    emptyView.style.display = 'none';
+
+                    filtered.forEach(exhibit => {
+
+                        const card = document.createElement('div');
+
+                        card.className = 'exhibit-row-card';
+
+                        card.setAttribute('data-id', exhibit.id);
+
+                        
+
+                        // ID formatting
+
+                        const idStr = exhibit.id < 10 ? '0' + exhibit.id : exhibit.id;
+
+                        
+
+                        card.innerHTML = `
+
+                            <div class="card-main-info">
+
+                                <div class="exhibit-num">${idStr}</div>
+
+                                <div class="exhibit-meta">
+
+                                    <h3 class="lang-en-only">${exhibit.title.en}</h3>
+
+                                    <h3 class="lang-ml-only">${exhibit.title.ml}</h3>
+
+                                    <span class="exhibit-badge badge-${exhibit.category}">${exhibit.category.replace('-', ' & ')}</span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="card-chevron"><i class="fas fa-chevron-right"></i></div>
+
+                        `;
+
+                                                card.addEventListener('click', () => {
+                            window.location.href = `./exhibit_viewer.html?exhibit=${exhibit.slug}`;
+                        });
+
+                        listContainer.appendChild(card);
+
+                    });
+
+                }
+
+            }
+
+            // Open Exhibit details drawer
+
+            function openExhibitDetails(id) {
+
+                const exhibit = EXHIBITS_DB.find(ex => ex.id === id);
+
+                if (!exhibit) return;
+
+                const idStr = exhibit.id < 10 ? '0' + exhibit.id : exhibit.id;
+
+                drawerBody.innerHTML = `
+
+                    <div class="drawer-header">
+
+                        <div class="drawer-title-group">
+
+                            <span class="drawer-num">${idStr}</span>
+
+                            <div>
+
+                                <h2 class="drawer-title-en">${exhibit.title.en}</h2>
+
+                                <h2 class="drawer-title-ml">${exhibit.title.ml}</h2>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="info-block">
+
+                        <div class="block-header block-header-en"><i class="fas fa-circle-play"></i> How it Works</div>
+
+                        <div class="block-text-en">${exhibit.how_it_works.en}</div>
+
+                        
+
+                        <div class="block-header block-header-ml"><i class="fas fa-hand-pointer"></i> പ്രവർത്തന രീതി</div>
+
+                        <div class="block-text-ml">${exhibit.how_it_works.ml}</div>
+
+                    </div>
+
+                    <div class="info-block principle-box">
+
+                        <div class="block-header block-header-en" style="color: var(--secondary-purple);"><i class="fas fa-graduation-cap"></i> Scientific Principle</div>
+
+                        <div class="block-text-en" style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 8px;">${exhibit.principle.en}</div>
+
+                        
+
+                        <div class="block-header block-header-ml" style="color: var(--secondary-purple);"><i class="fas fa-lightbulb"></i> ശാസ്ത്ര തത്വം</div>
+
+                        <div class="block-text-ml" style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">${exhibit.principle.ml}</div>
+
+                    </div>
+
+                    <button class="drawer-close-btn" id="drawer-close-button">
+
+                        <span class="lang-en-only">Close Details</span>
+
+                        <span class="lang-ml-only">വിവരങ്ങൾ അടയ്ക്കുക</span>
+
+                    </button>
+
+                `;
+
+                // Add close handler inside drawer
+
+                document.getElementById('drawer-close-button').addEventListener('click', closeDrawer);
+
+                // Show backdrop and drawer with animation
+
+                drawerBackdrop.style.display = 'block';
+
+                detailDrawer.style.display = 'flex';
+
+                
+
+                // Force layout recalculation for transition
+
+                setTimeout(() => {
+
+                    drawerBackdrop.style.opacity = '1';
+
+                    detailDrawer.style.transform = 'translate(-50%, 0)';
+
+                }, 10);
+
+                // Set URL Hash Parameter to track navigation state (QR compatible routing)
+
+                window.location.hash = `exhibit-${exhibit.slug}`;
+
+            }
+
+            // Close Drawer function
+
+            function closeDrawer() {
+
+                drawerBackdrop.style.opacity = '0';
+
+                detailDrawer.style.transform = 'translate(-50%, 100%)';
+
+                
+
+                setTimeout(() => {
+
+                    drawerBackdrop.style.display = 'none';
+
+                    detailDrawer.style.display = 'none';
+
+                }, 300);
+
+                // Clear hash parameter cleanly
+
+                history.pushState("", document.title, window.location.pathname + window.location.search);
+
+            }
+
+            // Dismiss drawer by tapping backdrop
+
+            drawerBackdrop.addEventListener('click', closeDrawer);
+
+            // Handle sliding pull bar click/tap to dismiss
+
+            drawerPullBar.addEventListener('click', closeDrawer);
+
+            // Handle URL Hash Parameter Routing on Page Load
+
+                        // Handle URL Hash Parameter Routing on Page Load
+            function handleHashRouting() {
+                const hash = window.location.hash;
+                if (hash && hash.startsWith('#exhibit-')) {
+                    const slug = hash.replace('#exhibit-', '');
+                    window.location.href = `./exhibit_viewer.html?exhibit=${slug}`;
+                }
+            }
+
+            // Run hash routing handler on load and on hash change
+
+            handleHashRouting();
+
+            window.addEventListener('hashchange', handleHashRouting);
+
+        });
+
+    </script>
+
+</body>
+
+</html>
+

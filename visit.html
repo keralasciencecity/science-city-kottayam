@@ -1,0 +1,1954 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+
+
+
+<head>
+
+
+
+    <meta charset="UTF-8">
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>Plan Your Visit | Kerala Science City Kottayam</title>
+
+
+
+    <meta name="description" content="Plan your trip to Kerala Science City Kottayam. Find timings, ticket rates, visitor FAQs, transit routes, and use our interactive ticket price calculator.">
+
+
+
+    <!-- Stylesheets -->
+
+
+
+    <link rel="stylesheet" href="./style.css">
+
+
+
+    <!-- Font Awesome Icons -->
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+    <style>
+
+
+
+        .banner {
+
+
+
+            padding: 160px 0 80px 0;
+
+
+
+            background: linear-gradient(180deg, rgba(7, 10, 19, 0.4) 0%, var(--bg-dark) 100%), 
+
+
+
+                        url('./assets/images/science_city_entrance_topview.jpg') center/cover no-repeat;
+
+
+
+            border-bottom: 1px solid var(--border-color);
+
+
+
+            text-align: center;
+
+
+
+        }
+
+
+
+        
+
+
+
+        /* Grid Split for Details */
+
+
+
+        .visit-grid {
+
+    display: block;
+
+    max-width: 800px;
+
+    margin: 0 auto 80px auto;
+
+}
+
+
+
+        
+
+
+
+        /* Styled Tables */
+
+
+
+        .info-table {
+
+
+
+            width: 100%;
+
+
+
+            border-collapse: collapse;
+
+
+
+            margin-top: 16px;
+
+
+
+            font-size: 0.95rem;
+
+
+
+        }
+
+
+
+        .info-table th {
+
+
+
+            background: rgba(255, 255, 255, 0.04);
+
+
+
+            color: var(--primary-cyan);
+
+
+
+            text-align: left;
+
+
+
+            padding: 14px 20px;
+
+
+
+            font-weight: 600;
+
+
+
+            border-bottom: 2px solid var(--border-color);
+
+
+
+            font-family: var(--font-heading);
+
+
+
+        }
+
+
+
+        .info-table td {
+
+
+
+            padding: 14px 20px;
+
+
+
+            border-bottom: 1px solid var(--border-color);
+
+
+
+            color: var(--text-secondary);
+
+
+
+        }
+
+
+
+        .info-table tr:hover td {
+
+
+
+            color: var(--text-primary);
+
+
+
+            background: rgba(255, 255, 255, 0.01);
+
+
+
+        }
+
+
+
+        
+
+
+
+        /* Calculator Card */
+
+
+
+        .calc-panel {
+
+
+
+            border-color: rgba(0, 229, 255, 0.15);
+
+
+
+        }
+
+
+
+        .calc-row {
+
+
+
+            display: grid;
+
+
+
+            grid-template-columns: 2fr 1fr;
+
+
+
+            gap: 16px;
+
+
+
+            align-items: center;
+
+
+
+            margin-bottom: 18px;
+
+
+
+        }
+
+
+
+        .calc-total-box {
+
+
+
+            background: rgba(7, 10, 19, 0.5);
+
+
+
+            border: 1px solid var(--border-color-glow);
+
+
+
+            border-radius: 10px;
+
+
+
+            padding: 24px;
+
+
+
+            margin-top: 24px;
+
+
+
+        }
+
+
+
+        .calc-total-row {
+
+
+
+            display: flex;
+
+
+
+            justify-content: space-between;
+
+
+
+            margin-bottom: 10px;
+
+
+
+            font-size: 0.9rem;
+
+
+
+            color: var(--text-secondary);
+
+
+
+        }
+
+
+
+        .calc-total-row:last-child {
+
+
+
+            margin-bottom: 0;
+
+
+
+            padding-top: 10px;
+
+
+
+            border-top: 1px solid var(--border-color);
+
+
+
+            font-size: 1.2rem;
+
+
+
+            font-weight: 700;
+
+
+
+            color: var(--primary-cyan);
+
+
+
+        }
+
+
+
+        
+
+
+
+        /* Map / Directions cards */
+
+
+
+        .directions-grid {
+
+
+
+            display: grid;
+
+
+
+            grid-template-columns: repeat(3, 1fr);
+
+
+
+            gap: 24px;
+
+
+
+            margin-bottom: 80px;
+
+
+
+        }
+
+
+
+        
+
+
+
+        /* FAQ Accordions */
+
+
+
+        .faq-item {
+
+
+
+            margin-bottom: 16px;
+
+
+
+            border: 1px solid var(--border-color);
+
+
+
+            border-radius: 10px;
+
+
+
+            overflow: hidden;
+
+
+
+            background: var(--bg-card);
+
+
+
+            transition: var(--transition-smooth);
+
+
+
+        }
+
+
+
+        .faq-question {
+
+
+
+            padding: 20px 24px;
+
+
+
+            font-weight: 600;
+
+
+
+            cursor: pointer;
+
+
+
+            display: flex;
+
+
+
+            justify-content: space-between;
+
+
+
+            align-items: center;
+
+
+
+            font-family: var(--font-heading);
+
+
+
+        }
+
+
+
+        .faq-answer {
+
+
+
+            padding: 0 24px 20px 24px;
+
+
+
+            color: var(--text-secondary);
+
+
+
+            display: none;
+
+
+
+            font-size: 0.95rem;
+
+
+
+            border-top: 1px solid transparent;
+
+
+
+            animation: fadeInUp 0.3s ease forwards;
+
+
+
+        }
+
+
+
+        .faq-item.active {
+
+
+
+            border-color: var(--border-color-glow);
+
+
+
+        }
+
+
+
+        .faq-item.active .faq-answer {
+
+
+
+            display: block;
+
+
+
+            border-top-color: var(--border-color);
+
+
+
+        }
+
+
+
+        .faq-item.active .faq-question i {
+
+
+
+            transform: rotate(180deg);
+
+
+
+            color: var(--primary-cyan);
+
+
+
+        }
+
+
+
+        .faq-question i {
+
+
+
+            transition: var(--transition-smooth);
+
+
+
+            font-size: 0.85rem;
+
+
+
+        }
+
+
+
+        
+
+
+
+        @media (max-width: 992px) {
+
+
+
+            .visit-grid {
+
+    display: block;
+
+    max-width: 800px;
+
+    margin: 0 auto 80px auto;
+
+}
+
+
+
+            .directions-grid {
+
+
+
+                grid-template-columns: 1fr;
+
+
+
+                gap: 16px;
+
+
+
+            }
+
+
+
+        }
+
+
+
+    </style>
+
+
+
+</head>
+
+
+
+<body class="lang-en">
+
+
+
+    <!-- Sticky Header -->
+
+
+
+    <header>
+
+
+
+        <div class="container navbar">
+
+
+
+            <a href="./index.html" class="logo">
+
+
+
+                <img src="./assets/images/ksstm_logo.png?v=3" alt="KSSTM Logo" class="logo-img">
+
+
+
+                <div>
+
+
+
+                    <span class="logo-text">SCIENCE CITY</span>
+
+
+
+                    <span class="logo-sub">Kottayam</span>
+
+
+
+                </div>
+
+
+
+            </a>
+
+
+
+            
+
+
+
+            <ul class="nav-links">
+
+
+
+                <li><a href="./index.html"><span class="lang-en">Home</span><span class="lang-ml">ഹോം</span></a></li>
+
+
+
+                <li><a href="./exhibits.html"><span class="lang-en">Exhibits</span><span class="lang-ml">പ്രദർശനങ്ങൾ</span></a></li>
+
+
+
+                <li><a href="./events.html"><span class="lang-en">Events</span><span class="lang-ml">പരിപാടികൾ</span></a></li>
+
+
+
+                <li><a href="./activity.html"><span class="lang-en">Activity Centre</span><span class="lang-ml">ആക്ടിവിറ്റി സെന്റർ</span></a></li>
+
+
+
+                <li><a href="./visit.html" class="active"><span class="lang-en">Visit</span><span class="lang-ml">സന്ദർശനം</span></a></li>
+
+
+
+            </ul>
+
+
+
+            <div class="nav-controls">
+
+
+
+                <button class="lang-switch" id="lang-toggle-btn" aria-label="Toggle Language">
+
+
+
+                    <i class="fas fa-globe"></i> മലയാളം
+
+
+
+                </button>
+
+
+
+                <button class="mobile-menu-toggle" aria-label="Toggle Mobile Menu">
+
+
+
+                    <i class="fas fa-bars"></i>
+
+
+
+                </button>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </header>
+
+
+
+    <!-- Banner -->
+
+
+
+    <section class="banner">
+
+
+
+        <div class="container">
+
+
+
+            <span class="badge"><span class="lang-en">Plan Your Trip</span><span class="lang-ml">യാത്ര പ്ലാൻ ചെയ്യാം</span></span>
+
+
+
+            <h1 style="font-size: 3rem; margin-top: 10px;">
+
+
+
+                <span class="lang-en">Visitor Guidelines & Pricing</span>
+
+
+
+                <span class="lang-ml">സമയവിവരങ്ങളും ടിക്കറ്റ് നിരക്കും</span>
+
+
+
+            </h1>
+
+
+
+            <p style="color: var(--text-secondary); max-width: 600px; margin: 16px auto 0 auto;">
+
+
+
+                <span class="lang-en">Everything you need to arrange school tours, calculate total ticket fees, and locate the centre in Kottayam.</span>
+
+
+
+                <span class="lang-ml">പ്രവേശന നിരക്കുകൾ, സ്കൂൾ ഗ്രൂപ്പുകൾക്കുള്ള ആനുകൂല്യങ്ങൾ, വിലാസം എന്നിവ താഴെ നൽകുന്നു.</span>
+
+
+
+            </p>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+    <!-- Info Sections and Calculator -->
+
+
+
+    <section class="section">
+
+
+
+        <div class="container">
+
+
+
+            <div class="visit-grid">
+
+            <!-- Timings -->
+
+            <span class="badge badge-purple"><span class="lang-en">Timings</span><span class="lang-ml">പ്രവർത്തന സമയം</span></span>
+
+            <h3 style="font-size: 1.8rem; margin-bottom: 20px; font-family: var(--font-heading);">
+
+                <span class="lang-en">Operating Hours</span>
+
+                <span class="lang-ml">പ്രവർത്തന സമയം</span>
+
+            </h3>
+
+            <table class="info-table" style="margin-bottom: 50px;">
+
+                <thead>
+
+                    <tr>
+
+                        <th><span class="lang-en">Day Bracket</span><span class="lang-ml">ദിവസങ്ങൾ</span></th>
+
+                        <th><span class="lang-en">Timing Details</span><span class="lang-ml">സമയം</span></th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong><span class="lang-en">Tuesday - Sunday</span><span class="lang-ml">ചൊവ്വ - ഞായർ</span></strong></td>
+
+                        <td>10:00 AM - 05:00 PM <br><small style="color: var(--text-muted);"><span class="lang-en">(Ticket counter closes at 04:15 PM)</span><span class="lang-ml">(ടിക്കറ്റ് കൗണ്ടർ 4:15-ന് അടയ്ക്കും)</span></small></td>
+
+                    </tr>
+
+                    <tr style="background: rgba(157, 78, 221, 0.03);">
+
+                        <td style="color: var(--secondary-purple);"><strong><span class="lang-en">Monday</span><span class="lang-ml">തിങ്കൾ</span></strong></td>
+
+                        <td style="color: var(--secondary-purple);"><strong><span class="lang-en">CLOSED (Weekly Holiday)</span><span class="lang-ml">അവധി ദിവസം</span></strong></td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+
+
+            <!-- Pricing Table -->
+
+            <span class="badge"><span class="lang-en">Ticket Rates</span><span class="lang-ml">ടിക്കറ്റ് നിരക്കുകൾ</span></span>
+
+            <h3 style="font-size: 1.8rem; margin-bottom: 20px; font-family: var(--font-heading);">
+
+                <span class="lang-en">General Admission Fees</span>
+
+                <span class="lang-ml">പൊതു പ്രവേശന നിരക്കുകൾ</span>
+
+            </h3>
+
+            <table class="info-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th><span class="lang-en">Category</span><span class="lang-ml">വിഭാഗം</span></th>
+
+                        <th><span class="lang-en">Museum & Park</span><span class="lang-ml">മ്യൂസിയം & പാർക്ക്</span></th>
+
+                        <th><span class="lang-en">3D Theatre Ticket</span><span class="lang-ml">3D തിയേറ്റർ</span></th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><strong><span class="lang-en">Adult (General)</span><span class="lang-ml">മുതിർന്നവർ (പൊതുവായത്)</span></strong></td>
+
+                        <td>50</td>
+
+                        <td>50</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><strong><span class="lang-en">Child (Ages 3 - 12)</span><span class="lang-ml">കുട്ടികൾ (3 - 12 വയസ്സ്)</span></strong></td>
+
+                        <td>30</td>
+
+                        <td>30</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+
+                            <strong><span class="lang-en">Students (with School Letter)</span><span class="lang-ml">വിദ്യാർത്ഥികൾ (സ്കൂൾ കത്തുമായി)</span></strong><br>
+
+                            <small style="color: var(--text-muted);"><span class="lang-en">(Requires Official Letter, No Min Group Size)</span><span class="lang-ml">(സ്കൂൾ ലെറ്റർ ആവശ്യമാണ്, കുറഞ്ഞ അളവ് നിബന്ധനയില്ല)</span></small>
+
+                        </td>
+
+                        <td style="color: var(--accent-emerald);">30</td>
+
+                        <td style="color: var(--accent-emerald);">30</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+    <!-- Travel Directions Section -->
+
+
+
+    <section class="section" style="border-top: 1px solid var(--border-color); background: rgba(255, 255, 255, 0.01);">
+
+
+
+        <div class="container">
+
+
+
+            <div class="section-header">
+
+
+
+                <span class="badge"><span class="lang-en">Map & Route</span><span class="lang-ml">വഴിവിവരം</span></span>
+
+
+
+                <h2><span class="lang-en">How to Reach Us</span><span class="lang-ml">എത്തിച്ചേരേണ്ട വഴി</span></h2>
+
+
+
+                <p class="section-subtitle">
+
+
+
+                    <span class="lang-en">Located along SH 1 (Main Central Road - MC Road) in Kozha, Kuravilangad, Kottayam District.</span>
+
+
+
+                    <span class="lang-ml">കോട്ടയം ജില്ലയിലെ കുറവിലങ്ങാടിനടുത്ത് കോഴയിൽ എം.സി റോഡിന് (SH 1) വശത്താണ് സയൻസ് സിറ്റി സ്ഥിതി ചെയ്യുന്നത്.</span>
+
+
+
+                </p>
+
+
+
+            </div>
+
+
+
+            <!-- Direction Cards -->
+
+
+
+            <div class="directions-grid">
+
+
+
+                <!-- Road -->
+
+
+
+                <div class="glass-panel" style="padding: 24px;">
+
+
+
+                    <div style="font-size: 2rem; color: var(--primary-cyan); margin-bottom: 16px;"><i class="fas fa-bus"></i></div>
+
+
+
+                    <h3 style="font-size: 1.2rem; margin-bottom: 10px;"><span class="lang-en">By Road</span><span class="lang-ml">റോഡ് മാർഗ്ഗം</span></h3>
+
+
+
+                    <p style="font-size: 0.9rem; color: var(--text-secondary);">
+
+
+
+                        <span class="lang-en">KSRTC and private buses frequently ply between Kottayam (24 km) and Ernakulam (50 km) via Kuravilangad. Get down at Kozha Junction.</span>
+
+
+
+                        <span class="lang-ml">കോട്ടയം (24 കി.മീ), എറണാകുളം (50 കി.മീ) എന്നിവടങ്ങളിൽ നിന്നും കുറവിലങ്ങാട് വഴി സർവീസ് നടത്തുന്ന കെ.എസ്.ആർ.ടി.സി / പ്രൈവറ്റ് ബസുകളിൽ കയറി കോഴ ജംഗ്ഷനിൽ ഇറങ്ങുക.</span>
+
+
+
+                    </p>
+
+
+
+                </div>
+
+
+
+                <!-- Train -->
+
+
+
+                <div class="glass-panel" style="padding: 24px;">
+
+
+
+                    <div style="font-size: 2rem; color: var(--secondary-purple); margin-bottom: 16px;"><i class="fas fa-train"></i></div>
+
+
+
+                    <h3 style="font-size: 1.2rem; margin-bottom: 10px;"><span class="lang-en">By Train</span><span class="lang-ml">ട്രെയിൻ മാർഗ്ഗം</span></h3>
+
+
+
+                    <p style="font-size: 0.9rem; color: var(--text-secondary);">
+
+
+
+                        <span class="lang-en">Nearest local station is Ettumanoor Railway Station (12 km). Nearest major junction is Kottayam Railway Station (24 km) with taxi connectivity.</span>
+
+
+
+                        <span class="lang-ml">ഏറ്റവും അടുത്തുള്ള റെയിൽവേ സ്റ്റേഷൻ ഏറ്റുമാനൂർ (12 കി.മീ) ആണ്. പ്രധാന ട്രെയിനുകൾ നിർത്തുന്ന കോട്ടയം റെയിൽവേ സ്റ്റേഷനിലേക്ക് 24 കി.മീ ദൂരമുണ്ട്.</span>
+
+
+
+                    </p>
+
+
+
+                </div>
+
+
+
+                <!-- Air -->
+
+
+
+                <div class="glass-panel" style="padding: 24px;">
+
+
+
+                    <div style="font-size: 2rem; color: var(--accent-emerald); margin-bottom: 16px;"><i class="fas fa-plane"></i></div>
+
+
+
+                    <h3 style="font-size: 1.2rem; margin-bottom: 10px;"><span class="lang-en">By Air</span><span class="lang-ml">വിമാന മാർഗ്ഗം</span></h3>
+
+
+
+                    <p style="font-size: 0.9rem; color: var(--text-secondary);">
+
+
+
+                        <span class="lang-en">Cochin International Airport (COK) is the nearest airport, located approximately 60 km away. Connected via SH 1 or MC Road.</span>
+
+
+
+                        <span class="lang-ml">ഏറ്റവും അടുത്തുള്ള വിമാനത്താവളം കൊച്ചി അന്താരാഷ്ട്ര വിമാനത്താവളം (നെടുമ്പാശ്ശേരി) ആണ്. ഇവിടെ നിന്നും സയൻസ് സിറ്റിയിലേക്ക് ഏകദേശം 60 കി.മീ ദൂരമുണ്ട്.</span>
+
+
+
+                    </p>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+    <!-- Group Booking Inquiry Form -->
+
+
+
+    <section class="section" id="booking">
+
+
+
+        <div class="container" style="max-width: 800px;">
+
+
+
+            <div class="glass-panel" style="border-color: rgba(0, 229, 255, 0.15); padding: 50px;">
+
+
+
+                <div style="text-align: center; margin-bottom: 40px;">
+
+
+
+                    <span class="badge"><span class="lang-en">Reservations</span><span class="lang-ml">മുൻകൂർ ബുക്കിംഗ്</span></span>
+
+
+
+                    <h2 style="font-family: var(--font-heading); margin-top: 10px;">
+
+
+
+                        <span class="lang-en">Group & School Tour Inquiry</span>
+
+
+
+                        <span class="lang-ml">സ്കൂൾ ഗ്രൂപ്പുകൾക്കായുള്ള അന്വേഷണ ഫോം</span>
+
+
+
+                    </h2>
+
+
+
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 10px;">
+
+
+
+                        <span class="lang-en">Planning to bring a school batch or tourist group? Submit an inquiry to arrange concessions and check availability.</span>
+
+
+
+                        <span class="lang-ml">നിങ്ങളുടെ സ്കൂളിൽ നിന്നോ സ്ഥാപനങ്ങളിൽ നിന്നോ ഒരുമിച്ച് സന്ദർശിക്കാൻ താല്പര്യമുണ്ടെങ്കിൽ താഴെയുള്ള ഫോം പൂരിപ്പിച്ചു അയക്കുക.</span>
+
+
+
+                    </p>
+
+
+
+                </div>
+
+
+
+                
+
+
+
+                <form id="inquiry-form">
+
+
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+
+
+
+                        <div>
+
+
+
+                            <label class="form-label" for="inq-name"><span class="lang-en">Contact Coordinator Name</span><span class="lang-ml">കോർഡിനേറ്ററുടെ പേര്</span></label>
+
+
+
+                            <input type="text" id="inq-name" class="form-control" placeholder="e.g. Prof. Mathew Varghese" required>
+
+
+
+                        </div>
+
+
+
+                        <div>
+
+
+
+                            <label class="form-label" for="inq-org"><span class="lang-en">Institution / School Name</span><span class="lang-ml">സ്കൂൾ / സ്ഥാപനത്തിന്റെ പേര്</span></label>
+
+
+
+                            <input type="text" id="inq-org" class="form-control" placeholder="e.g. St. Marys School Kottayam" required>
+
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+
+
+
+                        <div>
+
+
+
+                            <label class="form-label" for="inq-email"><span class="lang-en">Email Address</span><span class="lang-ml">ഇമെയിൽ വിലാസം</span></label>
+
+
+
+                            <input type="email" id="inq-email" class="form-control" placeholder="name@school.com" required>
+
+
+
+                        </div>
+
+
+
+                        <div>
+
+
+
+                            <label class="form-label" for="inq-phone"><span class="lang-en">Contact Mobile Number</span><span class="lang-ml">ഫോൺ നമ്പർ</span></label>
+
+
+
+                            <input type="tel" id="inq-phone" class="form-control" placeholder="e.g. +91 9876543210" required>
+
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+
+
+
+                        <div>
+
+
+
+                            <label class="form-label" for="inq-qty"><span class="lang-en">Estimated Total Headcount</span><span class="lang-ml">സന്ദർശകരുടെ എണ്ണം</span></label>
+
+
+
+                            <input type="number" id="inq-qty" class="form-control" min="1" placeholder="e.g. 45" required>
+
+
+
+                        </div>
+
+
+
+                        <div>
+
+
+
+                            <label class="form-label" for="inq-date"><span class="lang-en">Date of Proposed Visit</span><span class="lang-ml">സന്ദർശിക്കാൻ ഉദ്ദേശിക്കുന്ന തീയതി</span></label>
+
+
+
+                            <input type="date" id="inq-date" class="form-control" required>
+
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+
+
+                        <label class="form-label" for="inq-notes"><span class="lang-en">Special Requests / Requirements</span><span class="lang-ml">മറ്റ് ആവശ്യങ്ങൾ</span></label>
+
+
+
+                        <textarea id="inq-notes" class="form-control" placeholder="Specify if 3D movie shows or special Activity Centre visits are requested..."></textarea>
+
+
+
+                    </div>
+
+
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
+
+
+
+                        <span class="lang-en">Submit Inquiry Request</span><span class="lang-ml">ബുക്കിംഗ് അന്വേഷണം സമർപ്പിക്കുക</span>
+
+
+
+                        <i class="fas fa-paper-plane"></i>
+
+
+
+                    </button>
+
+
+
+                </form>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+    <!-- Frequently Asked Questions (FAQ) -->
+
+
+
+    <section class="section" style="border-top: 1px solid var(--border-color); background: rgba(255, 255, 255, 0.01);">
+
+
+
+        <div class="container" style="max-width: 800px;">
+
+
+
+            <div class="section-header">
+
+
+
+                <span class="badge badge-purple"><span class="lang-en">FAQ</span><span class="lang-ml">ചോദ്യോത്തരങ്ങൾ</span></span>
+
+
+
+                <h2><span class="lang-en">Frequently Asked Questions</span><span class="lang-ml">പതിവ് ചോദ്യങ്ങൾ</span></h2>
+
+
+
+            </div>
+
+
+
+            <div class="faq-container">
+
+
+
+                <!-- FAQ 1 -->
+
+
+
+                <div class="faq-item">
+
+
+
+                    <div class="faq-question">
+
+
+
+                        <span><span class="lang-en">Is parking available on site?</span><span class="lang-ml">വാഹനങ്ങൾ പാർക്ക് ചെയ്യാനുള്ള സൗകര്യം ഉണ്ടോ?</span></span>
+
+
+
+                        <i class="fas fa-chevron-down"></i>
+
+
+
+                    </div>
+
+
+
+                    <div class="faq-answer">
+
+
+
+                        <span class="lang-en">Yes, the Science City campus has a very spacious dedicated parking area capable of hosting multiple school buses, vans, and private tourist cars at a nominal daily charge.</span>
+
+
+
+                        <span class="lang-ml">അതെ, സയൻസ് സിറ്റി കോമ്പൗണ്ടിനുള്ളിൽ തന്നെ സ്കൂൾ ബസുകൾ, ടൂറിസ്റ്റ് വാനുകൾ, കാറുകൾ എന്നിവ പാർക്ക് ചെയ്യാനുള്ള വിശാലമായ പാർക്കിംഗ് സൗകര്യം ലഭ്യമാണ്.</span>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+                <!-- FAQ 2 -->
+
+
+
+                <div class="faq-item">
+
+
+
+                    <div class="faq-question">
+
+
+
+                        <span><span class="lang-en">Are school concessions available?</span><span class="lang-ml">സ്കൂൾ ഗ്രൂപ്പുകൾക്ക് കൺസെഷൻ ലഭിക്കുമോ?</span></span>
+
+
+
+                        <i class="fas fa-chevron-down"></i>
+
+
+
+                    </div>
+
+
+
+                    <div class="faq-answer">
+
+
+
+                        <span class="lang-en">Yes! School students can enjoy a concession rate of ₹30 for each entry (both Galleries and 3D Theatre). To claim this rate, an official letter signed by the Head of the School (Headmaster/Principal) must be presented at the ticket counter. There is no minimum group size requirement. Any student (even older than 12) can claim this concession rate if they have an official school letter; otherwise, children aged 3 to 12 years are classified under regular child rates (₹30 each).</span>
+
+
+
+                        <span class="lang-ml"><span class="lang-ml">അതെ! സ്കൂൾ വിദ്യാർത്ഥികൾക്ക് ഗാലറികൾക്കും 3D തിയേറ്റർ പ്രവേശനത്തിനും 30 രൂപ കൺസെഷൻ നിരക്കിൽ ടിക്കറ്റുകൾ ലഭിക്കും. ഈ നിരക്ക് ലഭിക്കുന്നതിനായി സ്കൂൾ മേധാവി (ഹെഡ്മാസ്റ്റർ/പ്രിൻസിപ്പൽ) ഒപ്പിട്ട ഔദ്യോഗിക സാക്ഷ്യപത്രം ടിക്കറ്റ് കൗണ്ടറിൽ ഹാജരാക്കേണ്ടതാണ്. ഇതിനായി വിദ്യാർത്ഥികളുടെ കുറഞ്ഞ എണ്ണത്തിൽ നിബന്ധനയില്ല. ഒപ്പം 3 മുതൽ 12 വയസ്സ് വരെയുള്ള കുട്ടികൾക്ക് ഔദ്യോഗിക ലെറ്റർ ഇല്ലെങ്കിലും ചൈൽഡ് നിരക്കായ 30 രൂപ ലഭ്യമായിരിക്കും.</span>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+                <!-- FAQ 3 -->
+
+
+
+                <div class="faq-item">
+
+
+
+                    <div class="faq-question">
+
+
+
+                        <span><span class="lang-en">Is there a cafeteria inside the campus?</span><span class="lang-ml">ഭക്ഷണശാലകൾ ലഭ്യമാണോ?</span></span>
+
+
+
+                        <i class="fas fa-chevron-down"></i>
+
+
+
+                    </div>
+
+
+
+                    <div class="faq-answer">
+
+
+
+                        <span class="lang-en">Yes, a light refreshment cafeteria operates on the campus, offering drinking water, juices, tea, coffee, snacks, and light meals for the convenience of travelers.</span>
+
+
+
+                        <span class="lang-ml">അതെ, കുടിവെള്ളം, ചായ, ലഘുഭക്ഷണങ്ങൾ, ലളിതമായ ഉച്ചഭക്ഷണം എന്നിവ ലഭിക്കുന്ന ഒരു ലഘുഭക്ഷണശാല സയൻസ് സിറ്റി ക്യാമ്പസിൽ പ്രവർത്തിക്കുന്നുണ്ട്.</span>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+                <!-- FAQ 4 -->
+
+
+
+                <div class="faq-item">
+
+
+
+                    <div class="faq-question">
+
+
+
+                        <span><span class="lang-en">Are cameras allowed inside the galleries?</span><span class="lang-ml">ക്യാമറകൾ അനുവദിക്കുമോ?</span></span>
+
+
+
+                        <i class="fas fa-chevron-down"></i>
+
+
+
+                    </div>
+
+
+
+                    <div class="faq-answer">
+
+
+
+                        <span class="lang-en">Still photography using mobile phones is allowed for personal use. Professional DSLR cameras and video recording inside the galleries require special permissions and additional tickets from the counter. Flash photography is prohibited inside the marine habitat zone.</span>
+
+
+
+                        <span class="lang-ml">വ്യക്തിപരമായ ആവശ്യങ്ങൾക്കായി മൊബൈൽ ഫോണുകളിൽ ഫോട്ടോ എടുക്കാൻ അനുവാദമുണ്ട്. എന്നാൽ പ്രൊഫഷണൽ ക്യാമറകൾ ഉപയോഗിക്കുന്നതിനും വീഡിയോകൾ റെക്കോർഡ് ചെയ്യുന്നതിനും കൗണ്ടറിൽ നിന്നും പ്രത്യേകം ടിക്കറ്റ് എടുക്കേണ്ടതുണ്ട്.</span>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+                
+
+
+
+                <!-- FAQ 5 -->
+
+
+
+                <div class="faq-item">
+
+
+
+                    <div class="faq-question">
+
+
+
+                        <span><span class="lang-en">How much time is required to see the full science city?</span><span class="lang-ml">സയൻസ് സിറ്റി മുഴുവൻ കാണാൻ എത്ര സമയമെടുക്കും?</span></span>
+
+
+
+                        <i class="fas fa-chevron-down"></i>
+
+
+
+                    </div>
+
+
+
+                    <div class="faq-answer">
+
+
+
+                        <span class="lang-en">To fully interact with all displays inside the galleries, stroll around the Outdoor Science Park, visit the Dinosaur Enclave, and watch a 3D movie show, we highly recommend setting aside 3 to 4 hours.</span>
+
+
+
+                        <span class="lang-ml">ഗ്യാലറികളിലെ ഉപകരണങ്ങൾ പ്രവർത്തിപ്പിച്ചു നോക്കാനും ഔട്ട്ഡോർ പാർക്ക്, ദിനോസർ എൻക്ലേവ് എന്നിവ കാണാനും ഒരു 3D തിയേറ്റർ ഷോ കാണാനും കുറഞ്ഞത് 3 മുതൽ 4 മണിക്കൂർ വരെ സമയം ആവശ്യമാണ്.</span>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+    <!-- Footer -->
+
+
+
+    <footer>
+
+
+
+        <div class="container footer-grid">
+
+
+
+            <div class="footer-col footer-about">
+
+
+
+                <a href="./index.html" class="logo" style="margin-bottom: 20px; display: inline-flex;">
+
+
+
+                    <img src="./assets/images/ksstm_logo.png?v=3" alt="KSSTM Logo" class="logo-img">
+
+
+
+                    <div>
+
+
+
+                        <span class="logo-text">SCIENCE CITY</span>
+
+
+
+                        <span class="logo-sub">Kottayam</span>
+
+
+
+                    </div>
+
+
+
+                </a>
+
+
+
+                <p>
+
+
+
+                    <span class="lang-en">A premium center fostering curiosity, hands-on scientific experiences, and space research among students and families.</span>
+
+
+
+                    <span class="lang-ml">ശാസ്ത്ര താല്പര്യങ്ങൾ വളർത്താനും പരീക്ഷണങ്ങൾ സ്വയം ചെയ്യാനുമായി കോട്ടയത്ത് ഒരുക്കിയിട്ടുള്ള അത്യാധുനിക സയൻസ് സെന്റർ.</span>
+
+
+
+                </p>
+
+
+
+                <div class="social-links">
+
+
+
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+
+
+
+                    <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+
+
+
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+
+
+
+                    <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+            
+
+
+
+            <div class="footer-col">
+
+
+
+                <h4><span class="lang-en">Quick Links</span><span class="lang-ml">പെട്ടെന്നുള്ള ലിങ്കുകൾ</span></h4>
+
+
+
+                <ul class="footer-links">
+
+
+
+                    <li><a href="./index.html"><span class="lang-en">Home</span><span class="lang-ml">ഹോം</span></a></li>
+
+
+
+                    <li><a href="./exhibits.html"><span class="lang-en">Galleries</span><span class="lang-ml">പ്രദർശനങ്ങൾ</span></a></li>
+
+
+
+                    <li><a href="./events.html"><span class="lang-en">Events</span><span class="lang-ml">പരിപാടികൾ</span></a></li>
+
+
+
+                    <li><a href="./activity.html"><span class="lang-en">Activity Centre</span><span class="lang-ml">ആക്ടിവിറ്റി സെന്റർ</span></a></li>
+
+
+
+                    <li><a href="./visit.html"><span class="lang-en">Visitor Details</span><span class="lang-ml">സന്ദർശക വിവരങ്ങൾ</span></a></li>
+
+
+
+                </ul>
+
+
+
+            </div>
+
+
+
+            
+
+
+
+            <div class="footer-col">
+
+
+
+                <h4><span class="lang-en">Timings</span><span class="lang-ml">സമയവിവരം</span></h4>
+
+
+
+                <ul class="footer-links" style="color: var(--text-secondary);">
+
+
+
+                    <li style="margin-bottom: 8px;">
+
+
+
+                        <strong><span class="lang-en">Tue - Sun:</span><span class="lang-ml">ചൊവ്വ - ഞായർ:</span></strong><br>
+
+
+
+                        10:00 AM - 05:00 PM
+
+
+
+                    </li>
+
+
+
+                    <li style="margin-bottom: 8px; color: var(--secondary-purple);">
+
+
+
+                        <strong><span class="lang-en">Monday:</span><span class="lang-ml">തിങ്കളാഴ്ച:</span></strong><br>
+
+
+
+                        <span class="lang-en">Closed (Weekly Holiday)</span><span class="lang-ml">അവധി ദിവസം</span>
+
+
+
+                    </li>
+
+
+
+                    <li>
+
+
+
+                        <span class="lang-en">Ticket Counter closes at 04:15 PM</span>
+
+
+
+                        <span class="lang-ml">ടിക്കറ്റ് കൗണ്ടർ 4:15-ന് അടയ്ക്കും</span>
+
+
+
+                    </li>
+
+
+
+                </ul>
+
+
+
+            </div>
+
+
+
+            
+
+
+
+            <div class="footer-col footer-contact">
+
+
+
+                <h4><span class="lang-en">Contact Us</span><span class="lang-ml">ബന്ധപ്പെടുക</span></h4>
+
+
+
+                <p>
+
+
+
+                    <i class="fas fa-map-marker-alt icon"></i>
+
+
+
+                    <span>
+
+
+
+                        <span class="lang-en">Kerala Science City, SH 1, Kozha, Kuravilangad, Kottayam, Kerala - 686636</span>
+
+
+
+                        <span class="lang-ml">കേരള സയൻസ് സിറ്റി, കോഴ, കുറുപ്പന്തറ-കുറവിലങ്ങാട് റോഡ്, കോട്ടയം - 686636</span>
+
+
+
+                    </span>
+
+
+
+                </p>
+
+
+
+                <p>
+
+
+
+                    <i class="fas fa-phone-alt icon"></i>
+
+
+
+                    <span>04822 232001</span>
+
+
+
+                </p>
+
+
+
+                <p>
+
+
+
+                    <i class="fas fa-envelope icon"></i>
+
+
+
+                    <span>keralasciencecity@gmail.com</span>
+
+
+
+                </p>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+        
+
+
+
+        <div class="container footer-bottom">
+
+
+
+            <p>&copy; 2026 Kerala Science City Kottayam. Developed by KSSTM. All Rights Reserved.</p>
+
+
+
+            <p>
+
+
+
+                <a href="./visit.html#terms" style="margin-right: 16px;"><span class="lang-en">Terms of Use</span><span class="lang-ml">ഉപാധികൾ</span></a>
+
+
+
+                <a href="./visit.html#privacy"><span class="lang-en">Privacy Policy</span><span class="lang-ml">സ്വകാര്യതാനയം</span></a>
+
+
+
+            </p>
+
+
+
+        </div>
+
+
+
+    </footer>
+
+
+
+    <!-- Logic Script -->
+
+
+
+    <script src="./main.js"></script>
+
+
+
+    
+
+
+
+    <!-- FAQ Toggle Handler -->
+
+
+
+    <script>
+
+
+
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+
+
+        faqQuestions.forEach(q => {
+
+
+
+            q.addEventListener('click', () => {
+
+
+
+                const item = q.parentElement;
+
+
+
+                item.classList.toggle('active');
+
+
+
+            });
+
+
+
+        });
+
+
+
+    </script>
+
+
+
+</body>
+
+
+
+</html>
+
+
+

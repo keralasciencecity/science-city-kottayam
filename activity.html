@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Activity Centre & Tinkering Corner | Kerala Science City Kottayam</title>
+
+    <meta name="description" content="Tinker, design, build and learn at the Activity Centre inside Kerala Science City Kottayam. Register for Arduino workshops, 3D printing classes and robotics bootcamps.">
+
+    <!-- Stylesheets -->
+
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Font Awesome Icons -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+
+        .banner {
+
+            padding: 160px 0 80px 0;
+
+            background: linear-gradient(180deg, rgba(7, 10, 19, 0.4) 0%, var(--bg-dark) 100%), 
+
+                        url('./assets/images/activity_centre_entrance.jpg') center/cover no-repeat;
+
+            border-bottom: 1px solid var(--border-color);
+
+            text-align: center;
+
+        }
+
+        
+
+        .facility-list {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 24px;
+
+            margin-top: 40px;
+
+        }
+
+        .facility-card {
+
+            padding: 30px;
+
+        }
+
+        .facility-icon {
+
+            font-size: 2.2rem;
+
+            color: var(--primary-cyan);
+
+            margin-bottom: 20px;
+
+        }
+
+        .facility-card-purple .facility-icon {
+
+            color: var(--secondary-purple);
+
+        }
+
+        
+
+        /* Grid split for form and text */
+
+        .register-split {
+
+            display: grid;
+
+            grid-template-columns: 1.2fr 1fr;
+
+            gap: 60px;
+
+            align-items: flex-start;
+
+        }
+
+        
+
+        @media (max-width: 992px) {
+
+            .facility-list {
+
+                grid-template-columns: repeat(2, 1fr);
+
+            }
+
+            .register-split {
+
+                grid-template-columns: 1fr;
+
+                gap: 40px;
+
+            }
+
+        }
+
+        @media (max-width: 576px) {
+
+            .facility-list {
+
+                grid-template-columns: 1fr;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body class="lang-en">
+
+    <!-- Sticky Header -->
+
+    <header>
+
+        <div class="container navbar">
+
+            <a href="./index.html" class="logo">
+
+                <img src="./assets/images/ksstm_logo.png?v=3" alt="KSSTM Logo" class="logo-img">
+
+                <div>
+
+                    <span class="logo-text">SCIENCE CITY</span>
+
+                    <span class="logo-sub">Kottayam</span>
+
+                </div>
+
+            </a>
+
+            
+
+            <ul class="nav-links">
+
+                <li><a href="./index.html"><span class="lang-en">Home</span><span class="lang-ml">ഹോം</span></a></li>
+
+                <li><a href="./exhibits.html"><span class="lang-en">Exhibits</span><span class="lang-ml">പ്രദർശനങ്ങൾ</span></a></li>
+
+                <li><a href="./events.html"><span class="lang-en">Events</span><span class="lang-ml">പരിപാടികൾ</span></a></li>
+
+                <li><a href="./activity.html" class="active"><span class="lang-en">Activity Centre</span><span class="lang-ml">ഇന്നൊവേഷൻ ഹബ്</span></a></li>
+
+                <li><a href="./visit.html"><span class="lang-en">Visit</span><span class="lang-ml">സന്ദർശനം</span></a></li>
+
+            </ul>
+
+            <div class="nav-controls">
+
+                <button class="lang-switch" id="lang-toggle-btn" aria-label="Toggle Language">
+
+                    <i class="fas fa-globe"></i> മലയാളം
+
+                </button>
+
+                <button class="mobile-menu-toggle" aria-label="Toggle Mobile Menu">
+
+                    <i class="fas fa-bars"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Banner -->
+
+    <section class="banner">
+
+        <div class="container">
+
+            <span class="badge badge-emerald"><span class="lang-en">Tinkering Space</span><span class="lang-ml">നിർമ്മാണ ലബോറട്ടറി</span></span>
+
+            <h1 style="font-size: 3rem; margin-top: 10px;">
+
+                <span class="lang-en">Activity Centre & Tinkering Corner</span>
+
+                <span class="lang-ml">ആക്ടിവിറ്റി സെന്റർ & ടിങ്കറിങ് കോർണർ</span>
+
+            </h1>
+
+            <p style="color: var(--text-secondary); max-width: 600px; margin: 16px auto 0 auto;">
+
+                <span class="lang-en">An activity corner equipped with maker-tools, basic science kits, and programming stations to turn scientific theories into physical understanding.</span>
+
+                <span class="lang-ml">പാഠപുസ്തകങ്ങളിൽ പഠിക്കുന്ന ശാസ്ത്ര ആശയങ്ങൾ പരീക്ഷണങ്ങളിലൂടെയും ലളിതമായ നിർമ്മാണങ്ങളിലൂടെയും പ്രായോഗികമായി മനസ്സിലാക്കാനുള്ള ഇടം.</span>
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Overview Section -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: center; margin-bottom: 80px;">
+
+                <div>
+
+                    <span class="badge badge-purple"><span class="lang-en">Tinker & Build</span><span class="lang-ml">ചിന്തിക്കാം നിർമ്മിക്കാം</span></span>
+
+                    <h2 style="font-size: 2.2rem; margin-bottom: 20px; line-height: 1.2;">
+
+                        <span class="lang-en">Where Young Minds Begin Exploring</span>
+
+                        <span class="lang-ml">യുവമനസ്സുകൾ ശാസ്ത്രം തൊട്ടറിയുന്ന ഇടം</span>
+
+                    </h2>
+
+                    <p class="lang-en" style="color: var(--text-secondary); margin-bottom: 16px;">
+
+                        The Activity Centre is designed to cultivate a culture of inquiry, innovation, and practical learning among high school and college students. Under the guidance of facilitators and mentors, visitors can build their own mechanical constructs, analyze smart circuitry, and write microcontroller codes.
+
+                    </p>
+
+                    <p class="lang-en" style="color: var(--text-secondary);">
+
+                        Equipped with basic raw materials, mechanical assembly kits, and electronic kits, the Hub offers students a sandbox environment to fail, iterate, and succeed.
+
+                    </p>
+
+                    
+
+                    <p class="lang-ml" style="color: var(--text-secondary); margin-bottom: 16px;">
+
+                        കേരള സയൻസ് സിറ്റിയുടെ ഭാഗമായി പ്രവർത്തിക്കുന്ന ഇന്നൊവേഷൻ ഹബ്ബ് വിദ്യാർത്ഥികളിൽ പരീക്ഷണ താല്പര്യവും ഗവേഷണ അഭിരുചിയും വളർത്തിയെടുക്കാൻ സഹായിക്കുന്നു. ഇവിടെ വിദ്യാർത്ഥികൾക്ക് വിദഗ്ദ്ധരായ മെന്റർമാരുടെ സഹായത്തോടെ റോബോട്ടിക്സ്, ഇലക്ട്രോണിക്സ് എന്നിവയിൽ പ്രോജക്റ്റുകൾ ചെയ്യാം.
+
+                    </p>
+
+                    <p class="lang-ml" style="color: var(--text-secondary);">
+
+                        കമ്പ്യൂട്ടർ പ്രോഗ്രാമിങ്, 3D പ്രിന്റിങ്, സർക്യൂട്ട് ബോർഡ് മെറ്റീരിയലുകൾ എന്നിവ ഉപയോഗിച്ച് കുട്ടികൾക്ക് തങ്ങളുടെ ആശയങ്ങൾ യഥാർത്ഥ മോഡലുകളായി നിർമ്മിച്ചെടുക്കാനുള്ള സൗകര്യം ഇവിടെ ഒരുക്കിയിട്ടുണ്ട്.
+
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <div class="glass-panel" style="padding: 12px; border-color: rgba(255,255,255,0.06);">
+
+                        <img src="./assets/images/activity_room_real.jpg" alt="Students Working in Maker Space" style="width: 100%; height: auto; border-radius: 12px; display: block;">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Facilities Grid -->
+
+            <div class="section-header">
+
+                <span class="badge"><span class="lang-en">Lab Stations</span><span class="lang-ml">ലാബ് സൗകര്യങ്ങൾ</span></span>
+
+                <h2><span class="lang-en">Tinkering Station Offerings</span><span class="lang-ml"> ലഭ്യമായ പ്രായോഗിക കോണുകൾ</span></h2>
+
+            </div>
+
+            
+
+            <div class="facility-list">
+            <!-- Station 1: Electronics & Microcontrollers -->
+            <div class="glass-panel facility-card">
+                <div class="facility-icon"><i class="fas fa-microchip"></i></div>
+                <h3 style="font-size: 1.25rem; margin-bottom: 12px;">
+                    <span class="lang-en">Electronics & Microcontrollers</span>
+                    <span class="lang-ml">ഇലക്ട്രോണിക്സ് & മൈക്രോകൺട്രോളറുകൾ</span>
+                </h3>
+                <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                    <span class="lang-en">Equipped with Arduino chips, Raspberry Pi setups, light sensors, motors, and breadboards for learning programming and circuitry.</span>
+                    <span class="lang-ml">അർഡുനോ ചിപ്പുകൾ, റാസ്ബെറി പൈ, സെൻസറുകൾ, മോട്ടോറുകൾ എന്നിവ ഉപയോഗിച്ചുള്ള സർക്യൂട്ട് നിർമ്മാണം.</span>
+                </p>
+            </div>
+
+            <!-- Station 2: Chemistry Experiment Facility -->
+            <div class="glass-panel facility-card facility-card-purple">
+                <div class="facility-icon"><i class="fas fa-flask"></i></div>
+                <h3 style="font-size: 1.25rem; margin-bottom: 12px;">
+                    <span class="lang-en">Chemistry Experiment Facility</span>
+                    <span class="lang-ml">കെമിസ്ട്രി പരീക്ഷണ സൗകര്യം</span>
+                </h3>
+                <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                    <span class="lang-en">Basic laboratory apparatus, test tubes, indicators, and safe chemical solutions to explore molecular reactions and bonding.</span>
+                    <span class="lang-ml">മോളിക്യുലാർ പ്രതിപ്രവർത്തനങ്ങൾ പരിശോധിക്കുന്നതിനുള്ള ടെസ്റ്റ് ട്യൂബുകൾ, സുരക്ഷിതമായ ലായനികൾ അടങ്ങിയ കെമിസ്ട്രി ലാബ്.</span>
+                </p>
+            </div>
+
+            <!-- Station 3: Biology & Microscopes -->
+            <div class="glass-panel facility-card">
+                <div class="facility-icon"><i class="fas fa-microscope"></i></div>
+                <h3 style="font-size: 1.25rem; margin-bottom: 12px;">
+                    <span class="lang-en">Microscope & Biology Lab</span>
+                    <span class="lang-ml">ബയോളജി & മൈക്രോസ്കോപ്പ് പരീക്ഷണങ്ങൾ</span>
+                </h3>
+                <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                    <span class="lang-en">High-resolution compound microscopes to analyze biological cell structures, slide specimens, and micro-organisms.</span>
+                    <span class="lang-ml">കോശങ്ങളുടെ ഘടനയും സൂക്ഷ്മാണുക്കളെയും നിരീക്ഷിക്കുന്നതിനുള്ള അത്യാധുനിക കോമ്പൗണ്ട് മൈക്രോസ്കോപ്പുകൾ.</span>
+                </p>
+            </div>
+
+            <!-- Station 4: Electronics Soldering Station -->
+            <div class="glass-panel facility-card facility-card-purple">
+                <div class="facility-icon"><i class="fas fa-bolt"></i></div>
+                <h3 style="font-size: 1.25rem; margin-bottom: 12px;">
+                    <span class="lang-en">Electronics Soldering Facility</span>
+                    <span class="lang-ml">സോൾഡറിങ് സ്റ്റേഷൻ</span>
+                </h3>
+                <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                    <span class="lang-en">Dedicated soldering irons, safety stands, solder wire, and multimeters to assemble and test permanent circuit boards.</span>
+                    <span class="lang-ml">സർക്യൂട്ടുകൾ കൂട്ടിയോജിപ്പിക്കുന്നതിനുള്ള സോൾഡറിങ് ഉപകരണങ്ങൾ, സുരക്ഷാ സ്റ്റാൻഡുകൾ, ഡിജിറ്റൽ മൾട്ടിമീറ്ററുകൾ.</span>
+                </p>
+            </div>
+
+            <!-- Station 5: Computing Stations -->
+            <div class="glass-panel facility-card">
+                <div class="facility-icon"><i class="fas fa-laptop"></i></div>
+                <h3 style="font-size: 1.25rem; margin-bottom: 12px;">
+                    <span class="lang-en">Computing & Coding Terminals</span>
+                    <span class="lang-ml">കമ്പ്യൂട്ടിംഗ് സ്റ്റേഷനുകൾ</span>
+                </h3>
+                <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                    <span class="lang-en">Desktop computers pre-loaded with Arduino IDE, logic simulators, and educational compilers for programming controls.</span>
+                    <span class="lang-ml">പ്രോഗ്രാമിങ് പഠിക്കുന്നതിനും സിമുലേഷനുകൾക്കുമായി അർഡുനോ IDE ഇൻസ്റ്റാൾ ചെയ്ത കമ്പ്യൂട്ടറുകൾ.</span>
+                </p>
+            </div>
+
+            <!-- Station 6: Telescope Sky Observation -->
+            <div class="glass-panel facility-card facility-card-purple">
+                <div class="facility-icon"><i class="fas fa-star"></i></div>
+                <h3 style="font-size: 1.25rem; margin-bottom: 12px;">
+                    <span class="lang-en">Telescopes for Sky Observation</span>
+                    <span class="lang-ml">അസ്ട്രോണമിക്കൽ ദൂരദർശിനി</span>
+                </h3>
+                <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                    <span class="lang-en">Advanced astronomical refracting telescopes for moon sightings, planetary tracking, and astronomy night sky workshops.</span>
+                    <span class="lang-ml">ഗ്രഹങ്ങളെയും നക്ഷത്രങ്ങളെയും വ്യക്തമായി നിരീക്ഷിക്കുന്നതിനായുള്ള അസ്ട്രോണമിക്കൽ ദൂരദർശിനികൾ.</span>
+                </p>
+            </div>
+        </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="container footer-grid">
+
+            <div class="footer-col footer-about">
+
+                <a href="./index.html" class="logo" style="margin-bottom: 20px; display: inline-flex;">
+
+                    <img src="./assets/images/ksstm_logo.png?v=3" alt="KSSTM Logo" class="logo-img">
+
+                    <div>
+
+                        <span class="logo-text">SCIENCE CITY</span>
+
+                        <span class="logo-sub">Kottayam</span>
+
+                    </div>
+
+                </a>
+
+                <p>
+
+                    <span class="lang-en">A premium center fostering curiosity, hands-on scientific experiences, and space research among students and families.</span>
+
+                    <span class="lang-ml">ശാസ്ത്ര താല്പര്യങ്ങൾ വളർത്താനും പരീക്ഷണങ്ങൾ സ്വയം ചെയ്യാനുമായി കോട്ടയത്ത് ഒരുക്കിയിട്ടുള്ള അത്യാധുനിക സയൻസ് സെന്റർ.</span>
+
+                </p>
+
+                <div class="social-links">
+
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+
+                </div>
+
+            </div>
+
+            
+
+            <div class="footer-col">
+
+                <h4><span class="lang-en">Quick Links</span><span class="lang-ml">പെട്ടെന്നുള്ള ലിങ്കുകൾ</span></h4>
+
+                <ul class="footer-links">
+
+                    <li><a href="./index.html"><span class="lang-en">Home</span><span class="lang-ml">ഹോം</span></a></li>
+
+                    <li><a href="./exhibits.html"><span class="lang-en">Galleries</span><span class="lang-ml">പ്രദർശനങ്ങൾ</span></a></li>
+
+                    <li><a href="./events.html"><span class="lang-en">Events</span><span class="lang-ml">പരിപാടികൾ</span></a></li>
+
+                    <li><a href="./activity.html"><span class="lang-en">Activity Centre</span><span class="lang-ml">ആക്ടിവിറ്റി സെന്റർ</span></a></li>
+
+                    <li><a href="./visit.html"><span class="lang-en">Visitor Details</span><span class="lang-ml">സന്ദർശക വിവരങ്ങൾ</span></a></li>
+
+                </ul>
+
+            </div>
+
+            
+
+            <div class="footer-col">
+
+                <h4><span class="lang-en">Timings</span><span class="lang-ml">സമയവിവരം</span></h4>
+
+                <ul class="footer-links" style="color: var(--text-secondary);">
+
+                    <li style="margin-bottom: 8px;">
+
+                        <strong><span class="lang-en">Tue - Sun:</span><span class="lang-ml">ചൊവ്വ - ഞായർ:</span></strong><br>
+
+                        10:00 AM - 05:00 PM
+
+                    </li>
+
+                    <li style="margin-bottom: 8px; color: var(--secondary-purple);">
+
+                        <strong><span class="lang-en">Monday:</span><span class="lang-ml">തിങ്കളാഴ്ച:</span></strong><br>
+
+                        <span class="lang-en">Closed (Weekly Holiday)</span><span class="lang-ml">അവധി ദിവസം</span>
+
+                    </li>
+
+                    <li>
+
+                        <span class="lang-en">Ticket Counter closes at 04:15 PM</span>
+
+                        <span class="lang-ml">ടിക്കറ്റ് കൗണ്ടർ 4:15-ന് അടയ്ക്കും</span>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            
+
+            <div class="footer-col footer-contact">
+
+                <h4><span class="lang-en">Contact Us</span><span class="lang-ml">ബന്ധപ്പെടുക</span></h4>
+
+                <p>
+
+                    <i class="fas fa-map-marker-alt icon"></i>
+
+                    <span>
+
+                        <span class="lang-en">Kerala Science City, SH 1, Kozha, Kuravilangad, Kottayam, Kerala - 686636</span>
+
+                        <span class="lang-ml">കേരള സയൻസ് സിറ്റി, കോഴ, കുറുപ്പന്തറ-കുറവിലങ്ങാട് റോഡ്, കോട്ടയം - 686636</span>
+
+                    </span>
+
+                </p>
+
+                <p>
+
+                    <i class="fas fa-phone-alt icon"></i>
+
+                    <span>04822 232001</span>
+
+                </p>
+
+                <p>
+
+                    <i class="fas fa-envelope icon"></i>
+
+                    <span>keralasciencecity@gmail.com</span>
+
+                </p>
+
+            </div>
+
+        </div>
+
+        
+
+        <div class="container footer-bottom">
+
+            <p>&copy; 2026 Kerala Science City Kottayam. Developed by KSSTM. All Rights Reserved.</p>
+
+            <p>
+
+                <a href="./visit.html#terms" style="margin-right: 16px;"><span class="lang-en">Terms of Use</span><span class="lang-ml">ഉപാധികൾ</span></a>
+
+                <a href="./visit.html#privacy"><span class="lang-en">Privacy Policy</span><span class="lang-ml">സ്വകാര്യതാനയം</span></a>
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- Logic Script -->
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
+
