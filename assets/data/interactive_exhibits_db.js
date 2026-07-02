@@ -14,6 +14,22 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     "jumping-disc": {
 
 
@@ -30,7 +46,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         "title": {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -62,7 +110,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             "ml": "ചാടുന്ന വളയം"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -94,7 +174,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         "category": "physics",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -126,7 +238,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             "quick": {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -158,7 +302,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 "ml": "<h3>ഇതൊന്ന് പറത്തി നോക്കൂ!</h3>\nചുവന്ന ബട്ടൺ അമർത്തി ഈ ലോഹവളയം മുകളിലേക്ക് പറക്കുന്നത് നോക്കൂ! ഇതെങ്ങനെയാണ് വായുവിൽ ഒഴുകി നടക്കുന്നത്? ഇതൊരു മാന്ത്രികവിദ്യയല്ല, കാന്തികശക്തിയാണ്! താഴെയുള്ള അദൃശ്യമായ ഒരു കാന്തികശക്തി ഈ വളയത്തെ മുകളിലേക്ക് തള്ളുകയും വായുവിൽ നിർത്തിക്കൊടുക്കുകയും ചെയ്യുന്നു. നിങ്ങൾ ബട്ടൺ അമർത്തിപ്പിടിക്കുന്നത്രയും നേരം ഇത് താഴെ വീഴില്ല!\n\n<h3>ഇത് നമ്മൾ എവിടെയാണ് കാണുന്നത്?</h3>\nമാഗ്ലെവ് (Maglev) ട്രെയിനുകൾ ഇതിന് ഉദാഹരണമാണ്! അവ വായുവിൽ ഒഴുകി നടക്കാൻ കാന്തികബലം ഉപയോഗിക്കുന്നു. അതിനാൽ വേഗത കൂടുതലായിരിക്കും."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -190,7 +366,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             "how": {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -222,7 +430,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 "ml": "<h3>വികർഷണത്തിന്റെ ശക്തി</h3>\nബട്ടൺ അമർത്തുമ്പോൾ അലുമിനിയം വളയം എങ്ങനെയാണ് മുകളിലേക്ക് ഉയരുന്നതെന്ന് നിരീക്ഷിക്കുക. താഴെയുള്ള കോയിലിലൂടെ വൈദ്യുതി കടന്നുപോകുമ്പോൾ ഒരു കാന്തികക്ഷേത്രം രൂപപ്പെടുന്നു. ഇത് അലുമിനിയം വളയത്തിൽ എഡ്ഡി കറന്റുകൾ പ്രേരിപ്പിക്കുന്നു. ഈ കറന്റുകൾ വിപരീതമായ മറ്റൊരു കാന്തികക്ഷേത്രം ഉണ്ടാക്കുന്നു. ഈ രണ്ട് കാന്തികക്ഷേത്രങ്ങളും പരസ്പരം വികർഷിക്കുന്നതിലൂടെ വളയം മുകളിലേക്ക് ഉയരുന്നു.\n\n<h3>യഥാർത്ഥ ജീവിതത്തിലെ പ്രയോഗം: ഇൻഡക്ഷൻ അടുപ്പുകൾ</h3>\nനമ്മുടെ അടുക്കളയിലെ ഇൻഡക്ഷൻ കുക്കറുകൾ ഇതിന് മികച്ച ഉദാഹരണമാണ്! അവ കാന്തികക്ഷേത്രം സൃഷ്ടിക്കുകയും പാത്രത്തിന്റെ അടിയിൽ ചൂട് ഉണ്ടാക്കുകയും ചെയ്യുന്നു."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -254,7 +494,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             "deep": {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -286,7 +558,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 "ml": "<h3>വൈദ്യുതകാന്തിക ഇൻഡക്ഷനും ഫാരഡെയുടെ നിയമവും</h3>\nഫാരഡെയുടെ ഇൻഡക്ഷൻ നിയമവും ലെൻസിന്റെ നിയമവും അടിസ്ഥാനമാക്കിയാണ് ഇത് പ്രവർത്തിക്കുന്നത്. കോയിലിലൂടെ വൈദ്യുതി കടന്നുപോകുമ്പോൾ ഉണ്ടാകുന്ന കാന്തികക്ഷേത്രം അലുമിനിയം വളയത്തിൽ ഒരു വലിയ എഡ്ഡി കറന്റ് ഉണ്ടാക്കുന്നു. ഇത് താഴെനിന്നുള്ള കാന്തികക്ഷേത്രത്തിന് വിപരീതമായ ഒരു കാന്തികക്ഷേത്രം സൃഷ്ടിക്കുകയും വളയം മുകളിലേക്ക് ഉയരുകയും ചെയ്യുന്നു.\n\n<h3>വ്യവസായ മേഖലയിലെ പ്രയോഗങ്ങൾ</h3>\nറോക്കറ്റ് റൈഡുകളിലും ഹൈ-സ്പീഡ് ട്രെയിനുകളിലും ബ്രേക്കിംഗ് സംവിധാനമായി ഇത് ഉപയോഗിക്കുന്നു. ഇതിനെ എഡ്ഡി കറന്റ് ബ്രേക്കുകൾ എന്ന് വിളിക്കുന്നു. യാതൊരു ഘർഷണവുമില്ലാതെ സുഗമമായി വാഹനം നിർത്താൻ ഇത് സഹായിക്കുന്നു."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -318,7 +622,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -350,7 +686,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <html lang="en">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -382,6 +750,22 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <meta charset="UTF-8">
 
 
@@ -398,7 +782,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -430,7 +846,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -462,7 +910,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     background-color: #0d1426;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -494,7 +974,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     margin: 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -526,6 +1038,22 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     align-items: center;
 
 
@@ -542,7 +1070,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     justify-content: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -574,7 +1134,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     height: 100vh;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -606,7 +1198,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -638,7 +1262,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     width: 100%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -670,7 +1326,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     display: flex;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -702,7 +1390,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     justify-content: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -734,7 +1454,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     box-sizing: border-box;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -766,7 +1518,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .exhibit-svg {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -798,7 +1582,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     max-height: 100%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -830,7 +1646,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     height: auto;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -862,7 +1710,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     display: block;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -894,7 +1774,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     background-color: #1a1a2e;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -926,7 +1838,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     padding: 16px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -958,7 +1902,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     border: 1px solid rgba(255, 255, 255, 0.05);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -990,7 +1966,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1022,6 +2030,22 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     animation: ringJump 3s infinite;
 
 
@@ -1038,7 +2062,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1070,7 +2126,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     0%, 15% { transform: translateY(0); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1102,7 +2190,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     30% { transform: translateY(0); animation-timing-function: ease-in; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1134,7 +2254,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     36% { transform: translateY(0); animation-timing-function: ease-in; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1166,7 +2318,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1198,7 +2382,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     stroke-dasharray: 6;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1230,7 +2446,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1262,7 +2510,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .flow-down { animation: flowLines 0.5s linear reverse infinite; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1294,7 +2574,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     from { stroke-dashoffset: 12; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1326,7 +2638,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1358,7 +2702,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     0%, 14% { opacity: 0; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1390,7 +2766,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     20% { opacity: 0.8; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1422,7 +2830,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1454,7 +2894,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1486,7 +2958,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="animation-container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1518,7 +3022,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <rect x="90" y="40" width="20" height="230" fill="#34495e" opacity="0.6" rx="4" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1550,7 +3086,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <path d="M 50 300 L 150 300 L 135 260 L 65 260 Z" fill="#d4af37" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1582,7 +3150,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <rect x="85" y="260" width="30" height="40" fill="#b8860b" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1614,7 +3214,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <path d="M 80 240 Q 50 180 80 120" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1646,7 +3278,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </g>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1678,7 +3342,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <g class="magnetic-burst flow-down" stroke="#ff4b4b" stroke-width="3" fill="none">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1710,7 +3406,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <path d="M 125 250 Q 160 270 140 290" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1742,7 +3470,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <rect x="70" y="240" width="60" height="12" fill="#ecf0f1" rx="3" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1774,7 +3534,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <rect x="90" y="240" width="20" height="12" fill="#2c3e50" opacity="0.8" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1806,7 +3598,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </svg>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1838,7 +3662,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1870,7 +3726,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1902,7 +3790,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         "title": {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1934,6 +3854,22 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             "ml": "ഒഴുകിനടക്കുന്ന പാത്രം"
 
 
@@ -1950,7 +3886,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1982,7 +3950,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         "content": {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2014,7 +4014,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 "en": "<h3>The Floating Pan!</h3>\n<p>Press the switch and watch the metal dish float in mid-air! It looks like a magic trick, but it's actually magnets at work. An invisible magnetic force pushes up from the table, lifting the dish and holding it right in the air. As long as you press the button, it won't fall!</p>\n\n<h3>Where do we see this?</h3>\n<p>Beyond floating Maglev trains, this exact technology is used in advanced factories! It is called Induction Levitation Melting. Scientists and engineers use these magnetic fields to float metals in mid-air while melting them. Because the hot metal floats and never touches the sides of a container, it stays 100% pure without picking up any dirt or impurities from a pot!</p>",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2046,7 +4078,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2078,7 +4142,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 "en": "<h3>Balancing Forces with Magnets</h3>\n<p>When you press the button, electricity flows through a hidden coil inside the base, creating a fluctuating magnetic field. This field creates moving electrical currents inside the solid aluminium dish above it. These new currents generate their own magnetic field that pushes against the one from the base. This upward magnetic push is strong enough to lift the dish and make it levitate steadily in the air!</p>\n\n<h3>Real-World Application: Induction Melting</h3>\n<p>Beyond floating Maglev trains, this exact technology is used in advanced factories! It is called Induction Levitation Melting. Scientists and engineers use these magnetic fields to float metals in mid-air while melting them. Because the hot metal floats and never touches the sides of a container, it stays 100% pure without picking up any dirt or impurities from a pot!</p>",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2110,7 +4206,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2142,7 +4270,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 "en": "<h3>Electromagnetic Levitation & Equilibrium</h3>\n<p>This exhibit is a beautiful demonstration of Faraday's Law and Lenz's Law achieving mechanical equilibrium. The base contains an alternating current (AC) electromagnet. The time-varying magnetic flux induces \"eddy currents\" in the solid aluminium pan. According to Lenz's Law, these currents create an opposing magnetic field. The pan lifts and comes to rest at a specific heightthe point of equilibriumwhere the upward magnetic repulsion exactly equals the downward gravitational force (F_g=mg) of the pan.</p>\n\n<h3>Advanced Mechanics & Industrial Use</h3>\n<p>Beyond floating Maglev trains, this exact technology is used in advanced factories! It is called Induction Levitation Melting. Scientists and engineers use these magnetic fields to float metals in mid-air while melting them. Because the hot metal floats and never touches the sides of a container, it stays 100% pure without picking up any dirt or impurities from a pot!</p>",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2174,7 +4334,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2206,7 +4398,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         "animation": `<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2238,7 +4462,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2270,7 +4526,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2302,7 +4590,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2334,7 +4654,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     background-color: #0d1426;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2366,7 +4718,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     margin: 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2398,6 +4782,22 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     align-items: center;
 
 
@@ -2414,7 +4814,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     justify-content: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2446,7 +4878,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     height: 100vh;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2478,7 +4942,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2510,7 +5006,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     width: 100%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2542,7 +5070,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     display: flex;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2574,7 +5134,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     justify-content: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2606,6 +5198,22 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     box-sizing: border-box;
 
 
@@ -2622,7 +5230,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2654,7 +5294,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     max-width: 100%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2686,7 +5358,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     width: auto;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2718,7 +5422,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     object-fit: contain;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2750,7 +5486,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     aspect-ratio: 200 / 280;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2782,7 +5550,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     border-radius: 16px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2814,7 +5614,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2846,6 +5678,22 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     box-sizing: border-box;
 
 
@@ -2862,7 +5710,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2894,7 +5774,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     transform-origin: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2926,7 +5838,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2958,7 +5902,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     0%, 100% { transform: translateY(0); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2990,7 +5966,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     50% { transform: translateY(-72px); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3022,7 +6030,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3054,7 +6094,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     stroke-dasharray: 8;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3086,7 +6158,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3118,7 +6222,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     stroke-dasharray: 8;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3150,7 +6286,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3182,7 +6350,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     from { stroke-dashoffset: 16; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3214,7 +6414,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3246,7 +6478,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     from { stroke-dashoffset: 0; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3278,7 +6542,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3310,7 +6606,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     0%, 100% { opacity: 0; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3342,7 +6670,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3374,7 +6734,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3422,7 +6814,55 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="animation-container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3454,7 +6894,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3486,7 +6958,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <rect x="60" y="180" width="80" height="10" fill="#2c3e50" rx="3" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3518,7 +7022,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3550,7 +7086,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <path d="M 85 175 Q 100 100 115 175" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3582,6 +7150,22 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <path d="M 55 175 Q 100 40 145 175" />
 
 
@@ -3598,7 +7182,55 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </g>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3646,7 +7278,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3678,7 +7342,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <path d="M 85 180 Q 100 230 115 180" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3710,6 +7406,22 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </g>
 
 
@@ -3726,7 +7438,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3758,7 +7502,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <path d="M 55 175 C 55 183, 145 183, 145 175 L 145 172 C 145 180, 55 180, 55 172 Z" fill="#95a5a6" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3790,6 +7566,22 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 
 
@@ -3806,7 +7598,39 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </svg>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3854,7 +7678,55 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3886,7 +7758,47 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3918,7 +7830,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
         "title": {
+
+
+
+
+
+
+
+
 
 
 
@@ -3934,6 +7862,14 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
             "ml": "ഉയരുന്ന വൃത്തഖണ്ഡങ്ങൾ"
 
 
@@ -3942,7 +7878,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
         },
+
+
+
+
+
+
+
+
 
 
 
@@ -3958,7 +7910,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
         "content": {
+
+
+
+
+
+
+
+
 
 
 
@@ -3974,7 +7942,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
                 "en": "<h3>Lightning in a Box!</h3>\n<p>Press the button and watch the glowing spark! It looks just like real lightning. The spark starts at the very bottom where the metal rods are closest together. Because hot air always rises, the hot spark floats up just like a hot air balloon. As it climbs, the gap gets wider and wider until the spark finally snaps and disappears!</p>\n\n<h3>Where do we see this?</h3>\n<p>This exact principle is used to protect our electrical power grids! Devices called Horn Gap Arresters are placed on electrical poles and transformers. If lightning strikes the power lines, the sudden, dangerous spike in voltage creates an arc across the arrester's horns. The arc travels up and dissipates safely into the ground, protecting the expensive transformers from exploding.</p>",
+
+
+
+
+
+
+
+
 
 
 
@@ -3990,7 +7974,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
             },
+
+
+
+
+
+
+
+
 
 
 
@@ -4006,7 +8006,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
                 "en": "<h3>Climbing Electricity</h3>\n<p>When you press the button, a massive 25,000 volts of electricity jumps across the narrowest gap at the bottom, breaking through the air to create a hot electrical spark (an arc). Two things push this arc up: the heat of the spark makes the surrounding air rise, and magnetic forces push it upward. As it climbs, the metal rods drift further apart. Eventually, the gap becomes too wide for the 25,000 volts to jump across, and the electrical arc breaks.</p>\n\n<h3>Real-World Application: Horn Gap Arresters</h3>\n<p>This exact principle is used to protect our electrical power grids! Devices called Horn Gap Arresters are placed on electrical poles and transformers. If lightning strikes the power lines, the sudden, dangerous spike in voltage creates an arc across the arrester's horns. The arc travels up and dissipates safely into the ground, protecting the expensive transformers from exploding.</p>",
+
+
+
+
+
+
+
+
 
 
 
@@ -4022,7 +8038,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
             },
+
+
+
+
+
+
+
+
 
 
 
@@ -4038,7 +8070,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
                 "en": "<h3>Plasma Physics & Jacob's Ladder</h3>\n<p>This device is famously known in physics as a \"Jacob's Ladder.\" Applying high voltage creates a strong electric field that ionizes the air molecules at the narrowest base, undergoing dielectric breakdown and turning the gas into a conductive plasma. The current flowing through this plasma creates a magnetic field that exerts an upward Lorentz force. Combined with thermal convection (the hot plasma is less dense and rises), the arc travels up the diverging electrodes. It extinguishes when the resistance of the widening air gap exceeds the voltage's capacity to sustain the plasma.</p>\n\n<h3>Advanced Electrical Protection</h3>\n<p>This exact principle is used to protect our electrical power grids! Devices called Horn Gap Arresters are placed on electrical poles and transformers. If lightning strikes the power lines, the sudden, dangerous spike in voltage creates an arc across the arrester's horns. The arc travels up and dissipates safely into the ground, protecting the expensive transformers from exploding.</p>",
+
+
+
+
+
+
+
+
 
 
 
@@ -4054,7 +8102,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
             }
+
+
+
+
+
+
+
+
 
 
 
@@ -4070,7 +8134,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
         "animation": `<!DOCTYPE html>
+
+
+
+
+
+
+
+
 
 
 
@@ -4086,7 +8166,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
 <head>
+
+
+
+
+
+
+
+
 
 
 
@@ -4102,7 +8198,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+
+
+
 
 
 
@@ -4118,7 +8230,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
 <style>
+
+
+
+
+
+
+
+
 
 
 
@@ -4134,7 +8262,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
     background-color: #0d1426;
+
+
+
+
+
+
+
+
 
 
 
@@ -4150,7 +8294,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
     margin: 0;
+
+
+
+
+
+
+
+
 
 
 
@@ -4166,6 +8326,14 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
     align-items: center;
 
 
@@ -4174,7 +8342,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
     justify-content: center;
+
+
+
+
+
+
+
+
 
 
 
@@ -4190,7 +8374,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
     height: 100vh;
+
+
+
+
+
+
+
+
 
 
 
@@ -4206,7 +8406,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
   }
+
+
+
+
+
+
+
+
 
 
 
@@ -4222,7 +8438,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
     width: 100%;
+
+
+
+
+
+
+
+
 
 
 
@@ -4238,7 +8470,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
     display: flex;
+
+
+
+
+
+
+
+
 
 
 
@@ -4254,7 +8502,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
     justify-content: center;
+
+
+
+
+
+
+
+
 
 
 
@@ -4270,6 +8534,14 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
     box-sizing: border-box;
 
 
@@ -4278,7 +8550,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
   }
+
+
+
+
+
+
+
+
 
 
 
@@ -4294,7 +8582,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
     max-width: 100%;
+
+
+
+
+
+
+
+
 
 
 
@@ -4310,7 +8614,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
     width: auto;
+
+
+
+
+
+
+
+
 
 
 
@@ -4326,7 +8646,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
     object-fit: contain;
+
+
+
+
+
+
+
+
 
 
 
@@ -4342,7 +8678,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
     aspect-ratio: 200 / 280;
+
+
+
+
+
+
+
+
 
 
 
@@ -4358,7 +8710,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
     border-radius: 16px;
+
+
+
+
+
+
+
+
 
 
 
@@ -4374,7 +8742,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
     box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+
+
+
+
+
+
+
+
 
 
 
@@ -4390,6 +8774,14 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
     box-sizing: border-box;
 
 
@@ -4398,7 +8790,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
   }
+
+
+
+
+
+
+
+
 
 
 
@@ -4414,7 +8822,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
     transform-origin: center bottom;
+
+
+
+
+
+
+
+
 
 
 
@@ -4430,7 +8854,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
   }
+
+
+
+
+
+
+
+
 
 
 
@@ -4446,6 +8886,14 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
     filter: drop-shadow(0px 0px 8px #66fcf1);
 
 
@@ -4454,7 +8902,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
   }
+
+
+
+
+
+
+
+
 
 
 
@@ -4470,7 +8934,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
     0%   { transform: translateY(0) scaleX(1); opacity: 0; }
+
+
+
+
+
+
+
+
 
 
 
@@ -4486,7 +8966,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
     90%  { transform: translateY(-160px) scaleX(4.5); opacity: 1; }
+
+
+
+
+
+
+
+
 
 
 
@@ -4502,6 +8998,14 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
     100% { transform: translateY(0) scaleX(1); opacity: 0; }
 
 
@@ -4510,7 +9014,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
   }
+
+
+
+
+
+
+
+
 
 
 
@@ -4526,7 +9046,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
     0% { stroke-opacity: 1; }
+
+
+
+
+
+
+
+
 
 
 
@@ -4542,7 +9078,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
   }
+
+
+
+
+
+
+
+
 
 
 
@@ -4558,7 +9110,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
 </head>
+
+
+
+
+
+
+
+
 
 
 
@@ -4582,7 +9150,31 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="animation-container">
+
+
+
+
+
+
+
+
 
 
 
@@ -4598,7 +9190,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
     
+
+
+
+
+
+
+
+
 
 
 
@@ -4614,6 +9222,14 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
     <rect x="50" y="260" width="100" height="15" fill="#d4af37" rx="4" />
 
 
@@ -4622,7 +9238,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
     
+
+
+
+
+
+
+
+
 
 
 
@@ -4638,6 +9270,14 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
     <path d="M 115 220 L 115 200 L 140 30" stroke="#95a5a6" stroke-width="4" stroke-linecap="round" fill="none" />
 
 
@@ -4646,7 +9286,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
     
+
+
+
+
+
+
+
+
 
 
 
@@ -4670,7 +9326,31 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <g class="electric-arc arc-glow">
+
+
+
+
+
+
+
+
 
 
 
@@ -4686,7 +9366,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
       <path d="M 85 200 Q 95 210 105 195 T 115 200" stroke="#45f3ff" stroke-width="1.5" fill="none" />
+
+
+
+
+
+
+
+
 
 
 
@@ -4702,6 +9398,14 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
     
 
 
@@ -4710,7 +9414,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
   </svg>
+
+
+
+
+
+
+
+
 
 
 
@@ -4734,7 +9454,31 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
+
+
+
+
+
+
+
+
 
 
 
@@ -4750,7 +9494,27 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -4766,7 +9530,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
         "title": {
+
+
+
+
 
 
 
@@ -4774,11 +9546,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
             "ml": "ഗ്രാൻഡ് ഷട്ടിൽ"
 
 
 
+
+
+
+
         },
+
+
+
+
 
 
 
@@ -4786,7 +9570,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
         "content": {
+
+
+
+
 
 
 
@@ -4794,7 +9586,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
                 "en": "<h3>Zooming Back and Forth!</h3>\n<p>Press the switch and watch the metal ring shoot across the bridge! How does it move without anyone pushing it? It’s playing a game of magnetic ping-pong! The coil on one side uses a strong invisible magnetic push to launch the ring away. When it slides down to the other side, the second coil pushes it right back!</p>\n\n<h3>Where do we see this?</h3>\n<p>Have you ever been on a roller coaster that shoots forward incredibly fast without a traditional chain lifting it up? Those rides use Linear Induction Motors (LIMs)! Instead of using moving gears, they use a straight line of electromagnets hidden in the track to magnetically launch the roller coaster car forward at massive speeds, just like this shuttle!</p>",
+
+
+
+
 
 
 
@@ -4802,7 +9602,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
             },
+
+
+
+
 
 
 
@@ -4810,7 +9618,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
                 "en": "<h3>Magnetic Ping-Pong</h3>\n<p>When you press the switch, alternating current (AC) flows through the copper coil at the base, creating a fluctuating magnetic field. This induces an electrical current inside the aluminium bobbin (the ring). This new current creates its own magnetic field around the bobbin. Just like the \"Jumping Disc,\" the two magnetic fields repel each other, shooting the bobbin up the curved track. When it reaches the coil on the exact opposite side, the same magnetic repulsion happens, firing it back like a shuttle.</p>\n\n<h3>Real-World Application: Linear Motors</h3>\n<p>Have you ever been on a roller coaster that shoots forward incredibly fast without a traditional chain lifting it up? Those rides use Linear Induction Motors (LIMs)! Instead of using moving gears, they use a straight line of electromagnets hidden in the track to magnetically launch the roller coaster car forward at massive speeds, just like this shuttle!</p>",
+
+
+
+
 
 
 
@@ -4818,7 +9634,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
             },
+
+
+
+
 
 
 
@@ -4826,7 +9650,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
                 "en": "<h3>Linear Induction & Kinetic Energy</h3>\n<p>The Grand Shuttle demonstrates the foundational principles of a Linear Induction Motor (LIM). The stationary coils act as the \"stator,\" generating a time-varying magnetic flux. The aluminium bobbin acts as the \"rotor.\" According to Faraday's and Lenz's laws, eddy currents are induced in the bobbin, creating an opposing magnetic field. The resulting Lorentz force repels the bobbin, converting electrical energy into kinetic energy (E_k=1/2 mv^2). The bobbin's momentum carries it across the low-friction arched rail until it enters the magnetic field of the opposite coil, where the induction process repeats to decelerate and relaunch it.</p>\n\n<h3>Advanced Launch & Braking Systems</h3>\n<p>Have you ever been on a roller coaster that shoots forward incredibly fast without a traditional chain lifting it up? Those rides use Linear Induction Motors (LIMs)! Instead of using moving gears, they use a straight line of electromagnets hidden in the track to magnetically launch the roller coaster car forward at massive speeds, just like this shuttle!</p>",
+
+
+
+
 
 
 
@@ -4834,7 +9666,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
             }
+
+
+
+
 
 
 
@@ -4842,7 +9682,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
         "animation": `<!DOCTYPE html>
+
+
+
+
 
 
 
@@ -4850,7 +9698,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
 <head>
+
+
+
+
 
 
 
@@ -4858,7 +9714,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
 
 
 
@@ -4866,7 +9730,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
 <style>
+
+
+
+
 
 
 
@@ -4874,7 +9746,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
     background-color: #0d1426;
+
+
+
+
 
 
 
@@ -4882,7 +9762,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
     margin: 0;
+
+
+
+
 
 
 
@@ -4890,11 +9778,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
     align-items: center;
 
 
 
+
+
+
+
     justify-content: center;
+
+
+
+
 
 
 
@@ -4902,7 +9802,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
     height: 100vh;
+
+
+
+
 
 
 
@@ -4910,7 +9818,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
   }
+
+
+
+
 
 
 
@@ -4918,7 +9834,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
     width: 100%;
+
+
+
+
 
 
 
@@ -4926,7 +9850,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
     display: flex;
+
+
+
+
 
 
 
@@ -4934,7 +9866,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
     justify-content: center;
+
+
+
+
 
 
 
@@ -4942,11 +9882,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
     box-sizing: border-box;
 
 
 
+
+
+
+
   }
+
+
+
+
 
 
 
@@ -4954,7 +9906,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
     max-width: 100%;
+
+
+
+
 
 
 
@@ -4962,7 +9922,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
     width: auto;
+
+
+
+
 
 
 
@@ -4970,7 +9938,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
     object-fit: contain;
+
+
+
+
 
 
 
@@ -4978,7 +9954,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
     aspect-ratio: 350 / 250;
+
+
+
+
 
 
 
@@ -4986,7 +9970,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
     border-radius: 16px;
+
+
+
+
 
 
 
@@ -4994,7 +9986,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
     box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+
+
+
+
 
 
 
@@ -5002,11 +10002,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
     box-sizing: border-box;
 
 
 
+
+
+
+
   }
+
+
+
+
 
 
 
@@ -5014,7 +10026,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
     fill: none;
+
+
+
+
 
 
 
@@ -5022,7 +10042,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
     stroke-width: 3;
+
+
+
+
 
 
 
@@ -5030,11 +10058,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
     opacity: 0;
 
 
 
+
+
+
+
   }
+
+
+
+
 
 
 
@@ -5042,7 +10082,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
     transform-origin: 60px 180px;
+
+
+
+
 
 
 
@@ -5050,7 +10098,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
   }
+
+
+
+
 
 
 
@@ -5058,7 +10114,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
     transform-origin: 290px 180px;
+
+
+
+
 
 
 
@@ -5066,7 +10130,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
   }
+
+
+
+
 
 
 
@@ -5074,7 +10146,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
     0%, 10% { opacity: 1; transform: scale(1); }
+
+
+
+
 
 
 
@@ -5082,11 +10162,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
     16%, 100% { opacity: 0; }
 
 
 
+
+
+
+
   }
+
+
+
+
 
 
 
@@ -5094,7 +10186,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
     0%, 44% { opacity: 0; transform: scale(1); }
+
+
+
+
 
 
 
@@ -5102,7 +10202,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
     60% { opacity: 0; transform: scale(1.5); }
+
+
+
+
 
 
 
@@ -5110,7 +10218,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
   }
+
+
+
+
 
 
 
@@ -5118,7 +10234,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
 </head>
+
+
+
+
 
 
 
@@ -5130,7 +10254,19 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
 <div class="animation-container">
+
+
+
+
 
 
 
@@ -5138,7 +10274,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
     <defs>
+
+
+
+
 
 
 
@@ -5146,7 +10290,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
         <stop offset="0%" stop-color="#d1d5db" />
+
+
+
+
 
 
 
@@ -5154,7 +10306,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
         <stop offset="100%" stop-color="#9ca3af" />
+
+
+
+
 
 
 
@@ -5162,11 +10322,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
     </defs>
 
 
 
+
+
+
+
     
+
+
+
+
 
 
 
@@ -5174,7 +10346,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
     <path d="M 260 220 L 320 220 L 305 190 L 275 190 Z" fill="#7f8c8d" />
+
+
+
+
 
 
 
@@ -5182,7 +10362,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
     <path id="rail-path" d="M 60 180 Q 175 70 290 180" stroke="#374151" stroke-width="12" fill="none" stroke-linecap="round"/>
+
+
+
+
 
 
 
@@ -5194,7 +10382,19 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
     <g transform="translate(60, 180) rotate(45)">
+
+
+
+
 
 
 
@@ -5202,7 +10402,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
       <rect x="-22" y="-15" width="4" height="30" fill="#2c3e50" />
+
+
+
+
 
 
 
@@ -5210,7 +10418,19 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
     </g>
+
+
+
+
+
+
+
+
 
 
 
@@ -5222,7 +10442,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
       <rect x="-20" y="-15" width="40" height="30" fill="#b87333" rx="2" />
+
+
+
+
 
 
 
@@ -5230,11 +10458,27 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
       <rect x="18" y="-15" width="4" height="30" fill="#2c3e50" />
 
 
 
+
+
+
+
     </g>
+
+
+
+
+
+
+
+
 
 
 
@@ -5246,7 +10490,19 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
     <circle cx="290" cy="180" r="25" class="burst burst-right" />
+
+
+
+
+
+
+
+
 
 
 
@@ -5258,7 +10514,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
       <rect x="-12" y="-15" width="24" height="30" fill="url(#bobbin-grad)" rx="4" />
+
+
+
+
 
 
 
@@ -5266,7 +10530,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
         dur="3s" 
+
+
+
+
 
 
 
@@ -5274,7 +10546,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
         rotate="auto"
+
+
+
+
 
 
 
@@ -5282,7 +10562,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
         keyPoints="0; 1; 1; 0; 0"
+
+
+
+
 
 
 
@@ -5290,7 +10578,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
         keySplines="0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1"
+
+
+
+
 
 
 
@@ -5298,7 +10594,15 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
         <mpath href="#rail-path" />
+
+
+
+
 
 
 
@@ -5306,11 +10610,23 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
     </g>
 
 
 
+
+
+
+
   </svg>
+
+
+
+
 
 
 
@@ -5322,7 +10638,19 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
+
+
+
+
 </body>
+
+
+
+
 
 
 
@@ -5330,7 +10658,17 @@ const INTERACTIVE_EXHIBITS = {
 
 
 
+
+
+
+
     }
+
+
+
+
+
+
 
 
 
@@ -5338,253 +10676,841 @@ const INTERACTIVE_EXHIBITS = {
 
     "curie-point": {
 
+
+
         "title": {
+
+
 
             "en": "Curie Point",
 
+
+
             "ml": "ക്യൂറി പോയിന്റ്"
 
+
+
         },
+
+
 
         "category": "physics",
 
+
+
         "content": {
+
+
 
             "quick": {
 
+
+
                 "en": "<h3>Heat Kills Magnets!</h3>\n<p>Watch the hanging magnet firmly sticking to the metal coil. Now, press the button! The coil gets super hot and glows red. Suddenly, the magnet lets go and swings away! Why? Because when magnets get too hot, they completely lose their sticky magnetic power. When it cools down, the power comes back!</p>\n\n<h3>Where do we see this?</h3>\n<p>Did you know that older automatic rice cookers use this exact trick? A magnetic switch holds the heater turned on. When the water boils away and the temperature of the pot goes above 100°C, a special magnetic piece inside hits its Curie Point. It loses its magnetism, causing the switch to drop and automatically turn off the heat so your food doesn't burn!</p>",
+
+
 
                 "ml": "<h3>ചൂടാക്കിയാൽ കാന്തം പിണങ്ങും!</h3>\n<p>ലോഹച്ചുരുളിൽ ഒട്ടിപ്പിടിച്ചിരിക്കുന്ന കാന്തം ശ്രദ്ധിക്കൂ. ഇനി സ്വിച്ച് അമർത്തുക! ചുരുൾ ചൂടായി ചുവന്ന നിറമാകുന്നു. പെട്ടെന്ന് കാന്തം പിടിവിട്ട് പിന്നിലേക്ക് മാറുന്നു! എന്തുകൊണ്ടാണിത്? കാന്തങ്ങൾ അമിതമായി ചൂടാകുമ്പോൾ അവയുടെ കാന്തികശക്തി നഷ്ടപ്പെടും. തണുക്കുമ്പോൾ ഈ ശക്തി തിരികെ വരികയും ചെയ്യും!</p>\n\n<h3>ഇത് നമ്മൾ എവിടെയാണ് കാണുന്നത്?</h3>\n<p>പഴയ ഓട്ടോമാറ്റിക് റൈസ് കുക്കറുകൾ ഇതേ ശാസ്ത്രമാണ് ഉപയോഗിക്കുന്നതെന്ന് നിങ്ങൾക്കറിയാമോ? ഇതിനുള്ളിലെ ഒരു കാന്തിക സ്വിച്ചാണ് ഹീറ്റർ ഓൺ ചെയ്തു നിർത്തുന്നത്. വെള്ളം വറ്റി പാത്രത്തിന്റെ താപനില 100°C-ന് മുകളിലാകുമ്പോൾ, ഉള്ളിലെ കാന്തം അതിന്റെ ക്യൂറി പോയിന്റിൽ എത്തുന്നു. അപ്പോൾ കാന്തികശക്തി നഷ്ടപ്പെട്ട് സ്വിച്ച് താഴേക്ക് വീഴുകയും, ഭക്ഷണം കരിഞ്ഞുപോകാതെ ഹീറ്റർ തനിയെ ഓഫ് ആകുകയും ചെയ്യുന്നു!</p>"
 
+
+
             },
+
+
 
             "how": {
 
+
+
                 "en": "<h3>The Temperature Limit of Magnetism</h3>\n<p>The hanging magnet is naturally attracted to the metal coil. When you press the switch, electricity heats the coil until it glows red-hot. At a certain high temperature, the metal undergoes an invisible structural change and loses its ability to act like a magnet. This specific temperature limit is called the Curie Point. Without the magnetic attraction to hold it, the magnet simply swings back away from the coil!</p>\n\n<h3>Real-World Application: Automatic Switches</h3>\n<p>Did you know that older automatic rice cookers use this exact trick? A magnetic switch holds the heater turned on. When the water boils away and the temperature of the pot goes above 100°C, a special magnetic piece inside hits its Curie Point. It loses its magnetism, causing the switch to drop and automatically turn off the heat so your food doesn't burn!</p>",
+
+
 
                 "ml": "<h3>കാന്തികതയുടെ താപനില പരിധി</h3>\n<p>തൂങ്ങിക്കിടക്കുന്ന കാന്തം ലോഹച്ചുരുളിലേക്ക് സ്വാഭാവികമായി ആകർഷിക്കപ്പെട്ടിരിക്കുന്നു. സ്വിച്ച് അമർത്തുമ്പോൾ, വൈദ്യുതി ചുരുളിനെ ചൂടാക്കി ചുവപ്പിക്കുന്നു. ഒരു പ്രത്യേക ഉയർന്ന താപനിലയിൽ എത്തുമ്പോൾ, ലോഹത്തിന്റെ ഘടന മാറുകയും അതിന് കാന്തികശക്തി നഷ്ടപ്പെടുകയും ചെയ്യുന്നു. ഈ പ്രത്യേക താപനിലയെ ക്യൂറി പോയിന്റ് (Curie Point) എന്ന് വിളിക്കുന്നു. ആകർഷണബലം നഷ്ടപ്പെടുന്നതോടെ കാന്തം പിടിവിട്ട് പിന്നിലേക്ക് മാറുന്നു!</p>\n\n<h3>യഥാർത്ഥ ജീവിതത്തിലെ പ്രയോഗം: കാന്തിക സ്വിച്ചുകൾ</h3>\n<p>പഴയ ഓട്ടോമാറ്റിക് റൈസ് കുക്കറുകൾ ഇതേ ശാസ്ത്രമാണ് ഉപയോഗിക്കുന്നതെന്ന് നിങ്ങൾക്കറിയാമോ? ഇതിനുള്ളിലെ ഒരു കാന്തിക സ്വിച്ചാണ് ഹീറ്റർ ഓൺ ചെയ്തു നിർത്തുന്നത്. വെള്ളം വറ്റി പാത്രത്തിന്റെ താപനില 100°C-ന് മുകളിലാകുമ്പോൾ, ഉള്ളിലെ കാന്തം അതിന്റെ ക്യൂറി പോയിന്റിൽ എത്തുന്നു. അപ്പോൾ കാന്തികശക്തി നഷ്ടപ്പെട്ട് സ്വിച്ച് താഴേക്ക് വീഴുകയും, ഭക്ഷണം കരിഞ്ഞുപോകാതെ ഹീറ്റർ തനിയെ ഓഫ് ആകുകയും ചെയ്യുന്നു!</p>"
 
+
+
             },
+
+
 
             "deep": {
 
+
+
                 "en": "<h3>Ferromagnetism and Thermal Agitation</h3>\n<p>This exhibit demonstrates the phase transition of a material from ferromagnetic to paramagnetic. In a magnetic material, the magnetic dipole moments of atoms are neatly aligned in regions called domains. As heat is applied, thermal energy causes the atoms to vibrate violently. When the temperature reaches a critical threshold—known as the Curie Temperature (T_c)—the thermal agitation overwhelms the atomic exchange forces keeping the domains aligned. The material's spontaneous magnetization vanishes instantly, breaking the attractive force.</p>\n\n<h3>Advanced Phase Transitions</h3>\n<p>Did you know that older automatic rice cookers use this exact trick? A magnetic switch holds the heater turned on. When the water boils away and the temperature of the pot goes above 100°C, a special magnetic piece inside hits its Curie Point. It loses its magnetism, causing the switch to drop and automatically turn off the heat so your food doesn't burn!</p>",
+
+
 
                 "ml": "<h3>ഫെറോമാഗ്നറ്റിസവും താപ ചലനങ്ങളും</h3>\n<p>ഈ പ്രദർശിനി ഒരു പദാർത്ഥം ഫെറോമാഗ്നറ്റിക് (ferromagnetic) അവസ്ഥയിൽ നിന്നും പാരാമാഗ്നറ്റിക് (paramagnetic) അവസ്ഥയിലേക്ക് മാറുന്നത് കാണിക്കുന്നു. കാന്തിക പദാർത്ഥങ്ങളിൽ, ആറ്റങ്ങളുടെ കാന്തിക സ്വഭാവം ഒരേ ദിശയിലായിരിക്കും (magnetic domains). ചൂടാക്കുമ്പോൾ, താപോർജ്ജം കാരണം ആറ്റങ്ങൾ വേഗത്തിൽ വിറയ്ക്കാൻ തുടങ്ങുന്നു. ഒരു പ്രത്യേക താപനിലയിൽ എത്തുമ്പോൾ (Curie Temperature അഥവാ T_c), ഈ വിറയൽ കാരണം കാന്തിക ഘടന തകരുകയും ആറ്റങ്ങൾ ചിതറുകയും ചെയ്യുന്നു. അതോടെ പദാർത്ഥത്തിന് കാന്തികശക്തി പൂർണ്ണമായും നഷ്ടപ്പെടുകയും ആകർഷണബലം ഇല്ലാതാവുകയും ചെയ്യുന്നു.</p>\n\n<h3>റൈസ് കുക്കറുകളിലെ ക്യൂറി പോയിന്റ്</h3>\n<p>പഴയ ഓട്ടോമാറ്റിക് റൈസ് കുക്കറുകൾ ഇതേ ശാസ്ത്രമാണ് ഉപയോഗിക്കുന്നതെന്ന് നിങ്ങൾക്കറിയാമോ? ഇതിനുള്ളിലെ ഒരു കാന്തിക സ്വിച്ചാണ് ഹീറ്റർ ഓൺ ചെയ്തു നിർത്തുന്നത്. വെള്ളം വറ്റി പാത്രത്തിന്റെ താപനില 100°C-ന് മുകളിലാകുമ്പോൾ, ഉള്ളിലെ കാന്തം അതിന്റെ ക്യൂറി പോയിന്റിൽ എത്തുന്നു. അപ്പോൾ കാന്തികശക്തി നഷ്ടപ്പെട്ട് സ്വിച്ച് താഴേക്ക് വീഴുകയും, ഭക്ഷണം കരിഞ്ഞുപോകാതെ ഹീറ്റർ തനിയെ ഓഫ് ആകുകയും ചെയ്യുന്നു!</p>"
 
+
+
             }
+
+
 
         },
 
+
+
         "animation": `<!DOCTYPE html>
+
+
 
 <html lang="en">
 
+
+
 <head>
+
+
 
 <meta charset="UTF-8">
 
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
 
 <title>Curie Point Animation</title>
 
+
+
 <style>
+
+
 
   body {
 
+
+
     background-color: #0d1426;
+
+
 
     color: #f8f9fa;
 
+
+
     margin: 0;
+
+
 
     display: flex;
 
+
+
     align-items: center;
 
+
+
     justify-content: center;
+
+
 
     width: 100vw;
 
+
+
     height: 100vh;
+
+
 
     overflow: hidden;
 
+
+
   }
+
+
 
   .animation-container {
 
+
+
     width: 100%;
+
+
 
     height: 100%;
 
+
+
     display: flex;
+
+
 
     align-items: center;
 
+
+
     justify-content: center;
+
+
 
     padding: 8px;
 
+
+
     box-sizing: border-box;
 
+
+
   }
+
+
 
   .exhibit-svg {
 
+
+
     max-width: 100%;
+
+
 
     max-height: 100%;
 
+
+
     width: auto;
+
+
 
     height: auto;
 
+
+
     object-fit: contain;
+
+
 
     display: block;
 
+
+
     aspect-ratio: 350 / 250;
+
+
 
     background-color: #1a1a2e;
 
+
+
     border-radius: 16px;
+
+
 
     padding: 16px;
 
+
+
     box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+
+
 
     border: 1px solid rgba(255, 255, 255, 0.05);
 
+
+
     box-sizing: border-box;
 
+
+
   }
+
+
 
   .pendulum {
 
+
+
     transform-origin: 175px 40px;
+
+
 
     animation: swingCycle 6s ease-in-out infinite;
 
+
+
   }
+
+
 
   .heating-coil {
 
+
+
     animation: heatCycle 6s infinite;
 
+
+
   }
+
+
 
   .magnetic-lines {
 
+
+
     stroke: #00d2ff;
+
+
 
     stroke-width: 2;
 
+
+
     fill: none;
+
+
 
     stroke-dasharray: 4;
 
+
+
     animation: fieldCycle 6s infinite, flowLines 1s linear infinite;
 
+
+
   }
+
+
 
   @keyframes flowLines {
 
+
+
     to { stroke-dashoffset: -8; }
 
+
+
   }
+
+
 
   @keyframes swingCycle {
 
+
+
     0%, 30% { transform: rotate(15deg); }
+
+
 
     35% { transform: rotate(-25deg); }
 
+
+
     45% { transform: rotate(-15deg); }
+
+
 
     55% { transform: rotate(-20deg); }
 
+
+
     75% { transform: rotate(-20deg); }
+
+
 
     85%, 100% { transform: rotate(15deg); }
 
+
+
   }
+
+
 
   @keyframes heatCycle {
 
+
+
     0%, 15% { fill: #95a5a6; filter: drop-shadow(0 0 0px #e74c3c); }
+
+
 
     25%, 60% { fill: #e74c3c; filter: drop-shadow(0 0 15px #ff4757); }
 
+
+
     70%, 100% { fill: #95a5a6; filter: drop-shadow(0 0 0px #e74c3c); }
 
+
+
   }
+
+
 
   @keyframes fieldCycle {
 
+
+
     0%, 25% { opacity: 1; }
+
+
 
     26%, 80% { opacity: 0; }
 
+
+
     85%, 100% { opacity: 1; }
+
+
 
   }
 
+
+
 </style>
 
+
+
 </head>
+
+
 
 <body>
 
 
 
+
+
+
+
 <div class="animation-container">
+
+
 
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 250" class="exhibit-svg">
 
+
+
     <rect x="150" y="30" width="50" height="10" fill="#7f8c8d" rx="2" />
+
+
 
     <circle cx="175" cy="40" r="4" fill="#2c3e50" />
 
+
+
     <rect x="50" y="220" width="250" height="15" fill="#34495e" rx="4" />
+
+
 
     <rect x="230" y="160" width="20" height="60" fill="#7f8c8d" />
 
 
 
+
+
+
+
     <rect x="220" y="140" width="40" height="40" class="heating-coil" rx="5" />
+
+
 
     
 
+
+
     <line x1="225" y1="145" x2="255" y2="145" stroke="#2c3e50" stroke-width="2" />
+
+
 
     <line x1="225" y1="155" x2="255" y2="155" stroke="#2c3e50" stroke-width="2" />
 
+
+
     <line x1="225" y1="165" x2="255" y2="165" stroke="#2c3e50" stroke-width="2" />
+
+
 
     <line x1="225" y1="175" x2="255" y2="175" stroke="#2c3e50" stroke-width="2" />
 
 
 
+
+
+
+
     <g class="pendulum">
+
+
 
       <line x1="175" y1="40" x2="175" y2="160" stroke="#bdc3c7" stroke-width="2" />
 
+
+
       
+
+
 
       <rect x="160" y="150" width="30" height="20" fill="#d4af37" rx="2" />
 
+
+
       <rect x="175" y="150" width="15" height="20" fill="#e74c3c" />
 
+
+
       <text x="165" y="164" fill="white" font-size="10" font-family="sans-serif">S</text>
+
+
 
       <text x="180" y="164" fill="white" font-size="10" font-family="sans-serif">N</text>
 
 
 
+
+
+
+
       <path d="M 195 155 Q 210 145 230 150" class="magnetic-lines" />
 
+
+
       <path d="M 195 165 Q 210 175 230 170" class="magnetic-lines" />
+
+
+
+    </g>
+
+
+
+  </svg>
+
+
+
+</div>
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>`
+
+
+
+    }
+
+
+
+
+
+    "identify-magnet": {
+
+        "title": {
+
+            "en": "Identify a Magnet",
+
+            "ml": "കാന്തത്തിന്റെ രൂപം തിരിച്ചറിയാം"
+
+        },
+
+        "category": "physics",
+
+        "content": {
+
+            "quick": {
+
+                "en": "<h3>The Magnetic Mystery!</h3>\n<p>Slide the round container over the white circles and give it a gentle tap. Watch the black powder inside magically dance into cool shapes! Can you guess what shape the hidden magnet is underneath? Press the red button to turn on the light and see if you guessed right!</p>\n\n<h3>Where do we see this?</h3>\n<p>The exact same principle of magnetic fields is used in MRI (Magnetic Resonance Imaging) scanners at hospitals! Instead of iron filings, the giant MRI magnet aligns the tiny, invisible protons inside your body's water molecules to create a detailed picture of your insides without using x-rays.</p>",
+
+                "ml": "<h3>കാന്തിക രഹസ്യം!</h3>\n<p>ഇരുമ്പുപൊടി ഉൾക്കൊള്ളുന്ന പാത്രം ഓരോ വൃത്തത്തിലും വച്ച് പതുക്കെ തട്ടിനോക്കൂ. അതിലെ കറുത്ത പൊടി മാന്ത്രികമായി പല രൂപങ്ങളിൽ മാറുന്നത് കാണാം! ഇതിനടിയിൽ ഒളിപ്പിച്ചിരിക്കുന്ന കാന്തത്തിന്റെ രൂപം നിങ്ങൾക്ക് ഊഹിക്കാൻ കഴിയുമോ? ചുവന്ന ബട്ടൺ അമർത്തി വെളിച്ചം വരുമ്പോൾ നിങ്ങളുടെ ഊഹം ശരിയാണോ എന്ന് പരിശോധിക്കൂ!</p>\n\n<h3>ഇത് നമ്മൾ എവിടെയാണ് കാണുന്നത്?</h3>\n<p>കാന്തികക്ഷേത്രങ്ങളുടെ ഇതേ തത്വമാണ് ആശുപത്രികളിലെ MRI (മാഗ്നെറ്റിക് റെസൊണൻസ് ഇമേജിംഗ്) സ്കാനറുകളിൽ ഉപയോഗിക്കുന്നത്! ഇരുമ്പുപൊടിക്ക് പകരം, ശരീരത്തിലെ ജലതന്മാത്രകളിലുള്ള വളരെ ചെറിയ പ്രോട്ടോണുകളെ അണിനിരത്തിയാണ് വലിയ MRI കാന്തങ്ങൾ നമ്മുടെ ശരീരത്തിൻ്റെ ആന്തരിക ചിത്രങ്ങൾ എടുക്കുന്നത്. ഇതിന് എക്സ്-റേയുടെ ആവശ്യമില്ല.</p>"
+
+            },
+
+            "how": {
+
+                "en": "<h3>Drawing with Invisible Forces</h3>\n<p>The black powder inside the container is made of tiny iron filings. Every magnet has an invisible magnetic field around it, made of \"lines of force.\" When you place the iron filings over the hidden magnets, they act like tiny compasses, lining up exactly along these invisible lines. Different shaped magnets (like a bar, horseshoe, or ring) create completely different patterns!</p>\n\n<h3>Real-World Application: MRI Scanners</h3>\n<p>The exact same principle of magnetic fields is used in MRI (Magnetic Resonance Imaging) scanners at hospitals! Instead of iron filings, the giant MRI magnet aligns the tiny, invisible protons inside your body's water molecules to create a detailed picture of your insides without using x-rays.</p>",
+
+                "ml": "<h3>അദൃശ്യശക്തികൊണ്ടുള്ള ചിത്രരചന</h3>\n<p>പാത്രത്തിലുള്ള കറുത്ത പൊടി ഇരുമ്പുപൊടിയാണ് (iron filings). എല്ലാ കാന്തങ്ങൾക്കും ചുറ്റും അദൃശ്യമായ ഒരു കാന്തികക്ഷേത്രമുണ്ട് (magnetic field). ഇരുമ്പുപൊടിയുള്ള പാത്രം കാന്തത്തിന് മുകളിൽ വെക്കുമ്പോൾ, ഈ പൊടികൾ ചെറിയ വടക്കുനോക്കിയന്ത്രങ്ങൾ പോലെ പ്രവർത്തിക്കുകയും ആ അദൃശ്യരേഖകൾക്ക് സമാന്തരമായി അണിനിരക്കുകയും ചെയ്യുന്നു. ബാർ കാന്തം, കുതിരലാട കാന്തം തുടങ്ങിയ വിവിധ രൂപങ്ങളിലുള്ള കാന്തങ്ങൾ വ്യത്യസ്ത പാറ്റേണുകൾ സൃഷ്ടിക്കുന്നു!</p>\n\n<h3>യഥാർത്ഥ ജീവിതത്തിലെ പ്രയോഗം: MRI സ്കാനറുകൾ</h3>\n<p>കാന്തികക്ഷേത്രങ്ങളുടെ ഇതേ തത്വമാണ് ആശുപത്രികളിലെ MRI (മാഗ്നെറ്റിക് റെസൊണൻസ് ഇമേജിംഗ്) സ്കാനറുകളിൽ ഉപയോഗിക്കുന്നത്! ഇരുമ്പുപൊടിക്ക് പകരം, ശരീരത്തിലെ ജലതന്മാത്രകളിലുള്ള വളരെ ചെറിയ പ്രോട്ടോണുകളെ അണിനിരത്തിയാണ് വലിയ MRI കാന്തങ്ങൾ നമ്മുടെ ശരീരത്തിൻ്റെ ആന്തരിക ചിത്രങ്ങൾ എടുക്കുന്നത്. ഇതിന് എക്സ്-റേയുടെ ആവശ്യമില്ല.</p>"
+
+            },
+
+            "deep": {
+
+                "en": "<h3>Visualizing Magnetic Flux Density</h3>\n<p>This exhibit visually maps the magnetic field vectors (B ⃗) of various dipole configurations. The iron filings become temporarily magnetized via induction. Since they are elongated, they experience a mechanical torque (τ ⃗=μ ⃗×B ⃗) that physically aligns their magnetic moments (μ ⃗) parallel to the local magnetic field lines. The filings cluster most densely at the poles, visualizing where the magnetic flux density is the strongest.</p>\n\n<h3>Clinical Diagnostics & Particle Physics</h3>\n<p>The exact same principle of magnetic fields is used in MRI (Magnetic Resonance Imaging) scanners at hospitals! Instead of iron filings, the giant MRI magnet aligns the tiny, invisible protons inside your body's water molecules to create a detailed picture of your insides without using x-rays.</p>",
+
+                "ml": "<h3>മാഗ്നെറ്റിക് ഫ്ലക്സ് ഡെൻസിറ്റി (Magnetic Flux Density) ദൃശ്യവൽക്കരിക്കൽ</h3>\n<p>ഈ പ്രദർശിനി വിവിധ കാന്തങ്ങളുടെ കാന്തികക്ഷേത്ര സദിശങ്ങളെ (magnetic field vectors, B ⃗) ദൃശ്യമാക്കുന്നു. കാന്തത്തിന് മുകളിൽ വരുമ്പോൾ ഇരുമ്പുപൊടികൾക്ക് താൽക്കാലികമായി കാന്തികശക്തി ലഭിക്കുന്നു. ഇവയ്ക്ക് നീളമുള്ള രൂപമായതിനാൽ, കാന്തികക്ഷേത്രത്തിന് സമാന്തരമായി തിരിയാൻ അവയിൽ ഒരു ടോർക്ക് (τ ⃗=μ ⃗×B ⃗) പ്രവർത്തിക്കുന്നു. കാന്തികബലം ഏറ്റവും കൂടുതലുള്ള ധ്രുവങ്ങളിൽ (poles) ഇരുമ്പുപൊടി ഏറ്റവും തിങ്ങിനിറഞ്ഞിരിക്കുന്നത് കാണാം.</p>\n\n<h3>MRI സ്കാനിംഗിലെ പ്രോട്ടോൺ അലൈൻമെന്റ്</h3>\n<p>കാന്തികക്ഷേത്രങ്ങളുടെ ഇതേ തത്വമാണ് ആശുപത്രികളിലെ MRI (മാഗ്നെറ്റിക് റെസൊണൻസ് ഇമേജിംഗ്) സ്കാനറുകളിൽ ഉപയോഗിക്കുന്നത്! ഇരുമ്പുപൊടിക്ക് പകരം, ശരീരത്തിലെ ജലതന്മാത്രകളിലുള്ള വളരെ ചെറിയ പ്രോട്ടോണുകളെ അണിനിരത്തിയാണ് വലിയ MRI കാന്തങ്ങൾ നമ്മുടെ ശരീരത്തിൻ്റെ ആന്തരിക ചിത്രങ്ങൾ എടുക്കുന്നത്. ഇതിന് എക്സ്-റേയുടെ ആവശ്യമില്ല.</p>"
+
+            }
+
+        },
+
+        "animation": `<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Identify a Magnet Animation</title>
+
+<style>
+
+  body {
+
+    background-color: #0d1426;
+
+    color: #f8f9fa;
+
+    margin: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 100vw;
+
+    height: 100vh;
+
+    overflow: hidden;
+
+  }
+
+  .animation-container {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 8px;
+
+    box-sizing: border-box;
+
+  }
+
+  .exhibit-svg {
+
+    max-width: 100%;
+
+    max-height: 100%;
+
+    width: auto;
+
+    height: auto;
+
+    object-fit: contain;
+
+    display: block;
+
+    aspect-ratio: 200 / 250;
+
+    background-color: #f1f2f6;
+
+    border-radius: 16px;
+
+    padding: 16px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+    border: 4px solid #f1c40f;
+
+    box-sizing: border-box;
+
+  }
+
+  .hidden-magnet {
+
+    animation: revealMagnet 8s infinite;
+
+  }
+
+  .scattered-filings {
+
+    animation: hideScattered 8s infinite;
+
+  }
+
+  .aligned-filings {
+
+    stroke-dasharray: 2 4;
+
+    stroke-linecap: round;
+
+    animation: showAligned 8s infinite;
+
+  }
+
+  .red-button {
+
+    transform-origin: center;
+
+    animation: pressButton 8s infinite;
+
+  }
+
+  .led-glow {
+
+    animation: glowEffect 8s infinite;
+
+  }
+
+  @keyframes revealMagnet {
+
+    0%, 45% { opacity: 0; }
+
+    50%, 80% { opacity: 0.85; }
+
+    85%, 100% { opacity: 0; }
+
+  }
+
+  @keyframes hideScattered {
+
+    0%, 15% { opacity: 1; }
+
+    20%, 95% { opacity: 0; }
+
+    100% { opacity: 1; }
+
+  }
+
+  @keyframes showAligned {
+
+    0%, 15% { opacity: 0; }
+
+    20%, 95% { opacity: 1; }
+
+    100% { opacity: 0; }
+
+  }
+
+  @keyframes pressButton {
+
+    0%, 45% { transform: scale(1); }
+
+    48% { transform: scale(0.9); }
+
+    80% { transform: scale(0.9); }
+
+    85%, 100% { transform: scale(1); }
+
+  }
+
+  @keyframes glowEffect {
+
+    0%, 45% { fill: #ffffff; filter: drop-shadow(0 0 0px #fff); }
+
+    50%, 80% { fill: #fdfae3; filter: drop-shadow(0 0 10px #f1c40f); }
+
+    85%, 100% { fill: #ffffff; filter: drop-shadow(0 0 0px #fff); }
+
+  }
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<div class="animation-container">
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 250" class="exhibit-svg">
+
+    <circle cx="100" cy="100" r="70" stroke="#2c3e50" stroke-width="6" class="led-glow" />
+
+    
+
+    <g class="hidden-magnet">
+
+      <rect x="70" y="60" width="60" height="40" fill="#e74c3c" />
+
+      <rect x="70" y="100" width="60" height="40" fill="#3498db" />
+
+      <text x="96" y="85" fill="white" font-family="sans-serif" font-weight="bold" font-size="12">N</text>
+
+      <text x="96" y="125" fill="white" font-family="sans-serif" font-weight="bold" font-size="12">S</text>
+
+    </g>
+
+
+
+    <g class="scattered-filings" fill="#2d3436" opacity="0.8">
+
+      <circle cx="80" cy="70" r="1.5" /><circle cx="120" cy="90" r="1.5" />
+
+      <circle cx="60" cy="120" r="1.5" /><circle cx="140" cy="80" r="1.5" />
+
+      <circle cx="90" cy="140" r="1.5" /><circle cx="110" cy="60" r="1.5" />
+
+      <circle cx="130" cy="130" r="1.5" /><circle cx="70" cy="100" r="1.5" />
+
+      <circle cx="95" cy="95" r="1.5" /><circle cx="105" cy="115" r="1.5" />
+
+      <circle cx="85" cy="85" r="1.5" /><circle cx="115" cy="105" r="1.5" />
+
+      <circle cx="75" cy="135" r="1.5" /><circle cx="125" cy="65" r="1.5" />
+
+      <circle cx="50" cy="90" r="1.5" /><circle cx="150" cy="110" r="1.5" />
+
+    </g>
+
+
+
+    <g class="aligned-filings" fill="none" stroke="#2d3436" stroke-width="2.5">
+
+      <path d="M 115 60 Q 170 100 115 140" />
+
+      <path d="M 85 60 Q 30 100 85 140" />
+
+      
+
+      <path d="M 100 50 Q 140 100 100 150" />
+
+      <path d="M 100 50 Q 60 100 100 150" />
+
+      
+
+      <line x1="100" y1="50" x2="100" y2="35" />
+
+      <line x1="80" y1="55" x2="70" y2="45" />
+
+      <line x1="120" y1="55" x2="130" y2="45" />
+
+      
+
+      <line x1="100" y1="150" x2="100" y2="165" />
+
+      <line x1="80" y1="145" x2="70" y2="155" />
+
+      <line x1="120" y1="145" x2="130" y2="155" />
+
+    </g>
+
+
+
+    <circle cx="100" cy="100" r="66" stroke="#bdc3c7" stroke-width="3" fill="none" opacity="0.6" />
+
+
+
+    <g transform="translate(100, 210)">
+
+      <circle cx="0" cy="0" r="18" fill="#2c3e50" />
+
+      <circle cx="0" cy="0" r="12" fill="#e74c3c" class="red-button" />
+
+      <path d="M -6 -6 Q 0 -10 6 -6" stroke="#ff7979" stroke-width="2" fill="none" class="red-button" />
 
     </g>
 
@@ -5601,24 +11527,24 @@ const INTERACTIVE_EXHIBITS = {
     }
 
 
-    "identify-magnet": {
+    "lines-of-force": {
         "title": {
-            "en": "Identify a Magnet",
-            "ml": "കാന്തത്തിന്റെ രൂപം തിരിച്ചറിയാം"
+            "en": "Lines of Force",
+            "ml": "കാന്തികബലരേഖകൾ"
         },
         "category": "physics",
         "content": {
             "quick": {
-                "en": "<h3>The Magnetic Mystery!</h3>\n<p>Slide the round container over the white circles and give it a gentle tap. Watch the black powder inside magically dance into cool shapes! Can you guess what shape the hidden magnet is underneath? Press the red button to turn on the light and see if you guessed right!</p>\n\n<h3>Where do we see this?</h3>\n<p>The exact same principle of magnetic fields is used in MRI (Magnetic Resonance Imaging) scanners at hospitals! Instead of iron filings, the giant MRI magnet aligns the tiny, invisible protons inside your body's water molecules to create a detailed picture of your insides without using x-rays.</p>",
-                "ml": "<h3>കാന്തിക രഹസ്യം!</h3>\n<p>ഇരുമ്പുപൊടി ഉൾക്കൊള്ളുന്ന പാത്രം ഓരോ വൃത്തത്തിലും വച്ച് പതുക്കെ തട്ടിനോക്കൂ. അതിലെ കറുത്ത പൊടി മാന്ത്രികമായി പല രൂപങ്ങളിൽ മാറുന്നത് കാണാം! ഇതിനടിയിൽ ഒളിപ്പിച്ചിരിക്കുന്ന കാന്തത്തിന്റെ രൂപം നിങ്ങൾക്ക് ഊഹിക്കാൻ കഴിയുമോ? ചുവന്ന ബട്ടൺ അമർത്തി വെളിച്ചം വരുമ്പോൾ നിങ്ങളുടെ ഊഹം ശരിയാണോ എന്ന് പരിശോധിക്കൂ!</p>\n\n<h3>ഇത് നമ്മൾ എവിടെയാണ് കാണുന്നത്?</h3>\n<p>കാന്തികക്ഷേത്രങ്ങളുടെ ഇതേ തത്വമാണ് ആശുപത്രികളിലെ MRI (മാഗ്നെറ്റിക് റെസൊണൻസ് ഇമേജിംഗ്) സ്കാനറുകളിൽ ഉപയോഗിക്കുന്നത്! ഇരുമ്പുപൊടിക്ക് പകരം, ശരീരത്തിലെ ജലതന്മാത്രകളിലുള്ള വളരെ ചെറിയ പ്രോട്ടോണുകളെ അണിനിരത്തിയാണ് വലിയ MRI കാന്തങ്ങൾ നമ്മുടെ ശരീരത്തിൻ്റെ ആന്തരിക ചിത്രങ്ങൾ എടുക്കുന്നത്. ഇതിന് എക്സ്-റേയുടെ ആവശ്യമില്ല.</p>"
+                "en": "<h3>The Dancing Needles!</h3>\n<p>Press the red button and watch the big magnet in the middle start to spin. Look at all the tiny yellow arrows around it—they are dancing! Those little arrows are actually tiny compasses. As the big magnet turns, its invisible magnetic force pulls and pushes them, making them spin in perfect circles together!</p>\n\n<h3>Where do we see this?</h3>\n<p>Did you know the Earth itself is a giant rotating magnet? Deep inside our planet, swirling liquid iron creates a massive magnetic field with invisible lines of force stretching from the South Pole to the North Pole. When hikers or sailors use a compass to navigate, the needle is doing exactly what you see in this exhibit—aligning itself with Earth's giant lines of force so we never get lost!</p>",
+                "ml": "<h3>നൃത്തം വയ്ക്കുന്ന സൂചികൾ!</h3>\n<p>ചുവന്ന ബട്ടൺ അമർത്തി നടുവിലുള്ള വലിയ കാന്തം കറങ്ങുന്നത് നോക്കൂ. അതിനുചുറ്റുമുള്ള ചെറിയ മഞ്ഞ സൂചികൾ നൃത്തം വയ്ക്കുന്നത് കണ്ടോ? ഇതെല്ലാം ചെറിയ വടക്കുനോക്കിയന്ത്രങ്ങളാണ് (compass). വലിയ കാന്തം കറങ്ങുമ്പോൾ അതിന്റെ അദൃശ്യമായ കാന്തികശക്തി ഈ ചെറിയ സൂചികളെ വലിക്കുകയും തള്ളുകയും ചെയ്യുന്നു. അതുകൊണ്ടാണ് അവ കാന്തത്തിനൊപ്പം കൃത്യമായി തിരിയുന്നത്!</p>\n\n<h3>ഇത് നമ്മൾ എവിടെയാണ് കാണുന്നത്?</h3>\n<p>നമ്മുടെ ഭൂമി തന്നെ ഒരു വലിയ കാന്തമാണെന്ന് നിങ്ങൾക്കറിയാമോ? ഭൂമിയുടെ ഉള്ളിൽ ഉരുകിത്തിളയ്ക്കുന്ന ഇരുമ്പ് വലിയൊരു കാന്തികക്ഷേത്രം സൃഷ്ടിക്കുന്നുണ്ട്. നാവികരും യാത്രക്കാരും വഴി കണ്ടുപിടിക്കാൻ ഉപയോഗിക്കുന്ന കോമ്പസ് പ്രവർത്തിക്കുന്നത് ഈ പ്രദർശിനിയിൽ കാണുന്ന അതേ തത്വത്തിലാണ്. ഭൂമിയുടെ അദൃശ്യമായ കാന്തികബലരേഖകൾക്ക് സമാന്തരമായി സ്വയം തിരിഞ്ഞാണ് കോമ്പസ് നമുക്ക് വടക്കുദിശ കാണിച്ചുതരുന്നത്!</p>"
             },
             "how": {
-                "en": "<h3>Drawing with Invisible Forces</h3>\n<p>The black powder inside the container is made of tiny iron filings. Every magnet has an invisible magnetic field around it, made of \"lines of force.\" When you place the iron filings over the hidden magnets, they act like tiny compasses, lining up exactly along these invisible lines. Different shaped magnets (like a bar, horseshoe, or ring) create completely different patterns!</p>\n\n<h3>Real-World Application: MRI Scanners</h3>\n<p>The exact same principle of magnetic fields is used in MRI (Magnetic Resonance Imaging) scanners at hospitals! Instead of iron filings, the giant MRI magnet aligns the tiny, invisible protons inside your body's water molecules to create a detailed picture of your insides without using x-rays.</p>",
-                "ml": "<h3>അദൃശ്യശക്തികൊണ്ടുള്ള ചിത്രരചന</h3>\n<p>പാത്രത്തിലുള്ള കറുത്ത പൊടി ഇരുമ്പുപൊടിയാണ് (iron filings). എല്ലാ കാന്തങ്ങൾക്കും ചുറ്റും അദൃശ്യമായ ഒരു കാന്തികക്ഷേത്രമുണ്ട് (magnetic field). ഇരുമ്പുപൊടിയുള്ള പാത്രം കാന്തത്തിന് മുകളിൽ വെക്കുമ്പോൾ, ഈ പൊടികൾ ചെറിയ വടക്കുനോക്കിയന്ത്രങ്ങൾ പോലെ പ്രവർത്തിക്കുകയും ആ അദൃശ്യരേഖകൾക്ക് സമാന്തരമായി അണിനിരക്കുകയും ചെയ്യുന്നു. ബാർ കാന്തം, കുതിരലാട കാന്തം തുടങ്ങിയ വിവിധ രൂപങ്ങളിലുള്ള കാന്തങ്ങൾ വ്യത്യസ്ത പാറ്റേണുകൾ സൃഷ്ടിക്കുന്നു!</p>\n\n<h3>യഥാർത്ഥ ജീവിതത്തിലെ പ്രയോഗം: MRI സ്കാനറുകൾ</h3>\n<p>കാന്തികക്ഷേത്രങ്ങളുടെ ഇതേ തത്വമാണ് ആശുപത്രികളിലെ MRI (മാഗ്നെറ്റിക് റെസൊണൻസ് ഇമേജിംഗ്) സ്കാനറുകളിൽ ഉപയോഗിക്കുന്നത്! ഇരുമ്പുപൊടിക്ക് പകരം, ശരീരത്തിലെ ജലതന്മാത്രകളിലുള്ള വളരെ ചെറിയ പ്രോട്ടോണുകളെ അണിനിരത്തിയാണ് വലിയ MRI കാന്തങ്ങൾ നമ്മുടെ ശരീരത്തിൻ്റെ ആന്തരിക ചിത്രങ്ങൾ എടുക്കുന്നത്. ഇതിന് എക്സ്-റേയുടെ ആവശ്യമില്ല.</p>"
+                "en": "<h3>Following the Invisible Paths</h3>\n<p>The large bar magnet in the center has a magnetic field around it. Think of this field as invisible \"lines of force\" that flow out from the North pole and loop around into the South pole. The small yellow needles are actual compasses. A compass needle will always line itself up perfectly with these lines of force. When the central magnet rotates, the invisible lines rotate with it, forcing all the little compasses to instantly change direction to follow the new path!</p>\n\n<h3>Real-World Application: Earth's Magnetic Field</h3>\n<p>Did you know the Earth itself is a giant rotating magnet? Deep inside our planet, swirling liquid iron creates a massive magnetic field with invisible lines of force stretching from the South Pole to the North Pole. When hikers or sailors use a compass to navigate, the needle is doing exactly what you see in this exhibit—aligning itself with Earth's giant lines of force so we never get lost!</p>",
+                "ml": "<h3>അദൃശ്യമായ വഴികളിലൂടെ</h3>\n<p>നടുവിലുള്ള വലിയ ബാർ കാന്തത്തിന് ചുറ്റും അദൃശ്യമായ ഒരു കാന്തികക്ഷേത്രമുണ്ട്. നോർത്ത് പോളിൽ (North pole) നിന്ന് പുറപ്പെട്ട് സൗത്ത് പോളിലേക്ക് (South pole) പോകുന്ന അദൃശ്യമായ \"കാന്തികബലരേഖകൾ\" (lines of force) ആണ് ഈ ക്ഷേത്രം നിർമ്മിക്കുന്നത്. ചുറ്റുമുള്ള മഞ്ഞ സൂചികൾ ചെറിയ കോമ്പസുകളാണ്. ഈ കാന്തികബലരേഖകൾക്ക് സമാന്തരമായി മാത്രമേ കോമ്പസ് സൂചികൾ നിൽക്കുകയുള്ളൂ. നടുവിലുള്ള കാന്തം കറങ്ങുമ്പോൾ ഈ അദൃശ്യരേഖകളും കറങ്ങുന്നു, അതോടൊപ്പം ദിശ മാറാൻ ചെറിയ കോമ്പസുകൾ നിർബന്ധിതരാകുന്നു!</p>\n\n<h3>യഥാർത്ഥ ജീവിതത്തിലെ പ്രയോഗം: ഭൂമിയുടെ കാന്തികവലയം</h3>\n<p>നമ്മുടെ ഭൂമി തന്നെ ഒരു വലിയ കാന്തമാണെന്ന് നിങ്ങൾക്കറിയാമോ? ഭൂമിയുടെ ഉള്ളിൽ ഉരുകിത്തിളയ്ക്കുന്ന ഇരുമ്പ് വലിയൊരു കാന്തികക്ഷേത്രം സൃഷ്ടിക്കുന്നുണ്ട്. നാവികരും യാത്രക്കാരും വഴി കണ്ടുപിടിക്കാൻ ഉപയോഗിക്കുന്ന കോമ്പസ് പ്രവർത്തിക്കുന്നത് ഈ പ്രദർശിനിയിൽ കാണുന്ന അതേ തത്വത്തിലാണ്. ഭൂമിയുടെ അദൃശ്യമായ കാന്തികബലരേഖകൾക്ക് സമാന്തരമായി സ്വയം തിരിഞ്ഞാണ് കോമ്പസ് നമുക്ക് വടക്കുദിശ കാണിച്ചുതരുന്നത്!</p>"
             },
             "deep": {
-                "en": "<h3>Visualizing Magnetic Flux Density</h3>\n<p>This exhibit visually maps the magnetic field vectors (B ⃗) of various dipole configurations. The iron filings become temporarily magnetized via induction. Since they are elongated, they experience a mechanical torque (τ ⃗=μ ⃗×B ⃗) that physically aligns their magnetic moments (μ ⃗) parallel to the local magnetic field lines. The filings cluster most densely at the poles, visualizing where the magnetic flux density is the strongest.</p>\n\n<h3>Clinical Diagnostics & Particle Physics</h3>\n<p>The exact same principle of magnetic fields is used in MRI (Magnetic Resonance Imaging) scanners at hospitals! Instead of iron filings, the giant MRI magnet aligns the tiny, invisible protons inside your body's water molecules to create a detailed picture of your insides without using x-rays.</p>",
-                "ml": "<h3>മാഗ്നെറ്റിക് ഫ്ലക്സ് ഡെൻസിറ്റി (Magnetic Flux Density) ദൃശ്യവൽക്കരിക്കൽ</h3>\n<p>ഈ പ്രദർശിനി വിവിധ കാന്തങ്ങളുടെ കാന്തികക്ഷേത്ര സദിശങ്ങളെ (magnetic field vectors, B ⃗) ദൃശ്യമാക്കുന്നു. കാന്തത്തിന് മുകളിൽ വരുമ്പോൾ ഇരുമ്പുപൊടികൾക്ക് താൽക്കാലികമായി കാന്തികശക്തി ലഭിക്കുന്നു. ഇവയ്ക്ക് നീളമുള്ള രൂപമായതിനാൽ, കാന്തികക്ഷേത്രത്തിന് സമാന്തരമായി തിരിയാൻ അവയിൽ ഒരു ടോർക്ക് (τ ⃗=μ ⃗×B ⃗) പ്രവർത്തിക്കുന്നു. കാന്തികബലം ഏറ്റവും കൂടുതലുള്ള ധ്രുവങ്ങളിൽ (poles) ഇരുമ്പുപൊടി ഏറ്റവും തിങ്ങിനിറഞ്ഞിരിക്കുന്നത് കാണാം.</p>\n\n<h3>MRI സ്കാനിംഗിലെ പ്രോട്ടോൺ അലൈൻമെന്റ്</h3>\n<p>കാന്തികക്ഷേത്രങ്ങളുടെ ഇതേ തത്വമാണ് ആശുപത്രികളിലെ MRI (മാഗ്നെറ്റിക് റെസൊണൻസ് ഇമേജിംഗ്) സ്കാനറുകളിൽ ഉപയോഗിക്കുന്നത്! ഇരുമ്പുപൊടിക്ക് പകരം, ശരീരത്തിലെ ജലതന്മാത്രകളിലുള്ള വളരെ ചെറിയ പ്രോട്ടോണുകളെ അണിനിരത്തിയാണ് വലിയ MRI കാന്തങ്ങൾ നമ്മുടെ ശരീരത്തിൻ്റെ ആന്തരിക ചിത്രങ്ങൾ എടുക്കുന്നത്. ഇതിന് എക്സ്-റേയുടെ ആവശ്യമില്ല.</p>"
+                "en": "<h3>Vector Fields and Magnetic Dipoles</h3>\n<p>This exhibit perfectly demonstrates the vector nature of a magnetic field (B ⃗). The small compasses act as tiny test dipoles placed in the magnetic field of the central rotating dipole. Each needle experiences a mechanical torque (τ ⃗=μ ⃗×B ⃗) which forces its magnetic moment (μ ⃗) to align with the local tangent of the magnetic field lines. The compasses constantly reorient themselves to remain in the lowest state of potential energy (U=-μ ⃗⋅B ⃗), dynamically mapping the changing flux lines in real-time.</p>\n\n<h3>Geomagnetic Navigation Systems</h3>\n<p>Did you know the Earth itself is a giant rotating magnet? Deep inside our planet, swirling liquid iron creates a massive magnetic field with invisible lines of force stretching from the South Pole to the North Pole. When hikers or sailors use a compass to navigate, the needle is doing exactly what you see in this exhibit—aligning itself with Earth's giant lines of force so we never get lost!</p>",
+                "ml": "<h3>വെക്റ്റർ ഫീൽഡുകളും മാഗ്നെറ്റിക് ഡൈപോളുകളും</h3>\n<p>കാന്തികക്ഷേത്രത്തിന്റെ സദിശ സ്വഭാവം (vector nature) ഈ പ്രദർശിനി വളരെ കൃത്യമായി കാണിച്ചുതരുന്നു. നടുവിലുള്ള കാന്തത്തിന്റെ കാന്തികക്ഷേത്രത്തിൽ വച്ചിരിക്കുന്ന ചെറിയ ഡൈപോളുകളായി (test dipoles) ഈ കോമ്പസുകൾ പ്രവർത്തിക്കുന്നു. കാന്തം കറങ്ങുമ്പോൾ, ഓരോ സൂചിയിലും ഒരു ടോർക്ക് (τ ⃗=μ ⃗×B ⃗) പ്രവർത്തിക്കുകയും, അവ കാന്തികബലരേഖകളുടെ ദിശയിലേക്ക് സ്വയം തിരിയുകയും ചെയ്യുന്നു. ഊർജ്ജം ഏറ്റവും കുറഞ്ഞ അവസ്ഥയിൽ (U=-μ ⃗⋅B ⃗) നിൽക്കാനാണ് ഈ സൂചികൾ എപ്പോഴും ശ്രമിക്കുന്നത്. ഇതിലൂടെ മാറിക്കൊണ്ടിരിക്കുന്ന കാന്തികക്ഷേത്രത്തെ നമുക്ക് നേരിട്ട് കാണാൻ കഴിയുന്നു.</p>\n\n<h3>ഭൂമിയുടെ കാന്തിക പ്രഭാവവും കോമ്പസും</h3>\n<p>നമ്മുടെ ഭൂമി തന്നെ ഒരു വലിയ കാന്തമാണെന്ന് നിങ്ങൾക്കറിയാമോ? ഭൂമിയുടെ ഉള്ളിൽ ഉരുകിത്തിളയ്ക്കുന്ന ഇരുമ്പ് വലിയൊരു കാന്തികക്ഷേത്രം സൃഷ്ടിക്കുന്നുണ്ട്. നാവികരും യാത്രക്കാരും വഴി കണ്ടുപിടിക്കാൻ ഉപയോഗിക്കുന്ന കോമ്പസ് പ്രവർത്തിക്കുന്നത് ഈ പ്രദർശിനിയിൽ കാണുന്ന അതേ തത്വത്തിലാണ്. ഭൂമിയുടെ അദൃശ്യമായ കാന്തികബലരേഖകൾക്ക് സമാന്തരമായി സ്വയം തിരിഞ്ഞാണ് കോമ്പസ് നമുക്ക് വടക്കുദിശ കാണിച്ചുതരുന്നത്!</p>"
             }
         },
         "animation": `<!DOCTYPE html>
@@ -5626,7 +11552,7 @@ const INTERACTIVE_EXHIBITS = {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Identify a Magnet Animation</title>
+<title>Lines of Force Animation</title>
 <style>
   body {
     background-color: #0d1426;
@@ -5640,129 +11566,169 @@ const INTERACTIVE_EXHIBITS = {
     overflow: hidden;
   }
   .animation-container {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
+    max-width: 96vw;
+    max-height: 96vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 8px;
+    background-color: #212121;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border: 4px solid #f39c12;
     box-sizing: border-box;
   }
   .exhibit-svg {
     max-width: 100%;
-    max-height: 100%;
+    max-height: min(200px, 50vh);
     width: auto;
     height: auto;
     object-fit: contain;
     display: block;
-    aspect-ratio: 200 / 250;
-    background-color: #f1f2f6;
-    border-radius: 16px;
-    padding: 16px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-    border: 4px solid #f1c40f;
+    aspect-ratio: 1 / 1;
+    background-color: #111;
+    border-radius: 50%;
+    border: 2px solid #555;
     box-sizing: border-box;
   }
-  .hidden-magnet {
-    animation: revealMagnet 8s infinite;
+  .control-btn {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.2s, transform 0.1s;
+    box-sizing: border-box;
   }
-  .scattered-filings {
-    animation: hideScattered 8s infinite;
-  }
-  .aligned-filings {
-    stroke-dasharray: 2 4;
-    stroke-linecap: round;
-    animation: showAligned 8s infinite;
-  }
-  .red-button {
-    transform-origin: center;
-    animation: pressButton 8s infinite;
-  }
-  .led-glow {
-    animation: glowEffect 8s infinite;
-  }
-  @keyframes revealMagnet {
-    0%, 45% { opacity: 0; }
-    50%, 80% { opacity: 0.85; }
-    85%, 100% { opacity: 0; }
-  }
-  @keyframes hideScattered {
-    0%, 15% { opacity: 1; }
-    20%, 95% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  @keyframes showAligned {
-    0%, 15% { opacity: 0; }
-    20%, 95% { opacity: 1; }
-    100% { opacity: 0; }
-  }
-  @keyframes pressButton {
-    0%, 45% { transform: scale(1); }
-    48% { transform: scale(0.9); }
-    80% { transform: scale(0.9); }
-    85%, 100% { transform: scale(1); }
-  }
-  @keyframes glowEffect {
-    0%, 45% { fill: #ffffff; filter: drop-shadow(0 0 0px #fff); }
-    50%, 80% { fill: #fdfae3; filter: drop-shadow(0 0 10px #f1c40f); }
-    85%, 100% { fill: #ffffff; filter: drop-shadow(0 0 0px #fff); }
+  .control-btn:active {
+    background-color: #c0392b;
+    transform: scale(0.98);
   }
 </style>
 </head>
 <body>
 
 <div class="animation-container">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 250" class="exhibit-svg">
-    <circle cx="100" cy="100" r="70" stroke="#2c3e50" stroke-width="6" class="led-glow" />
-    
-    <g class="hidden-magnet">
-      <rect x="70" y="60" width="60" height="40" fill="#e74c3c" />
-      <rect x="70" y="100" width="60" height="40" fill="#3498db" />
-      <text x="96" y="85" fill="white" font-family="sans-serif" font-weight="bold" font-size="12">N</text>
-      <text x="96" y="125" fill="white" font-family="sans-serif" font-weight="bold" font-size="12">S</text>
-    </g>
-
-    <g class="scattered-filings" fill="#2d3436" opacity="0.8">
-      <circle cx="80" cy="70" r="1.5" /><circle cx="120" cy="90" r="1.5" />
-      <circle cx="60" cy="120" r="1.5" /><circle cx="140" cy="80" r="1.5" />
-      <circle cx="90" cy="140" r="1.5" /><circle cx="110" cy="60" r="1.5" />
-      <circle cx="130" cy="130" r="1.5" /><circle cx="70" cy="100" r="1.5" />
-      <circle cx="95" cy="95" r="1.5" /><circle cx="105" cy="115" r="1.5" />
-      <circle cx="85" cy="85" r="1.5" /><circle cx="115" cy="105" r="1.5" />
-      <circle cx="75" cy="135" r="1.5" /><circle cx="125" cy="65" r="1.5" />
-      <circle cx="50" cy="90" r="1.5" /><circle cx="150" cy="110" r="1.5" />
-    </g>
-
-    <g class="aligned-filings" fill="none" stroke="#2d3436" stroke-width="2.5">
-      <path d="M 115 60 Q 170 100 115 140" />
-      <path d="M 85 60 Q 30 100 85 140" />
-      
-      <path d="M 100 50 Q 140 100 100 150" />
-      <path d="M 100 50 Q 60 100 100 150" />
-      
-      <line x1="100" y1="50" x2="100" y2="35" />
-      <line x1="80" y1="55" x2="70" y2="45" />
-      <line x1="120" y1="55" x2="130" y2="45" />
-      
-      <line x1="100" y1="150" x2="100" y2="165" />
-      <line x1="80" y1="145" x2="70" y2="155" />
-      <line x1="120" y1="145" x2="130" y2="155" />
-    </g>
-
-    <circle cx="100" cy="100" r="66" stroke="#bdc3c7" stroke-width="3" fill="none" opacity="0.6" />
-
-    <g transform="translate(100, 210)">
-      <circle cx="0" cy="0" r="18" fill="#2c3e50" />
-      <circle cx="0" cy="0" r="12" fill="#e74c3c" class="red-button" />
-      <path d="M -6 -6 Q 0 -10 6 -6" stroke="#ff7979" stroke-width="2" fill="none" class="red-button" />
+  <svg id="magnetic-field-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" class="exhibit-svg">
+    <g id="central-magnet">
+      <rect x="-30" y="-10" width="30" height="20" fill="#3498db" />
+      <rect x="0" y="-10" width="30" height="20" fill="#e74c3c" />
+      <text x="15" y="4" fill="white" font-family="sans-serif" font-weight="bold" font-size="10" text-anchor="middle">N</text>
+      <text x="-15" y="4" fill="white" font-family="sans-serif" font-weight="bold" font-size="10" text-anchor="middle">S</text>
     </g>
   </svg>
+  <button class="control-btn" id="spin-btn">Hold to Spin Magnet</button>
 </div>
+
+<script>
+  const svg = document.getElementById('magnetic-field-svg');
+  const magnet = document.getElementById('central-magnet');
+  const btn = document.getElementById('spin-btn');
+  
+  const cx = 150, cy = 150;
+  const needles = [];
+  
+  const spacing = 22; 
+  for (let x = 20; x <= 280; x += spacing) {
+    for (let y = 20; y <= 280; y += spacing) {
+      const distFromCenter = Math.hypot(x - cx, y - cy);
+      if (distFromCenter > 130) continue; 
+      if (distFromCenter < 35) continue; 
+
+      const g = document.createElementNS("http://www.w3.org/2000/svg", "g");
+      
+      const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+      path.setAttribute("d", "M -6,0 L 0,-3 L 6,0 L 0,3 Z");
+      path.setAttribute("fill", "#f1c40f");
+      
+      const tip = document.createElementNS("http://www.w3.org/2000/svg", "path");
+      tip.setAttribute("d", "M 0,-3 L 6,0 L 0,3 Z");
+      tip.setAttribute("fill", "#e74c3c");
+
+      g.appendChild(path);
+      g.appendChild(tip);
+      svg.insertBefore(g, magnet);
+
+      needles.push({ el: g, x: x, y: y });
+    }
+  }
+
+  let magnetAngle = 0;
+  let isSpinning = false;
+
+  function updateField() {
+    if (isSpinning) {
+      magnetAngle += 0.03;
+    }
+
+    const deg = magnetAngle * 180 / Math.PI;
+    magnet.setAttribute('transform', `translate(${cx}, ${cy}) rotate(${deg})`);
+
+    const mx = Math.cos(magnetAngle);
+    const my = Math.sin(magnetAngle);
+
+    needles.forEach(n => {
+      const dx = n.x - cx;
+      const dy = n.y - cy;
+      const rDist = Math.hypot(dx, dy);
+      
+      const rx = dx / rDist;
+      const ry = dy / rDist;
+
+      const dot = mx * rx + my * ry;
+
+      const bx = 3 * dot * rx - mx;
+      const by = 3 * dot * ry - my;
+
+      const needleAngle = Math.atan2(by, bx) * 180 / Math.PI;
+
+      n.el.setAttribute('transform', `translate(${n.x}, ${n.y}) rotate(${needleAngle})`);
+    });
+
+    requestAnimationFrame(updateField);
+  }
+
+  btn.addEventListener('mousedown', () => isSpinning = true);
+  btn.addEventListener('mouseup', () => isSpinning = false);
+  btn.addEventListener('mouseleave', () => isSpinning = false);
+  
+  btn.addEventListener('touchstart', (e) => { e.preventDefault(); isSpinning = true; });
+  btn.addEventListener('touchend', (e) => { e.preventDefault(); isSpinning = false; });
+
+  updateField();
+</script>
 
 </body>
 </html>`
     }
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
